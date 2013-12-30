@@ -6,3 +6,9 @@
 username: ferrande
 mail: ferrandezraul@gmail.com
 password: ferrande
+
+2. Clean database
+
+rake db:drop
+rake db:create
+rake db:migrate
