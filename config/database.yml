@@ -34,7 +34,7 @@ production:
 #  pool: 5
 #  timeout: 5000
 #  username: raul
-#  password: berlin08
+#  password:
 
 #test:
 #  adapter: postgresql
@@ -42,4 +42,4 @@ production:
 #  pool: 5
 #  timeout: 5000
 #  username: raul
-#  password: berlin08
+#  password:
