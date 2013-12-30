@@ -28,7 +28,7 @@ Uploading ssh public key /Users/adam/.ssh/id_rsa.pub
 
 You're now ready to create your first Heroku app:
 
-CREAR NUEVA APLICACION EN HEROKU
+4. CREAR NUEVA APLICACION EN HEROKU
 
 $ cd ~/myapp
 $ heroku create $app_name --stack cedar
@@ -47,3 +47,40 @@ git commit -m "whatever"
 git push heroku master
 
 Precompiled assets failed
+
+Running: rake assets:precompile
+        Move them out and bundle
+        them in your Gemfile, or fold them in to your app as lib/myplugin/* and
+        config/initializers/myplugin.rb. See the release notes for more on this:
+        http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released.
+       Tasks: TOP => environment
+       (See full trace by running task with --trace)
+ !
+ !     Precompiling assets failed.
+ !
+
+ !     Push rejected, failed to compile Ruby app
+
+To git@heroku.com:glacial-tundra-4445.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'git@heroku.com:glacial-tundra-4445.git'
+
+
+5. List heroku url
+   heroku domains
+
+6. Configurar environment variables
+
+The configuration for an application is stored in config vars.
+For example, here’s how to configure an encryption key for an application:
+
+$ heroku config:add ENCRYPTION_KEY= my_secret_launch_codes
+Adding config vars and restarting demoapp... done, v14
+ENCRYPTION_KEY:     my_secret_launch_codes
+
+Terminology: Config vars contain customizable configuration data that can be changed independently
+of your source code. The configuration is exposed to a running application via environment variables.
+
+At runtime, all of the config vars are exposed as environment variables -
+so they can be easily extracted programatically. A Ruby application deployed with the above config var,
+can access it by calling ENV["ENCRYPTION_KEY"].
