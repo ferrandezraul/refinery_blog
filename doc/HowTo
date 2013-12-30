@@ -28,6 +28,8 @@ Uploading ssh public key /Users/adam/.ssh/id_rsa.pub
 
 You're now ready to create your first Heroku app:
 
+CREAR NUEVA APLICACION EN HEROKU
+
 $ cd ~/myapp
 $ heroku create $app_name --stack cedar
 Creating stark-fog-398... done, stack is cedar
@@ -37,3 +39,11 @@ Git remote heroku added
 Seguir con https://www.codeschool.com/code_tv/heroku
 
 minuto 4 ... Conectando heroku
+
+
+ACTUALIZAR APLICACION EN HEROKU
+git add .
+git commit -m "whatever"
+git push heroku master
+
+Precompiled assets failed
