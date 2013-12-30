@@ -18,7 +18,7 @@ group :production do
 
   # Refinery doc
   # If you want to use Refinery’s image and resource support, you need to add the ‘fog’ gem too.
-  gem 'fog'
+  #gem 'fog'
 end
 
 
