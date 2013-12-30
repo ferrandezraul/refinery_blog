@@ -23,3 +23,23 @@ production:
   database: db/production.sqlite3
   pool: 5
   timeout: 5000
+
+
+
+# PostgreSQL
+
+#development:
+#  adapter: postgresql
+#  database: development_postgre
+#  pool: 5
+#  timeout: 5000
+#  username: raul
+#  password: berlin08
+
+#test:
+#  adapter: postgresql
+#  database: test_postgre
+#  pool: 5
+#  timeout: 5000
+#  username: raul
+#  password: berlin08

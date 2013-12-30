@@ -5,8 +5,18 @@ gem 'rails', '3.2.16'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+
+
 group :development, :test do
   gem 'sqlite3'
+  # Heroku depends on the presence of the pg (PostgreSQL) gem
+  # therefore I changed from sqlite3 to PostgreSQL on development mode to
+  # have same set up as in production
+  #gem 'pg'
+end
+
+group :production do
+  gem 'pg'
 end
 
 
