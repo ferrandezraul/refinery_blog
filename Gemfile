@@ -65,4 +65,8 @@ gem 'refinerycms-acts-as-indexed', '~> 1.0.0'
 #  gem 'refinerycms-page-images', '~> 2.1.0'
 
 
-ruby "2.0.0"
+# Dependency from Heroku
+gem 'unicorn'
+
+
+    ruby "2.0.0"
