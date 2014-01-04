@@ -20,7 +20,7 @@ group :production do
   # If you want to use Refinery’s image and resource support, you need to add the ‘fog’ gem too.
   #gem 'fog'
 
-  # Heroku dependency
+  # Heroku dependency needed in rails4 (added although we use rails 3.2 and should be included)
   gem 'rails_12factor'
 end
 
@@ -63,3 +63,6 @@ gem 'refinerycms-acts-as-indexed', '~> 1.0.0'
 #  gem 'refinerycms-inquiries', '~> 2.1.0'
 #  gem 'refinerycms-search', '~> 2.1.0'
 #  gem 'refinerycms-page-images', '~> 2.1.0'
+
+
+ruby "2.0.0"
