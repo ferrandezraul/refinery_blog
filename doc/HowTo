@@ -45,7 +45,16 @@ git push heroku master
 
    heroku open (Abre Url en firefox)
 
-6. Configurar environment variables
+6. Hacer un backup de tu database en production. Import?export databases en production.
+https://devcenter.heroku.com/articles/pgbackups
+
+7. Configurar environment variables
+
+Las environment variables locales se setean en un archivo llamado .env
+o en config/environment.rb
+Para verlas:
+cat .env
+cat config/environment.rb
 
 The configuration for an application is stored in config vars.
 For example, here’s how to configure an encryption key for an application:
