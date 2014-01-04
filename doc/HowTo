@@ -1,6 +1,3 @@
-
-
-
 1. Login into refinery cms user
 
 username: ferrande
@@ -30,44 +27,23 @@ You're now ready to create your first Heroku app:
 
 4. CREAR NUEVA APLICACION EN HEROKU
 
-$ cd ~/myapp
 $ heroku create $app_name --stack cedar
 Creating stark-fog-398... done, stack is cedar
-http://stark-fog-398.herokuapp.com/ | git@heroku.com:stark-fog-398.git
+http://glacial-tundra-4445.herokuapp.com/ | git@heroku.com:glacial-tundra-4445.git
 Git remote heroku added
 
-Seguir con https://www.codeschool.com/code_tv/heroku
+heroku run rake db:migrate
+heroku run rake db:seed
 
-minuto 4 ... Conectando heroku
-
-
-ACTUALIZAR APLICACION EN HEROKU
+----------  ACTUALIZAR APLICACION EN HEROKU
 git add .
 git commit -m "whatever"
 git push heroku master
 
-Precompiled assets failed
-
-Running: rake assets:precompile
-        Move them out and bundle
-        them in your Gemfile, or fold them in to your app as lib/myplugin/* and
-        config/initializers/myplugin.rb. See the release notes for more on this:
-        http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released.
-       Tasks: TOP => environment
-       (See full trace by running task with --trace)
- !
- !     Precompiling assets failed.
- !
-
- !     Push rejected, failed to compile Ruby app
-
-To git@heroku.com:glacial-tundra-4445.git
- ! [remote rejected] master -> master (pre-receive hook declined)
-error: failed to push some refs to 'git@heroku.com:glacial-tundra-4445.git'
-
-
 5. List heroku url
    heroku domains
+
+   heroku open (Abre Url en firefox)
 
 6. Configurar environment variables
 
@@ -84,3 +60,24 @@ of your source code. The configuration is exposed to a running application via e
 At runtime, all of the config vars are exposed as environment variables -
 so they can be easily extracted programatically. A Ruby application deployed with the above config var,
 can access it by calling ENV["ENCRYPTION_KEY"].
+
+6.6 Custom url in Heroku (your own domain)
+https://devcenter.heroku.com/articles/custom-domains
+
+7. How to use development database in production
+IMPORTANTE POST EN:
+http://stackoverflow.com/questions/12522742/rails-heroku-dbpush-command-failing
+posiblemente tenga que cambiar config/database.yml la parte de
+production:
+  adapter: sqlite3 a postgresql
+por ejemplo:
+production:
+  adapter: postgresql
+  encoding: utf8
+  database: project_production
+  pool: 5
+  username:
+  password:
+
+Que es eso de taps ? sudo apt-get install taps
+usar taps con Heroku ??
