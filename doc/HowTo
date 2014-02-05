@@ -70,10 +70,10 @@ At runtime, all of the config vars are exposed as environment variables -
 so they can be easily extracted programatically. A Ruby application deployed with the above config var,
 can access it by calling ENV["ENCRYPTION_KEY"].
 
-6.6 Custom url in Heroku (your own domain)
+8. Custom url in Heroku (your own domain)
 https://devcenter.heroku.com/articles/custom-domains
 
-7. How to use development database in production
+9. How to use development database in production
 IMPORTANTE POST EN:
 http://stackoverflow.com/questions/12522742/rails-heroku-dbpush-command-failing
 posiblemente tenga que cambiar config/database.yml la parte de

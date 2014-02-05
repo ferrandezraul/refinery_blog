@@ -68,5 +68,7 @@ gem 'refinerycms-acts-as-indexed', '~> 1.0.0'
 # Dependency from Heroku
 gem 'unicorn'
 
+gem 'cucumber'
+gem 'rspec'
 
-    ruby "2.0.0"
+ruby "2.0.0"
