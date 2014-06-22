@@ -5,9 +5,11 @@ Y EN PAGES EDITAR LA PAGINA QUE QUIERAS COMO INICIO Y PONER UNA BARRA / EN LA OP
 Forward this page to another website or page
 https://groups.google.com/forum/#!topic/refinery-cms/UEty7C8VddU
 
+PARA SUBIR IMAGENES A HEROKU, ENTRAR COMO ADMIN Y EN LA PESTANYA IMAGENES
+SUBIR LA IMAGEN Y DESPUES EN LA PESTANYA PAGES UTILIZARLA
+
 1. Login into refinery cms user
 http://raulferrandez.herokuapp.com/refinery/users/login
-http://raulferrandez.herokuapp.com/refinery
 
 username: ferrande
 mail: ferrandezraul@gmail.com

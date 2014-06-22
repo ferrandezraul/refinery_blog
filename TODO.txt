@@ -1,12 +1,19 @@
 - Add locale switch
+  https://github.com/refinery/refinerycms-i18n
+  http://stackoverflow.com/questions/7475289/how-to-add-multilanguage-refinery-cms-control-panel
 
-- Import / Export database from production
+- Now that I know how to export database from production Heroku and use it as local development database,
+  do the other way ( import local postgresql database into Heroku production )
 
-- Upgrade to refinery 2.1.2
+- See more refinery plugin/engines from http://refinerycms.com/engines
+
+- Improve SEO de mi blog http://raulferrandez.herokuapp.com/
+
+- Upgrade to refinery 2.1.2 ????
 
 ------------- WITH MONEY ---------------
 
-- Fix image not saved in heroku either with add on from Heroku or Amazon S3
+- Increase image storage saved in heroku either with add on from Heroku or Amazon S3
   https://addons.heroku.com/cloudinary
 
 - Custom domain on heroku
