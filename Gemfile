@@ -12,10 +12,6 @@ group :development, :test do
 end
 
 group :production do
-  # Heroku depends on the presence of the pg (PostgreSQL) gem
-  # therefore I changed from sqlite3 to PostgreSQL on production
-  gem 'pg'
-
   # Refinery doc
   # If you want to use Refinery’s image and resource support, you need to add the ‘fog’ gem too.
   #gem 'fog'
@@ -24,6 +20,9 @@ group :production do
   gem 'rails_12factor'
 end
 
+# Heroku depends on the presence of the pg (PostgreSQL) gem
+# therefore I changed from sqlite3 to PostgreSQL on production, development and test
+gem 'pg'
 
 # Gems used only for assets and not required
 # in production environments by default.

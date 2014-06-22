@@ -1,10 +1,28 @@
+Para tener file uploads saved on heroku, usar amazon S3 o add on de heroku cloudinary
+https://addons.heroku.com/cloudinary
+
+PARA DEFINIR MI PAGINA DE INICIO, ENTRAR COMO ADMIN EN .../refinery/users/login
+Y EN PAGES EDITAR LA PAGINA QUE QUIERAS COMO INICIO Y PONER UNA BARRA / EN LA OPCION
+Forward this page to another website or page
+https://groups.google.com/forum/#!topic/refinery-cms/UEty7C8VddU
+
 1. Login into refinery cms user
+http://raulferrandez.herokuapp.com/refinery/users/login
+http://raulferrandez.herokuapp.com/refinery
 
 username: ferrande
 mail: ferrandezraul@gmail.com
 password: ferrande
 
-2. Clean database
+2. Clean/ Export / Import database
+
+NOTE that I use postgresql database that's why I can not see the database in folde db from my app
+ To see whére the database is stored locally on my pc, check your postgres.conf located at etc/postgresql/9.3/main/postgres.conf.
+ In postgres.conf can see a line stating data_directory=<path>
+
+ For export/import see heroku doc
+ https://devcenter.heroku.com/articles/heroku-postgres-import-export
+ https://devcenter.heroku.com/articles/pgbackups
 
 rake db:drop
 rake db:create
@@ -19,16 +37,6 @@ Enter your Heroku credentials.
 Email: ferrandezraul@gmail.com
 Password: bxxx..
 
-4. CREAR NUEVA APLICACION EN HEROKU
-
-$ heroku create $app_name --stack cedar
-Creating stark-fog-398... done, stack is cedar
-http://glacial-tundra-4445.herokuapp.com/ | git@heroku.com:glacial-tundra-4445.git
-Git remote heroku added
-
-heroku run rake db:migrate
-heroku run rake db:seed
-
 ----------  ACTUALIZAR APLICACION EN HEROKU
 git add .
 git commit -m "whatever"
@@ -39,8 +47,6 @@ git push heroku master
 
    heroku open (Abre Url en firefox)
 
-6. Hacer un backup de tu database en production. Import?export databases en production.
-https://devcenter.heroku.com/articles/pgbackups
 
 7. Configurar environment variables
 
@@ -67,21 +73,6 @@ can access it by calling ENV["ENCRYPTION_KEY"].
 8. Custom url in Heroku (your own domain)
 https://devcenter.heroku.com/articles/custom-domains
 
-9. How to use development database in production
-IMPORTANTE POST EN:
-http://stackoverflow.com/questions/12522742/rails-heroku-dbpush-command-failing
-posiblemente tenga que cambiar config/database.yml la parte de
-production:
-  adapter: sqlite3 a postgresql
-por ejemplo:
-production:
-  adapter: postgresql
-  encoding: utf8
-  database: project_production
-  pool: 5
-  username:
-  password:
-
-Que es eso de taps ? sudo apt-get install taps
-usar taps con Heroku ??
+This link contains info on how to migrate data from sqlite3 database into postgresql using taps gem
+http://railscasts.com/episodes/342-migrating-to-postgresql?language=es&view=asciicast
 
