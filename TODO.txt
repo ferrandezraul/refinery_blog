@@ -1,0 +1,13 @@
+- Add locale switch
+
+- Import / Export database from production
+
+- Upgrade to refinery 2.1.2
+
+------------- WITH MONEY ---------------
+
+- Fix image not saved in heroku either with add on from Heroku or Amazon S3
+  https://addons.heroku.com/cloudinary
+
+- Custom domain on heroku
+  https://devcenter.heroku.com/articles/custom-domains

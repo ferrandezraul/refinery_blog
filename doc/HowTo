@@ -1,5 +1,4 @@
-Para tener file uploads saved on heroku, usar amazon S3 o add on de heroku cloudinary
-https://addons.heroku.com/cloudinary
+----------REFINERY IMPORTANT TIP ---------------------------------------------------------------
 
 PARA DEFINIR MI PAGINA DE INICIO, ENTRAR COMO ADMIN EN .../refinery/users/login
 Y EN PAGES EDITAR LA PAGINA QUE QUIERAS COMO INICIO Y PONER UNA BARRA / EN LA OPCION
@@ -14,7 +13,7 @@ username: ferrande
 mail: ferrandezraul@gmail.com
 password: ferrande
 
-2. Clean/ Export / Import database
+----------CLEAN/ EXPORT / IMPORT DATABASE ------------------------------------------------------------
 
 NOTE that I use postgresql database that's why I can not see the database in folde db from my app
  To see whére the database is stored locally on my pc, check your postgres.conf located at etc/postgresql/9.3/main/postgres.conf.
@@ -24,31 +23,42 @@ NOTE that I use postgresql database that's why I can not see the database in fol
  https://devcenter.heroku.com/articles/heroku-postgres-import-export
  https://devcenter.heroku.com/articles/pgbackups
 
-rake db:drop
-rake db:create
-rake db:migrate
+ EXPORT DATABASE FROM PRODUCTION HEROKU:
+ heroku pgbackups:capture --app [app_name]
+ curl -o latest.dump `heroku pgbackups:url --app [app_name]`
 
-3. login to Heroku
+ In my case:
+ heroku pgbackups:capture --app raulferrandez
+ curl -o latest.dump `heroku pgbackups:url --app raulferrandez`
 
-enter:
+ IMPORT EXPORTED DATABASE latest.dump AS MY LOCAL DEV DATABASE:
+ pg_restore -c -d [local_database_name] [exported_database]
+
+ In my case:
+ pg_restore -c -d development_postgreSQL latest.dump
+
+ POSTGRESQL USEFULL COMMANDS:
+ psql -l                                    List databases
+ psql -d development_postgreSQL             Enter database development_postgreSQL
+
+ CLEAN DATABASE:
+ rake db:drop
+ rake db:create
+ rake db:migrate
+
+----------LOGIN HEROKU ------------------------------------------------------------
 
 $ heroku login
 Enter your Heroku credentials.
 Email: ferrandezraul@gmail.com
 Password: bxxx..
 
-----------  ACTUALIZAR APLICACION EN HEROKU
+----------  ACTUALIZAR APLICACION EN HEROKU  ------------------------------------------
 git add .
 git commit -m "whatever"
 git push heroku master
 
-5. List heroku url
-   heroku domains
-
-   heroku open (Abre Url en firefox)
-
-
-7. Configurar environment variables
+----------  ENVIRONMENT VARS  -------------------------------------------------------------
 
 Las environment variables locales se setean en un archivo llamado .env
 o en config/environment.rb
@@ -69,10 +79,4 @@ of your source code. The configuration is exposed to a running application via e
 At runtime, all of the config vars are exposed as environment variables -
 so they can be easily extracted programatically. A Ruby application deployed with the above config var,
 can access it by calling ENV["ENCRYPTION_KEY"].
-
-8. Custom url in Heroku (your own domain)
-https://devcenter.heroku.com/articles/custom-domains
-
-This link contains info on how to migrate data from sqlite3 database into postgresql using taps gem
-http://railscasts.com/episodes/342-migrating-to-postgresql?language=es&view=asciicast
 
