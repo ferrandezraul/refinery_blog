@@ -15,6 +15,10 @@ username: ferrande
 mail: ferrandezraul@gmail.com
 password: ferrande
 
+----------INSTALL POSTGRESQL UBUNTU  -----------------------------------------------------------------
+
+sudo apt-get install postgresql postgresql-client postgresql-contrib libpq-dev
+
 ----------CLEAN/ EXPORT / IMPORT DATABASE ------------------------------------------------------------
 
 NOTE that I use postgresql database that's why I can not see the database in folde db from my app
@@ -42,6 +46,13 @@ NOTE that I use postgresql database that's why I can not see the database in fol
  POSTGRESQL USEFULL COMMANDS:
  psql -l                                    List databases
  psql -d development_postgreSQL             Enter database development_postgreSQL
+
+ Para crear un usuario llamado raul que puedas usar en tu database.yml, teclea:
+
+ sudo su postgres -c psql
+ CREATE USER raul;
+ ALTER ROLE raul WITH CREATEDB;
+ \q
 
  CLEAN DATABASE:
  rake db:drop
