@@ -1,9 +1,10 @@
+- Now that I know how to export database from production Heroku and use it as local development database,
+  do the other way ( import local postgresql database into Heroku production )  IMPORTANT
+  CAUSE VERY USEFULL TO CREATE DATABASE LOCALLY AND UPLOAD TO HEROKU
+
 - Add locale switch
   https://github.com/refinery/refinerycms-i18n
   http://stackoverflow.com/questions/7475289/how-to-add-multilanguage-refinery-cms-control-panel
-
-- Now that I know how to export database from production Heroku and use it as local development database,
-  do the other way ( import local postgresql database into Heroku production )
 
 - See more refinery plugin/engines from http://refinerycms.com/engines
 

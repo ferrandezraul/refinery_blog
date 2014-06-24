@@ -1,10 +1,26 @@
-<% Refinery::I18n.frontend_locales.each do |frontend_locale| %>
-    <%= link_to Refinery::I18n.locales[frontend_locale], {:locale => frontend_locale} %>
-<% end %>
+<div id='locales'>
 
-<h1 id='logo'>
-  <%= link_to Refinery::Core.site_name, refinery.root_path %>
-</h1>
+  <%-# commented line -%>
+  <%-# use frontend locales disabled. Note that they are hardcoded below -%>
+  <% if false %>
+      <% Refinery::I18n.frontend_locales.each do |frontend_locale| %>
+          <%= link_to Refinery::I18n.locales[frontend_locale], {:locale => frontend_locale} %>
+      <% end %>
+  <% end %>
 
-<%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html %>
+  <%= link_to image_tag('flags/gb.png') + " English", {:locale => "en" } %>
+  <%= link_to image_tag('flags/de.png') + " Deutsch", {:locale => "de" } %>
+  <%= link_to image_tag('flags/es.png') + " Español", {:locale => "es" } %>
+  <%= link_to image_tag('flags/ca.png') + " Catala", {:locale => "ca" } %>
 
+</div>
+
+<div>
+  <h1 id='logo'>
+    <%= link_to Refinery::Core.site_name, refinery.root_path %>
+  </h1>
+</div>
+
+<div id='pages'>
+  <%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html %>
+</div>

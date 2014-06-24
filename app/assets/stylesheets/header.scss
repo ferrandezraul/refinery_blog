@@ -1,0 +1,15 @@
+#locales {
+  font-size: 10px;
+//  position: absolute;
+//  right: 20px;
+//  top: 5px;
+}
+
+
+// This relates to the pages menu on header. Note definition from Refinery::Pages::MenuPresenter
+// where self.css = 'menu clearfix'
+// which seems to mean that following css selectors can be used:
+// #menu, .menu, #clearfix or .clearfix
+#menu {
+  font-size: 14px;
+}
