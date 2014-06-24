@@ -1,9 +1,1 @@
-<ul class="dropdown-menu">
-  <% Refinery::I18n.frontend_locales.each do |frontend_locale| %>
-      <li>
-        <%= link_to Refinery::I18n.locales[frontend_locale], {:locale => frontend_locale} %>
-      </li>
-  <% end %>
-</ul>
-
 <%= render '/refinery/content_page' %>

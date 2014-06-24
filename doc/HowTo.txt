@@ -3,6 +3,7 @@
 PARA DEFINIR MI PAGINA DE INICIO, ENTRAR COMO ADMIN EN .../refinery/users/login
 Y EN PAGES EDITAR LA PAGINA QUE QUIERAS COMO INICIO Y PONER UNA BARRA / EN LA OPCION
 Forward this page to another website or page
+Tambien seleccionar todas las "View template" como "Home" y no como "Show", sino el switcher de idiomas no aparece.
 https://groups.google.com/forum/#!topic/refinery-cms/UEty7C8VddU
 
 PARA SUBIR IMAGENES A HEROKU, ENTRAR COMO ADMIN Y EN LA PESTANYA IMAGENES
