@@ -1,3 +1,6 @@
+- Alternativas a Heroku ??
+- Alternativas a Amazon S3 ??
+
 - create new repo para proyecto alemanes.
 
 - Cambiar texto sustitutorio si imagen no esta accesible a "" (empty string)
