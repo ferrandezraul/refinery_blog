@@ -54,6 +54,20 @@ NOTE that I use postgresql database that's why I can not see the database in fol
  pg_dump -Fc --no-acl --no-owner -U user database_name > my_db.dump
 i.e.  pg_dump -Fc --no-acl --no-owner -U raul development_postgreSQL > my_db_blog.dump
 
+---------- IMPORT (PREVIOUS EXPORTED DATABASE FROM LOCALHOST) INTO HEROKU---------------------------------------
+
+Doc: https://devcenter.heroku.com/articles/heroku-postgres-import-export
+
+In order for PG Backups to access and import your dump file you will need to upload it somewhere with an HTTP-accessible URL.
+Use Amazon S3 or dropbox
+
+Asegurate de que puedes descargar el dump file con la url, y que no se abre el browser y te muestre un xml.
+Para ello tube que hacer el archivo publico en amazon S3 (no pasa nada porque despues de ser importado lo puedes borrar)
+
+heroku pgbackups:restore [DATABASE] [URL_DUMP_DATABASE]
+i.e.
+heroku pgbackups:restore HEROKU_POSTGRESQL_BRONZE_URL 'https://..../.../my_db_blog.dump'
+
  ---------- POSTGRESQL USEFULL COMMANDS: -----------------------------------------------------------------------
 
  psql -l                                    List databases
@@ -94,6 +108,8 @@ i.e. git remote add heroku git@heroku.com:ferrandezraul.git
 
 ----------- SETTING AWS S3 CREDENTIALS ON HEROKU -------------------------------------
 
+heroku config (list my env vars)
+
 heroku config:set AWS_ACCESS_KEY_ID=[XX] AWS_SECRET_ACCESS_KEY=[XX]
 heroku config:set S3_BUCKET=my-blog-assets S3_KEY=[XX] S3_SECRET=[XX] S3_REGION=Ireland
 
@@ -103,25 +119,4 @@ git add .
 git commit -m "whatever"
 git push heroku master
 
-----------  ENVIRONMENT VARS  -------------------------------------------------------------
-
-Las environment variables locales se setean en un archivo llamado .env
-o en config/environment.rb
-Para verlas:
-cat .env
-cat config/environment.rb
-
-The configuration for an application is stored in config vars.
-For example, here’s how to configure an encryption key for an application:
-
-$ heroku config:add ENCRYPTION_KEY= my_secret_launch_codes
-Adding config vars and restarting demoapp... done, v14
-ENCRYPTION_KEY:     my_secret_launch_codes
-
-Terminology: Config vars contain customizable configuration data that can be changed independently
-of your source code. The configuration is exposed to a running application via environment variables.
-
-At runtime, all of the config vars are exposed as environment variables -
-so they can be easily extracted programatically. A Ruby application deployed with the above config var,
-can access it by calling ENV["ENCRYPTION_KEY"].
 
