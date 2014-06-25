@@ -22,15 +22,20 @@ sudo apt-get install postgresql postgresql-client postgresql-contrib libpq-dev
 
 ----------CLEAN/ EXPORT / IMPORT DATABASE ------------------------------------------------------------
 
-NOTE that I use postgresql database that's why I can not see the database in folde db from my app
- To see whére the database is stored locally on my pc, check your postgres.conf located at etc/postgresql/9.3/main/postgres.conf.
+NOTE that I use postgresql database that's why I can not see the database in folder rails_app/db from my app
+ To see where the database is stored locally on my pc, check your postgres.conf located at etc/postgresql/9.3/main/postgresql.conf.
  In postgres.conf can see a line stating data_directory=<path>
+
+ Or better, export the database with:
+ pg_dump dbname > outfile
+ i.e. pg_dump development_postgreSQL > outfile
 
  For export/import see heroku doc
  https://devcenter.heroku.com/articles/heroku-postgres-import-export
  https://devcenter.heroku.com/articles/pgbackups
 
- EXPORT DATABASE FROM PRODUCTION HEROKU:
+---------- EXPORT DATABASE FROM PRODUCTION HEROKU:  ------------------------------------------------------------
+
  heroku pgbackups:capture --app [app_name]
  curl -o latest.dump `heroku pgbackups:url --app [app_name]`
 
@@ -44,7 +49,13 @@ NOTE that I use postgresql database that's why I can not see the database in fol
  In my case:
  pg_restore -c -d development_postgreSQL latest.dump
 
- POSTGRESQL USEFULL COMMANDS:
+---------- EXPORT DATABASE FROM LOCALHOST -----------------------------------------------------------------------
+
+ pg_dump -Fc --no-acl --no-owner -U user database_name > my_db.dump
+i.e.  pg_dump -Fc --no-acl --no-owner -U raul development_postgreSQL > my_db_blog.dump
+
+ ---------- POSTGRESQL USEFULL COMMANDS: -----------------------------------------------------------------------
+
  psql -l                                    List databases
  psql -d development_postgreSQL             Enter database development_postgreSQL
 
@@ -60,12 +71,32 @@ NOTE that I use postgresql database that's why I can not see the database in fol
  rake db:create
  rake db:migrate
 
-----------LOGIN HEROKU ------------------------------------------------------------
+----------LOGIN HEROKU AND USEFULL COMMANDS ------------------------------------------------------------
 
 $ heroku login
 Enter your Heroku credentials.
 Email: ferrandezraul@gmail.com
 Password: bxxx..
+
+heroku info (list current app info)
+heroku apps (list all my app)
+heroku ps
+heroku logs
+
+NEEDED IF I RENAME MY APP IN HEROKU web browser
+To bind a local app to heroku:
+You need to remove the heroku remote in git using this command:
+git remote rm heroku
+Then you can add a new remote using this one:
+git remote add heroku git@heroku.com:your-app.git
+
+i.e. git remote add heroku git@heroku.com:ferrandezraul.git
+
+----------- SETTING AWS S3 CREDENTIALS ON HEROKU -------------------------------------
+
+heroku config:set AWS_ACCESS_KEY_ID=[XX] AWS_SECRET_ACCESS_KEY=[XX]
+heroku config:set S3_BUCKET=my-blog-assets S3_KEY=[XX] S3_SECRET=[XX] S3_REGION=Ireland
+
 
 ----------  ACTUALIZAR APLICACION EN HEROKU  ------------------------------------------
 git add .

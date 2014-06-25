@@ -1,13 +1,13 @@
-- Alternativas a Heroku ??
-- Alternativas a Amazon S3 ??
-
-- create new repo para proyecto alemanes.
-
-- Cambiar texto sustitutorio si imagen no esta accesible a "" (empty string)
-
 - Now that I know how to export database from production Heroku and use it as local development database,
   do the other way ( import local postgresql database into Heroku production )  IMPORTANT
   CAUSE VERY USEFULL TO CREATE DATABASE LOCALLY AND UPLOAD TO HEROKU
+  https://devcenter.heroku.com/articles/heroku-postgres-import-export
+
+  postgresql viewer?? like sqlite3browse
+
+- Use AWS S3
+
+- create new repo para proyecto alemanes.
 
 - Add locale switch
   https://github.com/refinery/refinerycms-i18n
