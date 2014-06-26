@@ -123,7 +123,9 @@ i.e. git remote add heroku git@heroku.com:ferrandezraul.git
 heroku config (list my env vars)
 
 heroku config:set AWS_ACCESS_KEY_ID=[XX] AWS_SECRET_ACCESS_KEY=[XX]
-heroku config:set S3_BUCKET=my-blog-assets S3_KEY=[XX] S3_SECRET=[XX] S3_REGION=Ireland
+heroku config:set S3_BUCKET=my-blog-assets S3_KEY=[XX] S3_SECRET=[XX]
+
+IMPORTANT NOTE (Do not set S3_REGION=Ireland although you set the bucket on Ireland)
 
 
 ----------  ACTUALIZAR APLICACION EN HEROKU  ------------------------------------------
