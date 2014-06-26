@@ -9,7 +9,7 @@ development:
   database: development_postgreSQL
   pool: 5
   timeout: 5000
-  username: raul
+  username:
   password:
 
 # Warning: The database defined as "test" will be erased and
