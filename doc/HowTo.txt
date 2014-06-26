@@ -10,10 +10,11 @@ PARA SUBIR IMAGENES A HEROKU, ENTRAR COMO ADMIN Y EN LA PESTANYA IMAGENES
 SUBIR LA IMAGEN Y DESPUES EN LA PESTANYA PAGES UTILIZARLA
 
 1. Login into refinery cms user
-http://raulferrandez.herokuapp.com/refinery                (Should always work, F5 many times if it fails)
-http://ferrandezraul.herokuapp.com/refinery/users/register (First time, F5 many times if it fails)
-http://raulferrandez.herokuapp.com/refinery/users/login
+http://raulferrandez.herokuapp.com/refinery                (Should always work, F5 many times if it fails. It goes to register page if it is the first time and there are no users)
+http://ferrandezraul.herokuapp.com/refinery/users/register (Should not be used. It goes alone if you use the one from above for the first time)
+http://raulferrandez.herokuapp.com/refinery/users/login    (option one redirects to this one if there is a user already on database, F5 many times if it fails)
 
+heroku restart (Use it if you got problems with above commands)
 
 username: ferrande
 mail: ferrandezraul@gmail.com
@@ -120,6 +121,11 @@ Then you can add a new remote using this one:
 git remote add heroku git@heroku.com:your-app.git
 
 i.e. git remote add heroku git@heroku.com:ferrandezraul.git
+
+
+Run rails console in production heroku:
+
+heroku run rails console
 
 ----------- SETTING AWS S3 CREDENTIALS ON HEROKU -------------------------------------
 

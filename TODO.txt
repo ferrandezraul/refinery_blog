@@ -1,17 +1,17 @@
-- Check that image is still there. (Should be)
-- Does the login on heroku still fails often http://ferrandezraul.herokuapp.com/refinery
-  Was it fixed by removing sqlite gem? Try to fix it.
-
-- Save current working env as a backup (heroku config) and try to not use the root key from AWS.
+- Assets not properly served in admin (black color from background ??)
+  Read this https://devcenter.heroku.com/articles/rails-asset-pipeline
+  and also Cloud content
+  coffescript?? check assets doc on refinery
 
 - Use AWS S3 also in development??? The idea is to create the database locally and import it to heroku.
   Although if the images fail cause they are not in S3, I do not care so much ...
   Create a nice blog for me locally and import to heroku.
 
-- Assets not properly served in admin (black color from background ??)
-  http://refinerycms.com/guides/heroku
-
 - Add locale switch in javascript ( current approach is ugly )
+
+- email does not work in case user forgets password
+
+- Currently only one user is allowed. More users with different privileges? extension?
 
 - See more refinery plugin/engines from http://refinerycms.com/engines
 
