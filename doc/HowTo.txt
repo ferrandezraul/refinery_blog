@@ -10,7 +10,9 @@ PARA SUBIR IMAGENES A HEROKU, ENTRAR COMO ADMIN Y EN LA PESTANYA IMAGENES
 SUBIR LA IMAGEN Y DESPUES EN LA PESTANYA PAGES UTILIZARLA
 
 1. Login into refinery cms user
+http://ferrandezraul.herokuapp.com/refinery/users/register (First time, F5 many times if it fails)
 http://raulferrandez.herokuapp.com/refinery/users/login
+
 
 username: ferrande
 mail: ferrandezraul@gmail.com
@@ -34,8 +36,9 @@ NOTE that I use postgresql database that's why I can not see the database in fol
  https://devcenter.heroku.com/articles/heroku-postgres-import-export
  https://devcenter.heroku.com/articles/pgbackups
 
----------- EXPORT DATABASE FROM PRODUCTION HEROKU:  ------------------------------------------------------------
+---------- EXPORT DATABASE FROM PRODUCTION HEROKU AND IMPORT IT LOCALLY ----------------------------------------------------
 
+OPTION 1:
  heroku pgbackups:capture --app [app_name]
  curl -o latest.dump `heroku pgbackups:url --app [app_name]`
 
@@ -48,6 +51,15 @@ NOTE that I use postgresql database that's why I can not see the database in fol
 
  In my case:
  pg_restore -c -d development_postgreSQL latest.dump
+
+ OPTION 2:   https://devcenter.heroku.com/articles/heroku-postgresql
+  heroku pg:pull HEROKU_POSTGRESQL_BRONZE_URL development_postgreSQL --app ferrandezraul
+
+  Like pull but in reverse, pg:push will push data from a local database into a remote Heroku Postgres database.
+  The command looks like this:
+
+  heroku pg:push mylocaldb HEROKU_POSTGRESQL_MAGENTA --app ferrandezraul
+
 
 ---------- EXPORT DATABASE FROM LOCALHOST -----------------------------------------------------------------------
 
@@ -119,4 +131,9 @@ git add .
 git commit -m "whatever"
 git push heroku master
 
+---------- RESET DATABASE ON HEROKU ---------------------------------------------------
 
+heroku pg:reset [dbname]
+heroku pg:reset HEROKU_POSTGRESQL_BRONZE_URL      (drop it)
+heroku run rake --trace db:migrate                (migrate)
+heroku restart
