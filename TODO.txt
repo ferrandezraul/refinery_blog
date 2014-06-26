@@ -1,29 +1,23 @@
-Probably is the paperclip not set?
-https://devcenter.heroku.com/articles/paperclip-s3
+- Check that image is still there. (Should be)
+- Does the login on heroku still fails often http://ferrandezraul.herokuapp.com/refinery
+  Was it fixed by removing sqlite gem? Try to fix it.
 
-Otherwise:
+- Save current working env as a backup (heroku config) and try to not use the root key from AWS.
 
-heroku pg:reset
-heroku run rake --trace db:migrate
+- Use AWS S3 also in development??? The idea is to create the database locally and import it to heroku.
+  Although if the images fail cause they are not in S3, I do not care so much ...
+  Create a nice blog for me locally and import to heroku.
 
-- Now that I know how to export database from production Heroku and use it as local development database,
-  do the other way ( import local postgresql database into Heroku production )  IMPORTANT
-  CAUSE VERY USEFULL TO CREATE DATABASE LOCALLY AND UPLOAD TO HEROKU
-  https://devcenter.heroku.com/articles/heroku-postgres-import-export
+- Assets not properly served in admin (black color from background ??)
+  http://refinerycms.com/guides/heroku
 
-  postgresql viewer?? like sqlite3browse
-
-- Use AWS S3
-
-- create new repo para proyecto alemanes.
-
-- Add locale switch
-  https://github.com/refinery/refinerycms-i18n
-  http://stackoverflow.com/questions/7475289/how-to-add-multilanguage-refinery-cms-control-panel
+- Add locale switch in javascript ( current approach is ugly )
 
 - See more refinery plugin/engines from http://refinerycms.com/engines
 
 - Improve SEO de mi blog http://raulferrandez.herokuapp.com/
+
+- create new repo para proyecto alemanes.
 
 - Upgrade to refinery 2.1.2 ????
 
