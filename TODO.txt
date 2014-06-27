@@ -14,8 +14,6 @@
 
 - create new repo para proyecto alemanes.
 
-- Upgrade to refinery 2.1.2 ????
-
 ------------- WITH MONEY ---------------
 
 - Custom domain on heroku
