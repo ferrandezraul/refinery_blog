@@ -1,12 +1,3 @@
-- Assets not properly served in admin (black color from background ??)
-  Read this https://devcenter.heroku.com/articles/rails-asset-pipeline
-  and also Cloud content
-  coffescript?? check assets doc on refinery
-
-  https://github.com/refinery/refinerycms/issues/1591
-  heroku labs:enable user-env-compile -a myapp
-  config.assets.initialize_on_precompile = true
-
 - Use AWS S3 also in development??? The idea is to create the database locally and import it to heroku.
   Although if the images fail cause they are not in S3, I do not care so much ...
   Create a nice blog for me locally and import to heroku.

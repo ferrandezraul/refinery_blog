@@ -65,7 +65,9 @@ module MyRefineryBlog
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
-    # Refinery doc
+    # Needed to have assets on admin panel working
+    # https://github.com/refinery/refinerycms/issues/1591
+    # heroku labs:enable user-env-compile -a myapp (was not needed)
     config.assets.initialize_on_precompile = true
   end
 end

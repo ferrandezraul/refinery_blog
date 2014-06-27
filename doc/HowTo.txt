@@ -150,3 +150,14 @@ heroku pg:reset [dbname]
 heroku pg:reset HEROKU_POSTGRESQL_BRONZE_URL      (drop it)
 heroku run rake --trace db:migrate                (migrate)
 heroku restart
+
+--------- ASSETS WHERE NOT WORKING ON ADMIN PANEL ------------------------------------
+
+I fixed it just adding to config/application.rb
+
+config.assets.initialize_on_precompile = true
+
+source: https://github.com/refinery/refinerycms/issues/1591
+I didn't need to use: heroku labs:enable user-env-compile -a myapp
+
+Those instructions are contradicted to heroku doc, but seems to work for me
