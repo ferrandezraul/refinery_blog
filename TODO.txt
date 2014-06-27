@@ -18,8 +18,5 @@
 
 ------------- WITH MONEY ---------------
 
-- Increase image storage saved in heroku either with add on from Heroku or Amazon S3
-  https://addons.heroku.com/cloudinary
-
 - Custom domain on heroku
   https://devcenter.heroku.com/articles/custom-domains
