@@ -1,22 +1,27 @@
+- Create users in facebook, google+ to check buttons from sharethis.com
+
 - Use AWS S3 also in development??? The idea is to create the database locally and import it to heroku.
   Although if the images fail cause they are not in S3, I do not care so much ...
   Create a nice blog for me locally and import to heroku.
 
 - Fix catalan locale flag in admin.
   (see here what you can overwritte https://gist.github.com/ryandeussing/2502881 )
+
 - Fix warnings that appear while deploying on heroku
 
 - Add locale switch in CoffeeScript ( not pure javascript ) ( current approach is ugly )
 
-- email does not work in case user forgets password
+- Email does not work in case user forgets password
 
-- Currently only one user is allowed. More users with different privileges? extension?
+- First created user might create new users with different privileges. Test it.
 
 - See more refinery plugin/engines from http://refinerycms.com/engines
 
 - Improve SEO de mi blog http://raulferrandez.herokuapp.com/
 
-- create new repo para proyecto alemanes.
+- Create some test cases with RSpec, Cucumber and/or Capybara.
+
+- Create new repo para proyecto alemanes.
 
 ------------- WITH MONEY ---------------
 
