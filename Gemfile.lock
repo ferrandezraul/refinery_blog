@@ -220,7 +220,7 @@ GEM
     rspec-mocks (3.0.2)
       rspec-support (~> 3.0.0)
     rspec-support (3.0.2)
-    sass (3.3.8)
+    sass (3.3.9)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
       sass (>= 3.1.10)
@@ -248,7 +248,7 @@ GEM
       raindrops (~> 0.7)
     warden (1.2.3)
       rack (>= 1.0)
-    will_paginate (3.0.5)
+    will_paginate (3.0.6)
 
 PLATFORMS
   ruby
