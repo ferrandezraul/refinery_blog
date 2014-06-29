@@ -8,6 +8,18 @@
       <% end %>
   <% end %>
 
+  <%-# using javascript disabled ... -%>
+  <% if false %>
+      <div id='locales'>
+        <select id='locale_switch'>
+          <option value="en">English</option>
+          <option value="de">Deutsch</option>
+          <option value="es">Espanyol</option>
+          <option value="ca">Catala</option>
+        </select>
+      </div>
+  <% end %>
+
   <%= link_to image_tag('flags/gb.png') + " English", {:locale => "en" } %>
   <%= link_to image_tag('flags/de.png') + " Deutsch", {:locale => "de" } %>
   <%= link_to image_tag('flags/es.png') + " Español", {:locale => "es" } %>
