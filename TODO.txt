@@ -1,3 +1,5 @@
+- WATCH THIS http://railscasts.com/episodes/332-refinery-cms-basics?view=asciicast
+
 - Stylesheet refinery 2.0.0 (social_garrotxa) versus mine. Check #menu ul in social-garrotxa
 
 - Use AWS S3 also in development??? The idea is to create the database locally and import it to heroku.
