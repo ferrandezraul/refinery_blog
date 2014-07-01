@@ -51,7 +51,9 @@ header {
 
 #banner {
   background-color: #852A2C;
-  padding: 20px 100px;
+  //padding: 20px 100px;
+  padding-left: 50px;
+  padding-bottom: 0px;
   font-weight: normal;
   font-style: italic;
   color: #FFF;
@@ -69,6 +71,14 @@ header {
       font-size: 20px;
       color: #EAA29F;
     }
+  }
+  .image-align-left {
+    // In order to have me.png touching banner border
+    margin-bottom: 0px;
+  }
+  .image-align-right {
+    // In order to have me.png touching banner border
+    margin-bottom: 0px;
   }
 }
 
