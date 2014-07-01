@@ -1,4 +1,7 @@
-- Create users in facebook, google+ to check buttons from sharethis.com
+- Add more page parts and add banner with nice sentence (Change style a bit. Color UI, font, etc .. )
+  i.e. Banner (but be carefull cause side_bar steps into banner cause it contains a div with class inner)
+
+- Stylesheet refinery 2.0.0 (social_garrotxa) versus mine. Check #menu ul in social-garrotxa
 
 - Use AWS S3 also in development??? The idea is to create the database locally and import it to heroku.
   Although if the images fail cause they are not in S3, I do not care so much ...
