@@ -1,5 +1,7 @@
+- Continue extracting code from layout.css to header.css or even create a new one with banner.css
+  Fix issue with overlapping menu on the phone
+
 - Add more page parts and add banner with nice sentence
-  i.e. Banner (be carefull cause side_bar steps into banner cause it contains a div with class inner)
   Add javascript animation to show different sentences.
 
 - Stylesheet refinery 2.0.0 (demo app, source code available?) versus mine. Check #menu ul ??
