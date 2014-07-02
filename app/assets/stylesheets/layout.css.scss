@@ -88,22 +88,26 @@ header {
 }
 
 #body_content {
-  position: relative;
   #body {
     margin: 25px 100px;
+    float: left;
   }
   .image-align-left {
     margin-right: 40px;
   }
-  #side_body {
-    position: absolute;
-    top: 0;
-    right: 100px;
-    width: 250px;
-    p {
-      color: #777;
-      font-size: 14px;
-    }
+
+}
+
+#side_body {
+  margin: 25px 100px;
+  float: right;
+  div {
+    float:left;
+  }
+  width: 250px;
+  p {
+    color: #777;
+    font-size: 14px;
   }
 }
 
