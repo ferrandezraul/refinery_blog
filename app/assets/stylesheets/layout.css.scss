@@ -51,9 +51,12 @@ header {
 
 #banner {
   background-color: #852A2C;
+  // Original padding
   //padding: 20px 100px;
-  padding-left: 50px;
+  padding-right: 100px;
+  padding-left: 100px;
   padding-bottom: 0px;
+  padding-top: 0px;
   font-weight: normal;
   font-style: italic;
   color: #FFF;
@@ -75,10 +78,12 @@ header {
   .image-align-left {
     // In order to have me.png touching banner border
     margin-bottom: 0px;
+    //margin-top: 0px;
   }
   .image-align-right {
     // In order to have me.png touching banner border
     margin-bottom: 0px;
+    //margin-top: 0px;
   }
 }
 
