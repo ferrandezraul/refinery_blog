@@ -56,6 +56,34 @@ header {
   font-size: 10px;
   padding-bottom: 10px;
   float: left;
+  img {
+    margin-right: 4px;
+    border:1px solid black;
+
+  }
+  img{
+    -webkit-transform:scale(1);          /*Webkit: Scale down image to 0.8x original size*/
+    -moz-transform:scale(1);             /*Mozilla scale version*/
+    -o-transform:scale(1);               /*Opera scale version*/
+    -ms-transform:scale(1);               /*Internet Explorer scale version*/
+    -webkit-transition-duration: 0.3s;   /*Webkit: Animation duration*/
+    -moz-transition-duration: 0.3s;      /*Mozilla duration version*/
+    -o-transition-duration: 0.3s;        /*Opera duration version*/
+    -ms-transform-duration: 0.3s;        /*Internet Explorer scale version*/
+    //opacity: 0.5;
+  }
+  /* al pasar el cursor por encima SE AMPLIA*/
+  img:hover{
+    -webkit-transform:scale(1.5);         /*Webkit:Modificamos tamaño a escala*/
+    -moz-transform:scale(1.5);            /*Mozilla:Modificamos tamaño a escala*/
+    -o-transform:scale(1.5);              /*Opera:Modificamos tamaño a escala*/
+    -ms-transform:scale(1.5);              /*Internet Explorer scale version*/
+    -webkit-transition-duration: 0.3s;    /*Webkit:Duración de la animación*/
+    -moz-transition-duration: 0.3s;       /*Mozilla:Duración de la animació*/
+    -o-transition-duration: 0.3s;         /*Opera:Duración de la animació*/
+    -ms-transform-duration: 0.3s;        /*Internet Explorer scale version*/
+    //opacity: 1;
+  }
 }
 
 // This relates to the pages menu on header. Note definition from Refinery::Pages::MenuPresenter
