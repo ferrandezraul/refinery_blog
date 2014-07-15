@@ -9,5 +9,8 @@ change_locale_not_working = ->
 
 # Document ready
 $ ->
+  #$('#banner p').delay( 5000 ).fadeIn( 5000 );
+  #$(".fade_in").hide( );
+  #$('#banner p .fade_in').show( );
   #alert( "Yes ready")
   #$( '#locale_switch').on( 'change', locale_changed );

@@ -41,17 +41,23 @@ pages_array = [ {
                                     <li>\"Agile Software Development\" amb títol de \"Professional Scrum Master\" i \"Project Manager Professional (PMP)\" </li>
                                   </ul>",
                     :banner => "<p><img class=\"image-align-right\" data-rel=\"450x450\" alt=\"Me\" title=\"Me Strocked Cut\" src=\"%s\" height=\"355\" width=\"450\" /></p>
-                                <p>If you want different results, don't do always the same.</p>
-                                <p>We can't solve problems by thinking the same way as when we created them.</p>
-                                <p class=\"font-size-small\"><em>Albert Einstein</em></p>" % image_me.url,
+                                <p class=\"fade_in\">If you want different results, don't do always the same.</p>
+                                <p class=\"fade_in\">We can't solve problems by thinking the same way as when we created them.</p>
+                                <p class=\"fade_in\">There is an engine more powerful than oil, electricity and atomic energy: the will.</p>
+                                <p class=\"fade_in\">Every day we learn more and understand less.</p>
+                                <p class=\"font-size-small fade_in\"><em>Albert Einstein</em></p>" % image_me.url,
                     :banner_es => "<p><img class=\"image-align-right\" data-rel=\"450x450\" alt=\"Me\" title=\"Me Strocked Cut\" src=\"%s\" height=\"355\" width=\"450\" /></p>
-                                   <p>Si buscas resultados distintos, no hagas siempre lo mismo.</p>
-                                   <p>No podemos resolver problemas pensando de la misma manera que cuando los creamos.</p>
-                                   <p class=\"font-size-small\"><em>Albert Einstein</em></p>" % image_me.url,
+                                   <p class=\"fade_in\">Si buscas resultados distintos, no hagas siempre lo mismo.</p>
+                                   <p class=\"fade_in\">No podemos resolver problemas pensando de la misma manera que cuando los creamos.</p>
+                                   <p class=\"fade_in\">Hay una fuerza motriz más poderosa que el petróleo, la electricidad y la energía atómica: la voluntad.</p>
+                                   <p class=\"fade_in\">Cada día sabemos más y entendemos menos.</p>
+                                   <p class=\"font-size-small fade_in\"><em>Albert Einstein</em></p>" % image_me.url,
                     :banner_ca => "<p><img class=\"image-align-right\" data-rel=\"450x450\" alt=\"Me\" title=\"Me Strocked Cut\" src=\"%s\" height=\"355\" width=\"450\" /></p>
-                                   <p>Si buscas resultados distintos, no hagas siempre lo mismo.</p>
-                                   <p>No podemos resolver problemas pensando de la misma manera que cuando los creamos.</p>
-                                   <p class=\"font-size-small\"><em>Albert Einstein</em></p>" % image_me.url,
+                                   <p class=\"fade_in\">Si buscas resultados distintos, no hagas siempre lo mismo.</p>
+                                   <p class=\"fade_in\">No podemos resolver problemas pensando de la misma manera que cuando los creamos.</p>
+                                   <p class=\"fade_in\">Hi ha una força motriu més poderosa que el petroli, l'electricitat i l'energia atòmica: la voluntat.  </p>
+                                   <p class=\"fade_in\">Cada dia sabem més i entenem menys.</p>
+                                   <p class=\"font-size-small fade_in\"><em>Albert Einstein</em></p>" % image_me.url,
                     :position_banner => 0,
                     :position_body => 1,
                     :children =>  {
