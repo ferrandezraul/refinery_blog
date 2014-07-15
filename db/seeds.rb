@@ -44,6 +44,14 @@ pages_array = [ {
                                 <p>If you want different results, don't do always the same.</p>
                                 <p>We can't solve problems by thinking the same way as when we created them.</p>
                                 <p class=\"font-size-small\"><em>Albert Einstein</em></p>" % image_me.url,
+                    :banner_es => "<p><img class=\"image-align-right\" data-rel=\"450x450\" alt=\"Me\" title=\"Me Strocked Cut\" src=\"%s\" height=\"355\" width=\"450\" /></p>
+                                   <p>Si buscas resultados distintos, no hagas siempre lo mismo.</p>
+                                   <p>No podemos resolver problemas pensando de la misma manera que cuando los creamos.</p>
+                                   <p class=\"font-size-small\"><em>Albert Einstein</em></p>" % image_me.url,
+                    :banner_ca => "<p><img class=\"image-align-right\" data-rel=\"450x450\" alt=\"Me\" title=\"Me Strocked Cut\" src=\"%s\" height=\"355\" width=\"450\" /></p>
+                                   <p>Si buscas resultados distintos, no hagas siempre lo mismo.</p>
+                                   <p>No podemos resolver problemas pensando de la misma manera que cuando los creamos.</p>
+                                   <p class=\"font-size-small\"><em>Albert Einstein</em></p>" % image_me.url,
                     :position_banner => 0,
                     :position_body => 1,
                     :children =>  {
@@ -143,8 +151,8 @@ def finnish_page( page, page_attr )
 
     page_banner_part = page.parts.create!( { :title => "Banner", :body => page_attr[:banner], :position => page_attr[:position_banner] } )
 
-    #page_banner_part.translations.create!( { :locale => "es", :body => page_attr[:banner_es] } )
-    #page_banner_part.translations.create!( { :locale => "es-CA", :body => page_attr[:banner_ca] } )
+    page_banner_part.translations.create!( { :locale => "es", :body => page_attr[:banner_es] } )
+    page_banner_part.translations.create!( { :locale => "es-CA", :body => page_attr[:banner_ca] } )
 
   end
 
