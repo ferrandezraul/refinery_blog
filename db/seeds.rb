@@ -15,6 +15,68 @@
 image_path = "#{Rails.root.join('app/assets/images/me_strocked_cut.png')}"
 image_me= Refinery::Image.create :image => File.new(image_path)
 
+# class fade-in used with javascript to fade in and out text
+banner_html = { :default => "<p><img class=\"image-align-right\" data-rel=\"450x450\" alt=\"Me\" title=\"Me Strocked Cut\" src=\"%s\" height=\"355\" width=\"450\" /></p>
+                             <p class=\"fade_in\">If you want different results, don't do always the same. <br>
+                               <em class=\"font-size-small\">Albert Einstein</em></p>
+                             <p class=\"fade_in\">If you give a hungry man a fish, you nourish him a day. If you teach him to fish, you nourish his whole life. <br>
+                               <em class=\"font-size-small\">Lao-Tsé</em></p>
+                             <p class=\"fade_in\">It is always possible, when one wants it. <br>
+                               <em class=\"font-size-small\">José Luis Sampedro</em></p>
+                             <p class=\"fade_in\">There is an engine more powerful than oil, electricity and atomic energy: the will. <br>
+                               <em class=\"font-size-small\">Albert Einstein</em></p>
+                             <p class=\"fade_in\">I am not a saint, unless you think of a saint as a sinner who keeps on trying. <br>
+                               <em class=\"font-size-small\">Nelson Mandela </em></p>
+                             <p class=\"fade_in\">Every day we learn more and understand less. <br>
+                               <em class=\"font-size-small\">Albert Einstein</em></p>
+                             <p class=\"fade_in\">Choose a job you like and you won't have to work a day in your life. <br>
+                               <em class=\"font-size-small\">Confucius (Chinese philosopher)</em></p>
+                             <p class=\"fade_in\">We can't solve problems by thinking the same way as when we created them. <br>
+                               <em class=\"font-size-small\">Albert Einstein</em></p>
+                             <p class=\"fade_in\">The ignorant affirms it, the wise questions it and thinks about it. <br>
+                               <em class=\"font-size-small\">Aristotle</em></p>" % image_me.url,
+
+                :es => "<p><img class=\"image-align-right\" data-rel=\"450x450\" alt=\"Me\" title=\"Me Strocked Cut\" src=\"%s\" height=\"355\" width=\"450\" /></p>
+                        <p class=\"fade_in\">Si buscas resultados distintos, no hagas siempre lo mismo.<br>
+                          <em class=\"font-size-small\">Albert Einstein</em></p>
+                        <p class=\"fade_in\">Si das pescado a un hombre hambriento, le nutres una jornada. Si le enseñas a pescar, le nutrirás toda la vida. <br>
+                               <em class=\"font-size-small\">Lao-Tsé</em></p>
+                        <p class=\"fade_in\">Siempre se puede, cuando se quiere. <br>
+                               <em class=\"font-size-small\">José Luis Sampedro</em></p>
+                        <p class=\"fade_in\">Hay una fuerza motriz más poderosa que el petróleo, la electricidad y la energía atómica: la voluntad.<br>
+                          <em class=\"font-size-small\">Albert Einstein</em></p>
+                        <p class=\"fade_in\">No soy un santo, a menos que pienses que un santo es un pecador que persiste en el intento.<br>
+                               <em class=\"font-size-small\">Nelson Mandela </em></p>
+                        <p class=\"fade_in\">Cada día sabemos más y entendemos menos.<br>
+                          <em class=\"font-size-small\">Albert Einstein</em></p>
+                        <p class=\"fade_in\">Elige un trabajo que te guste y no tendrás que trabajar ni un día de tu vida. <br>
+                               <em class=\"font-size-small\">Confucio ( Filósofo chino )</em></p>
+                        <p class=\"fade_in\">No podemos resolver problemas pensando de la misma manera que cuando los creamos. <br>
+                          <em class=\"font-size-small\">Albert Einstein</em></p>
+                        <p class=\"fade_in\">El ignorante afirma, el sabio duda y reflexiona. <br>
+                          <em class=\"font-size-small\">Aristóteles</em></p>" % image_me.url,
+
+                :ca => "<p><img class=\"image-align-right\" data-rel=\"450x450\" alt=\"Me\" title=\"Me Strocked Cut\" src=\"%s\" height=\"355\" width=\"450\" /></p>
+                        <p class=\"fade_in\">Si busques resultats diferents, no facis sempre el mateix. <br>
+                          <em class=\"font-size-small\">Albert Einstein</em></p>
+                        <p class=\"fade_in\">Si dónes peix a un home afamat, li nodreixes una jornada. Si li ensenyes a pescar, li nutrirás tota la vida. <br>
+                          <em class=\"font-size-small\">Lao-Tsé</em></p>
+                        <p class=\"fade_in\">Sempre es pot, quan es vol. <br>
+                               <em class=\"font-size-small\">José Luis Sampedro</em></p>
+                        <p class=\"fade_in\">Hi ha una força motriu més poderosa que el petroli, l'electricitat i l'energia atòmica: la voluntat.<br>
+                          <em class=\"font-size-small\">Albert Einstein</em></p>
+                        <p class=\"fade_in\">No sóc un sant, llevat que pensis d'un sant com un pecador que persisteix en l'intent. <br>
+                            <em class=\"font-size-small\">Nelson Mandela </em></p>
+                        <p class=\"fade_in\">Cada dia sabem més i entenem menys.<br>
+                          <em class=\"font-size-small\">Albert Einstein</em></p>
+                        <p class=\"fade_in\">Tria un treball que t'agradi i no hauràs de treballar ni un dia de la teva vida. <br>
+                          <em class=\"font-size-small\">(Filòsof xinès)</em></p>
+                        <p class=\"fade_in\">No podem resoldre problemes pensant de la mateixa manera que quan els vam crear. <br>
+                          <em class=\"font-size-small\">Albert Einstein</em></p>
+                        <p class=\"fade_in\">L'ignorant afirma, el savi dubta i reflexiona. <br>
+                          <em class=\"font-size-small\">Aristòtil</em></p>" % image_me.url,
+}
+
 pages_array = [ {
                     :show_in_menu => true,
                     :deletable => false,
@@ -40,24 +102,9 @@ pages_array = [ {
                                     <li>Amb experiència en diversos processos de desenvolupament de programari com a cap de projecte, enginyer de proves i desenvolupador.</li>
                                     <li>\"Agile Software Development\" amb títol de \"Professional Scrum Master\" i \"Project Manager Professional (PMP)\" </li>
                                   </ul>",
-                    :banner => "<p><img class=\"image-align-right\" data-rel=\"450x450\" alt=\"Me\" title=\"Me Strocked Cut\" src=\"%s\" height=\"355\" width=\"450\" /></p>
-                                <p class=\"fade_in\">If you want different results, don't do always the same.</p>
-                                <p class=\"fade_in\">We can't solve problems by thinking the same way as when we created them.</p>
-                                <p class=\"fade_in\">There is an engine more powerful than oil, electricity and atomic energy: the will.</p>
-                                <p class=\"fade_in\">Every day we learn more and understand less.</p>
-                                <p class=\"font-size-small fade_in\"><em>Albert Einstein</em></p>" % image_me.url,
-                    :banner_es => "<p><img class=\"image-align-right\" data-rel=\"450x450\" alt=\"Me\" title=\"Me Strocked Cut\" src=\"%s\" height=\"355\" width=\"450\" /></p>
-                                   <p class=\"fade_in\">Si buscas resultados distintos, no hagas siempre lo mismo.</p>
-                                   <p class=\"fade_in\">No podemos resolver problemas pensando de la misma manera que cuando los creamos.</p>
-                                   <p class=\"fade_in\">Hay una fuerza motriz más poderosa que el petróleo, la electricidad y la energía atómica: la voluntad.</p>
-                                   <p class=\"fade_in\">Cada día sabemos más y entendemos menos.</p>
-                                   <p class=\"font-size-small fade_in\"><em>Albert Einstein</em></p>" % image_me.url,
-                    :banner_ca => "<p><img class=\"image-align-right\" data-rel=\"450x450\" alt=\"Me\" title=\"Me Strocked Cut\" src=\"%s\" height=\"355\" width=\"450\" /></p>
-                                   <p class=\"fade_in\">Si buscas resultados distintos, no hagas siempre lo mismo.</p>
-                                   <p class=\"fade_in\">No podemos resolver problemas pensando de la misma manera que cuando los creamos.</p>
-                                   <p class=\"fade_in\">Hi ha una força motriu més poderosa que el petroli, l'electricitat i l'energia atòmica: la voluntat.  </p>
-                                   <p class=\"fade_in\">Cada dia sabem més i entenem menys.</p>
-                                   <p class=\"font-size-small fade_in\"><em>Albert Einstein</em></p>" % image_me.url,
+                    :banner => banner_html[:default],
+                    :banner_es => banner_html[:es],
+                    :banner_ca => banner_html[:ca],
                     :position_banner => 0,
                     :position_body => 1,
                     :children =>  {
@@ -146,19 +193,19 @@ pages_array = [ {
 
 def finnish_page( page, page_attr )
   page.translations.create!( { :locale => 'es', :title => page_attr[:title_es] } )
-  page.translations.create!( { :locale => 'es-CA', :title => page_attr[:title_ca] } )
+  page.translations.create!( { :locale => 'ca', :title => page_attr[:title_ca] } )
 
   page_body_part = page.parts.create!( { :title => "Body", :body => page_attr[:body], :position => page_attr[:position_body] } )
 
   page_body_part.translations.create!( { :locale => "es", :body => page_attr[:body_es] } )
-  page_body_part.translations.create!( { :locale => "es-CA", :body => page_attr[:body_ca] } )
+  page_body_part.translations.create!( { :locale => "ca", :body => page_attr[:body_ca] } )
 
   if page_attr.has_key?(:banner)
 
     page_banner_part = page.parts.create!( { :title => "Banner", :body => page_attr[:banner], :position => page_attr[:position_banner] } )
 
     page_banner_part.translations.create!( { :locale => "es", :body => page_attr[:banner_es] } )
-    page_banner_part.translations.create!( { :locale => "es-CA", :body => page_attr[:banner_ca] } )
+    page_banner_part.translations.create!( { :locale => "ca", :body => page_attr[:banner_ca] } )
 
   end
 
@@ -167,7 +214,7 @@ def finnish_page( page, page_attr )
     page_side_body_part = page.parts.create!( { :title => "Side Body", :body => page_attr[:side_body], :position => page_attr[:position_side_body] } )
 
     page_side_body_part.translations.create!( { :locale => "es", :body => page_attr[:side_body_es] } )
-    page_side_body_part.translations.create!( { :locale => "es-CA", :body => page_attr[:side_body_ca] } )
+    page_side_body_part.translations.create!( { :locale => "ca", :body => page_attr[:side_body_ca] } )
 
   end
 
@@ -181,7 +228,7 @@ def finnish_page( page, page_attr )
                                            :deletable => children_attr[:deletable] )
 
     page_children.translations.create!( { :locale => "es", :title => children_attr[:title_es] } )
-    page_children.translations.create!( { :locale => "es-CA", :title => children_attr[:title_ca] } )
+    page_children.translations.create!( { :locale => "ca", :title => children_attr[:title_ca] } )
   end
 end
 
@@ -211,6 +258,7 @@ Refinery::I18n.frontend_locales.each do |lang|
   I18n.locale = lang
   {'home' => "Home",
    'technical-skills' => 'Technical Skills',
+   'professional-experience' => 'Professional Experience',
    'contact' => 'Contact'
   }.each do |slug, title|
     Refinery::Page.by_title(title).each { |page| page.update_attributes(:slug => slug) }

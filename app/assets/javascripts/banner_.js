@@ -22,9 +22,11 @@ function fade_in_and_out() {
     function showOne() {
         if (i === 1)
             $('.fade_in').hide( );
+        // eq --> Reduce the set of matched elements to the one at the specified index.
         $('.fade_in').eq(i - 1).delay( 1000 ).fadeIn( 1000, function() {
             $('.fade_in').eq(i - 1).delay(5000).fadeOut(1000, function() {
-                if ( ++i > 4 )
+                // if ++i is bigger than number of elements with class .fade-in
+                if ( ++i > $('.fade_in').length )
                     i = 1;
                 showOne();
             });
