@@ -12,11 +12,14 @@
 
 
 # Create image in order to be able to load in a page later
-image_path = "#{Rails.root.join('app/assets/images/me_strocked_cut.png')}"
-image_me= Refinery::Image.create :image => File.new(image_path)
+image_me_path = "#{Rails.root.join('app/assets/images/me_strocked_cut.png')}"
+image_me= Refinery::Image.create :image => File.new(image_me_path)
+
+image_road_close_path = "#{Rails.root.join('app/assets/images/road_closure-128.png')}"
+image_road_close= Refinery::Image.create :image => File.new(image_road_close_path)
 
 # class fade-in used with javascript to fade in and out text
-banner_html = { :default => "<p><img class=\"image-align-right\" data-rel=\"450x450\" alt=\"Me\" title=\"Me Strocked Cut\" src=\"%s\" height=\"355\" width=\"450\" /></p>
+banner_html = { :default => "<p><img class=\"image-align-right\" data-rel=\"750x592\" title=\"Me\" src=\"%s\" height=\"320\" width=\"405\" /></p>
                              <p class=\"fade_in\">If you want different results, don't do always the same. <br>
                                <em class=\"font-size-small\">Albert Einstein</em></p>
                              <p class=\"fade_in\">If you give a hungry man a fish, you nourish him a day. If you teach him to fish, you nourish his whole life. <br>
@@ -33,10 +36,10 @@ banner_html = { :default => "<p><img class=\"image-align-right\" data-rel=\"450x
                                <em class=\"font-size-small\">Confucius (Chinese philosopher)</em></p>
                              <p class=\"fade_in\">We can't solve problems by thinking the same way as when we created them. <br>
                                <em class=\"font-size-small\">Albert Einstein</em></p>
-                             <p class=\"fade_in\">The ignorant affirms it, the wise questions it and thinks about it. <br>
+                             <p class=\"fade_in\">The ignorant affirms it, the wise questions and thinks about it. <br>
                                <em class=\"font-size-small\">Aristotle</em></p>" % image_me.url,
 
-                :es => "<p><img class=\"image-align-right\" data-rel=\"450x450\" alt=\"Me\" title=\"Me Strocked Cut\" src=\"%s\" height=\"355\" width=\"450\" /></p>
+                :es => "<p><img class=\"image-align-right\" data-rel=\"750x592\" title=\"Me\" src=\"%s\" height=\"320\" width=\"405\" /></p>
                         <p class=\"fade_in\">Si buscas resultados distintos, no hagas siempre lo mismo.<br>
                           <em class=\"font-size-small\">Albert Einstein</em></p>
                         <p class=\"fade_in\">Si das pescado a un hombre hambriento, le nutres una jornada. Si le enseñas a pescar, le nutrirás toda la vida. <br>
@@ -56,7 +59,7 @@ banner_html = { :default => "<p><img class=\"image-align-right\" data-rel=\"450x
                         <p class=\"fade_in\">El ignorante afirma, el sabio duda y reflexiona. <br>
                           <em class=\"font-size-small\">Aristóteles</em></p>" % image_me.url,
 
-                :ca => "<p><img class=\"image-align-right\" data-rel=\"450x450\" alt=\"Me\" title=\"Me Strocked Cut\" src=\"%s\" height=\"355\" width=\"450\" /></p>
+                :ca => "<p><img class=\"image-align-right\" data-rel=\"750x592\" title=\"Me\" src=\"%s\" height=\"320\" width=\"405\" /></p>
                         <p class=\"fade_in\">Si busques resultats diferents, no facis sempre el mateix. <br>
                           <em class=\"font-size-small\">Albert Einstein</em></p>
                         <p class=\"fade_in\">Si dónes peix a un home afamat, li nodreixes una jornada. Si li ensenyes a pescar, li nutrirás tota la vida. <br>
@@ -91,16 +94,28 @@ pages_array = [ {
                                  <li>Enthusiastic in learning new things by cooperating with projects.</li>
                                  <li>Experienced in several processes of software development as project manager, test engineer and software developer.</li>
                                  <li>\"Agile Software Development\" with \"Professional Scrum Master\" and \"Project Manager Professional (PMP) degree\" </li>
+                                 <li>Good communication skills with experience in several countries. </li>
+                                 <li>Sports lover: running, cycling, hiking, yoga, football, ... </li>
+                                 <li>Environment responsible and an advocate for organic agriculture.</li>
+                                 <li>Languages: English, German, Spanish and Catalan. </li>
                               </ul>",
                     :body_es => "<h3>Mi Perfil</h3>
                                   <ul><li>Entusiasta en aprender cosas nuevas mediante la cooperación en proyectos.</li>
                                   <li>Con experiencia en varios procesos de desarrollo de software como gestor de proyectos, control de calidad y desarrollador.</li>
                                   <li>\"Agile software development\" con título de \"Professional Scrum Master\" y \"Project Manager Professional (PMP)\"</li>
+                                  <li>Habilidades de comunicación con experiencia en varios países.</li>
+                                  <li>Amante del deporte: correr, ciclismo, senderismo, yoga, fútbol, ... </li>
+                                  <li>Responsable con el medio ambiente y defensor de la agricultura ecológica </li>
+                                  <li>Idiomas: Inglés, Alemán, Español y Catalán. </li>
                                   </ul>",
                     :body_ca => "<h3>El meu Perfil</h3>
                                   <ul><li>Entusiasta en aprendre coses noves mitjançant la cooperació amb projectes.</li>
                                     <li>Amb experiència en diversos processos de desenvolupament de programari com a cap de projecte, enginyer de proves i desenvolupador.</li>
                                     <li>\"Agile Software Development\" amb títol de \"Professional Scrum Master\" i \"Project Manager Professional (PMP)\" </li>
+                                    <li>Habilidades de comunicación con experiencia en varios países.</li>
+                                    <li>Amante del deporte: correr, ciclisme, senderisme, ioga, futbòl... </li>
+                                    <li>Responsable amb el medi ambient i defensor de l'agricultura ecològica </li>
+                                    <li>Idiomes: Anglès, Alemany, Espanyol i Català. </li>
                                   </ul>",
                     :banner => banner_html[:default],
                     :banner_es => banner_html[:es],
@@ -114,9 +129,10 @@ pages_array = [ {
                         :title => "Page not found",  # default german title
                         :title_es => "Página no encontrada",
                         :title_ca => "Pàgina no trobada",
-                        :body => "",
-                        :body_es => "",
-                        :body_ca => "",
+                        :position_body => 0,
+                        :body => "<img class=\"image-align-left\" data-rel=\"128x128\" title=\"Road closed\" src=\"%s\" height=\"128\" width=\"128\" /><h2>Upsss! Sorry, there has been a problem ...</h2><p>The page is not available.</p><p><a href='/'>Back to home</a></p>" % image_road_close.url,
+                        :body_es => "<img class=\"image-align-left\" data-rel=\"128x128\" title=\"Road closed\" src=\"%s\" height=\"128\" width=\"128\" /><h2>Upsss! Lo sentimos, ha habido un problema ...</h2><p>La página solicitada no ha sido encontrada.</p><p><a href='/es'>Vuelva a la página de inicio</a></p>" % image_road_close.url,
+                        :body_ca => "<img class=\"image-align-left\" data-rel=\"128x128\" title=\"Road closed\" src=\"%s\" height=\"128\" width=\"128\" /><h2>Upsss! Ho sentim, hi ha hagut un problema ...</h2><p>La pàgina sol-licitada no s'ha trobat.</p><p><a href='/ca'>Tornar a la pàgina de inici</a></p>" % image_road_close.url,
                     }
                 },
                 {
@@ -125,7 +141,8 @@ pages_array = [ {
                     :title => "Technical Skills",  # default german title
                     :title_es => "Habilidades Técnicas",
                     :title_ca => "Habilitats Tècniques",
-                    :body => "<p>Since 2005, I've been mainly working with C++, developing <a target=\"_blank\" title=\"https://developer.here.com/\" href=\"https://developer.here.com/\">cross platform SDK's for location based services in Nokia HERE Maps.</a></p>
+                    :body => "<h3>Technical Skills</h3>
+                              <p>Since 2005, I've been mainly working with C++, developing <a target=\"_blank\" title=\"https://developer.here.com/\" href=\"https://developer.here.com/\">cross platform SDK's for location based services in Nokia HERE Maps.</a></p>
                               <p>I enjoyed creating test applications with Qt and building a test framework with Ruby.</p>
                               <p>I am passionate about open source software and Linux OS.</p>
                               <p>Scripting skills with Bash, Python and Ruby.</p>
@@ -134,7 +151,8 @@ pages_array = [ {
                               <p>JavaScript with JQuery and CooffeScript. </p>
                               <p>Design with HTML5, CSS and&#160; SASS.</p>
                               <p>Agile methodologies like Scrum and Kanban.</p><br></p>",
-                    :body_es => "<p>Desde 2005, he trabajado principalmente con C++, desarrollando <a target=\"_blank\" title=\"https://developer.here.com/\" href=\"https://developer.here.com/\">kits de desarrollo de software (SDK) multiplataforma para los servicios basados en localización de Nokia HERE Maps.</a></p>
+                    :body_es => "<h3>Habilidades Técnicas</h3>
+                                 <p>Desde 2005, he trabajado principalmente con C++, desarrollando <a target=\"_blank\" title=\"https://developer.here.com/\" href=\"https://developer.here.com/\">kits de desarrollo de software (SDK) multiplataforma para los servicios basados en localización de Nokia HERE Maps.</a></p>
                                  <p>He disfrutado creando aplicaciones de test e interfaces gráficos con Qt y construyendo un sistema de pruebas con Ruby.</p>
                                  <p>Soy un apasionado del programario libre y los sistemas operativos Linux.</p>
                                  <p>Scripting con Bash, Python y Ruby.</p>
@@ -143,7 +161,8 @@ pages_array = [ {
                                  <p>JavaScript con JQuery y CooffeScript. </p>
                                  <p>Diseño con HTML5, CSS y&#160; SASS.</p>
                                  <p>Metodologias \"Agile\" como Scrum y Kanban.</p>",
-                    :body_ca => "<p>Since 2005, I've been mainly working with C++, developing <a target=\"_blank\" title=\"https://developer.here.com/\" href=\"https://developer.here.com/\">cross platform SDK's for location based services in Nokia HERE Maps.</a></p>
+                    :body_ca => "<h3>Habilitats tècniques</h3>
+                                 <p>Since 2005, I've been mainly working with C++, developing <a target=\"_blank\" title=\"https://developer.here.com/\" href=\"https://developer.here.com/\">cross platform SDK's for location based services in Nokia HERE Maps.</a></p>
                                  <p>I enjoyed creating test applications with Qt and building a test framework with Ruby.</p>
                                  <p>I am passionate about open source software and Linux OS.</p>
                                  <p>Scripting skills with Bash, Python and Ruby.</p>
@@ -159,15 +178,18 @@ pages_array = [ {
                     :title => "Professional Experience",  # default german title
                     :title_es => "Experiencia Profesional",
                     :title_ca => "Experiència Professional",
-                    :body => "<h3>June 2005 – Present - R&amp;D Senior Software Engineer at Nokia</h3>
+                    :body => "<h3>Professional Experience</h3>
+                              <h3>June 2005 – Present - R&amp;D Senior Software Engineer at Nokia</h3>
                               <p>Development &amp; Testing of cross-platform API used by different clients of Nokia HERE Maps in several platforms as Symbian, Maemo, Meego, Android, iOS and Microsoft Windows Phone.</p>
                               <h3>October 2003 – May 2005 - Electronic Laboratory Assistant MAZ Brandenburg GmbH</h3>
                               <p>Design high complex application specific integrated circuits (ASIC)</p>",
-                    :body_es => "<h3>Junio 2005 – Presente - I+D Ingeniero Desarrollador Senior en Here a Nokia Business</h3>
-                                <p>Desarrollo &amp; Test de una API multiplataforma usada en diferentes clientes de Nokia HERE Maps para Symbian, Maemo, Meego, Android, iOS and Microsoft Windows Phone.</p>
-                                <h3>Octubre 2003 – Mayo 2005 - Asistente de laboratory electrónico en MAZ Brandenburg GmbH</h3>
-                                <p>Diseño de circuitos integrados para aplicaciones específicas (ASIC).</p>",
-                    :body_ca => "<h3>June 2005 – Present - R&amp;D Senior Software Engineer at Nokia</h3>
+                    :body_es => "<h3>Experiencia Profesional</h3>
+                                 <h3>Junio 2005 – Presente - I+D Ingeniero Desarrollador Senior en Here a Nokia Business</h3>
+                                 <p>Desarrollo &amp; Test de una API multiplataforma usada en diferentes clientes de Nokia HERE Maps para Symbian, Maemo, Meego, Android, iOS and Microsoft Windows Phone.</p>
+                                 <h3>Octubre 2003 – Mayo 2005 - Asistente de laboratory electrónico en MAZ Brandenburg GmbH</h3>
+                                 <p>Diseño de circuitos integrados para aplicaciones específicas (ASIC).</p>",
+                    :body_ca => "h3>Professional Experience</h3>
+                                 <h3>June 2005 – Present - R&amp;D Senior Software Engineer at Nokia</h3>
                                  <p>Development &amp; Testing of cross-platform API used by different clients of Nokia HERE Maps in several platforms as Symbian, Maemo, Meego, Android, iOS and Microsoft Windows Phone.</p>
                                  <h3>October 2003 – May 2005 - Electronic Laboratory Assistant MAZ Brandenburg GmbH</h3>
                                  <p>Design high complex application specific integrated circuits (ASIC)</p>"
@@ -178,13 +200,16 @@ pages_array = [ {
                     :title => "Contact",  # default german title
                     :title_es => "Contacto",
                     :title_ca => "Contacte",
-                    :body => "<p>Currently I am located in Berlin (Germany) but you can contact me via Email.</p>
+                    :body => "<h3>Contact</h3>
+                              <p>Currently I am located in Berlin (Germany) but you can contact me via Email.</p>
                               <p>Send me an email <a title=\"ferrandezraul@gmail.com\" href=\"mailto:%66%65%72%72%61%6e%64%65%7a%72%61%75%6c%40%67%6d%61%69%6c%2e%63%6f%6d\">ferrandezraul@gmail.com</a></p>
                               <p>Find me in&#160;<a target=\"_blank\" title=\"http://www.linkedin.com/in/ferrandezraul\" href=\"http://www.linkedin.com/in/ferrandezraul\">LinkedIn</a></p>",
-                    :body_es => "<p>Actualmente resido en Berlin (Alemania) pero puedes contactarme via mail.</p>
+                    :body_es => "<h3>Contacto</h3>
+                                 <p>Actualmente resido en Berlín (Alemania) pero puedes contactarme vía mail.</p>
                                  <p>Envíame un mail a <a title=\"ferrandezraul@gmail.com\" href=\"mailto:%66%65%72%72%61%6e%64%65%7a%72%61%75%6c%40%67%6d%61%69%6c%2e%63%6f%6d\">ferrandezraul@gmail.com</a></p>
                                  <p>Encuéntrame en&#160;<a target=\"_blank\" title=\"http://www.linkedin.com/in/ferrandezraul\" href=\"http://www.linkedin.com/in/ferrandezraul\">LinkedIn</a></p>",
-                    :body_ca => "<p>Currently I am located in Berlin (Germany) but you can contact me via Email.</p>
+                    :body_ca => "<h3>Contacte</h3>
+                                 <p>Currently I am located in Berlin (Germany) but you can contact me via Email.</p>
                                  <p>Send me an email <a title=\"ferrandezraul@gmail.com\" href=\"mailto:%66%65%72%72%61%6e%64%65%7a%72%61%75%6c%40%67%6d%61%69%6c%2e%63%6f%6d\">ferrandezraul@gmail.com</a></p>
                                  <p>Find me in&#160;<a target=\"_blank\" title=\"http://www.linkedin.com/in/ferrandezraul\" href=\"http://www.linkedin.com/in/ferrandezraul\">LinkedIn</a></p>"
                 }
@@ -229,6 +254,11 @@ def finnish_page( page, page_attr )
 
     page_children.translations.create!( { :locale => "es", :title => children_attr[:title_es] } )
     page_children.translations.create!( { :locale => "ca", :title => children_attr[:title_ca] } )
+
+    page_children_body_part = page_children.parts.create!( { :title => "Body", :body => children_attr[:body], :position => children_attr[:position_body] } )
+
+    page_children_body_part.translations.create!( { :locale => "es", :body => children_attr[:body_es] } )
+    page_children_body_part.translations.create!( { :locale => "ca", :body => children_attr[:body_ca] } )
   end
 end
 
