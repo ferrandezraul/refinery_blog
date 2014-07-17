@@ -39,7 +39,7 @@ banner_html = { :default => "<img class=\"image-align-right\" data-rel=\"750x592
                              <p class=\"fade_in\">The ignorant affirms it, the wise questions and thinks about it. <br>
                                <em class=\"font-size-small\">Aristotle</em></p>" % image_me.url,
 
-                :es => "<img class=\"image-align-right\" data-rel=\"750x592\" title=\"Me\" src=\"%s\" height=\"320\" width=\"405\" />
+                :es => "<img class=\"image-align-right\" data-rel=\"750x592\" title=\"Me\" src=\"%s\" height=\"284\" width=\"360\" />
                         <p class=\"fade_in\">Si buscas resultados distintos, no hagas siempre lo mismo.<br>
                           <em class=\"font-size-small\">Albert Einstein</em></p>
                         <p class=\"fade_in\">Si das pescado a un hombre hambriento, le nutres una jornada. Si le enseñas a pescar, le nutrirás toda la vida. <br>
@@ -59,7 +59,7 @@ banner_html = { :default => "<img class=\"image-align-right\" data-rel=\"750x592
                         <p class=\"fade_in\">El ignorante afirma, el sabio duda y reflexiona. <br>
                           <em class=\"font-size-small\">Aristóteles</em></p>" % image_me.url,
 
-                :ca => "<img class=\"image-align-right\" data-rel=\"750x592\" title=\"Me\" src=\"%s\" height=\"320\" width=\"405\" />
+                :ca => "<img class=\"image-align-right\" data-rel=\"750x592\" title=\"Me\" src=\"%s\" height=\"284\" width=\"360\" />
                         <p class=\"fade_in\">Si busques resultats diferents, no facis sempre el mateix. <br>
                           <em class=\"font-size-small\">Albert Einstein</em></p>
                         <p class=\"fade_in\">Si dónes peix a un home afamat, li nodreixes una jornada. Si li ensenyes a pescar, li nutrirás tota la vida. <br>
