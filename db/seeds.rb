@@ -19,7 +19,7 @@ image_road_close_path = "#{Rails.root.join('app/assets/images/road_closure-128.p
 image_road_close= Refinery::Image.create :image => File.new(image_road_close_path)
 
 # class fade-in used with javascript to fade in and out text
-banner_html = { :default => "<img class=\"image-align-right\" data-rel=\"750x592\" title=\"Me\" src=\"%s\" height=\"320\" width=\"405\" />
+banner_html = { :default => "<img class=\"image-align-right\" data-rel=\"750x592\" title=\"Me\" src=\"%s\" height=\"284\" width=\"360\" />
                              <p class=\"fade_in\">If you want different results, don't do always the same. <br>
                                <em class=\"font-size-small\">Albert Einstein</em></p>
                              <p class=\"fade_in\">If you give a hungry man a fish, you nourish him a day. If you teach him to fish, you nourish his whole life. <br>
