@@ -200,20 +200,77 @@ pages_array = [ {
                     :title_es => "Experiencia Profesional",
                     :title_ca => "Experiència Professional",
                     :body => "<h3>Professional Experience</h3>
-                              <h3>June 2005 – Present - R&amp;D Senior Software Engineer at Nokia</h3>
-                              <p>Development &amp; Testing of cross-platform API used by different clients of Nokia HERE Maps in several platforms as Symbian, Maemo, Meego, Android, iOS and Microsoft Windows Phone.</p>
-                              <h3>October 2003 – May 2005 - Electronic Laboratory Assistant MAZ Brandenburg GmbH</h3>
-                              <p>Design high complex application specific integrated circuits (ASIC)</p>",
+                              <span class=\"font-size-small\"><span class=\"font-size-normal\"></span>
+                              </span>
+                              <table>
+                              <tbody>
+                              <tr>
+                                <th style=\"width:200px\">Time</th>
+                                <th style=\"width:420px\">Position</th>
+                                <th style=\"width:700px\">Responsabilities</th>
+                              </tr>
+                              <tr><td>June 2005 – Present</td>
+                              <td>R&amp;D Senior Software Engineer at Nokia</td>
+                              <td>Development &amp; Testing of cross-platform API used by different clients of Nokia HERE Maps in several platforms as Symbian, Maemo, Meego, Android, iOS and Microsoft Windows Phone.</td>
+                              </tr>
+                              <tr><td>October 2003 – May 2005</td>
+                              <td>Electronic Laboratory Assistant MAZ Brandenburg GmbH</td>
+                              <td>Design high complex application specific integrated circuits (ASIC)</td>
+                              </tr>
+                              <tr><td></td>
+                              <td></td>
+                              <td></td>
+                              </tr>
+                              </tbody>
+                              </table>",
                     :body_es => "<h3>Experiencia Profesional</h3>
-                                 <h3>Junio 2005 – Presente - I+D Ingeniero Desarrollador Senior en Here a Nokia Business</h3>
-                                 <p>Desarrollo &amp; Test de una API multiplataforma usada en diferentes clientes de Nokia HERE Maps para Symbian, Maemo, Meego, Android, iOS and Microsoft Windows Phone.</p>
-                                 <h3>Octubre 2003 – Mayo 2005 - Asistente de laboratory electrónico en MAZ Brandenburg GmbH</h3>
-                                 <p>Diseño de circuitos integrados para aplicaciones específicas (ASIC).</p>",
-                    :body_ca => "h3>Professional Experience</h3>
-                                 <h3>June 2005 – Present - R&amp;D Senior Software Engineer at Nokia</h3>
-                                 <p>Development &amp; Testing of cross-platform API used by different clients of Nokia HERE Maps in several platforms as Symbian, Maemo, Meego, Android, iOS and Microsoft Windows Phone.</p>
-                                 <h3>October 2003 – May 2005 - Electronic Laboratory Assistant MAZ Brandenburg GmbH</h3>
-                                 <p>Design high complex application specific integrated circuits (ASIC)</p>"
+                              <span class=\"font-size-small\"><span class=\"font-size-normal\"></span>
+                              </span>
+                              <table>
+                              <tbody>
+                              <tr>
+                                <th style=\"width:200px\">Tiempo</th>
+                                <th style=\"width:420px\">Posición</th>
+                                <th style=\"width:700px\">Responsabilidades</th>
+                              </tr>
+                              <tr><td>Junio 2005 – Presente</td>
+                              <td>I+D Ingeniero Desarrollador Senior en Here a Nokia Business</td>
+                              <td>Desarrollo &amp; Test de una API multiplataforma usada en diferentes clientes de Nokia HERE Maps para Symbian, Maemo, Meego, Android, iOS y Microsoft Windows Phone.</td>
+                              </tr>
+                              <tr><td>Octubre 2003 – Mayo 2005</td>
+                              <td>Asistente de laboratory electrónico en MAZ Brandenburg GmbH</td>
+                              <td>Diseño de circuitos integrados para aplicaciones específicas (ASIC).</td>
+                              </tr>
+                              <tr><td></td>
+                              <td></td>
+                              <td></td>
+                              </tr>
+                              </tbody>
+                              </table>",
+                    :body_ca => "<h3>Professional Experience</h3>
+                              <span class=\"font-size-small\"><span class=\"font-size-normal\"></span>
+                              </span>
+                              <table>
+                              <tbody>
+                              <tr>
+                                <th style=\"width:200px\">Time</th>
+                                <th style=\"width:420px\">Position</th>
+                                <th style=\"width:700px\">Responsabilities</th>
+                              </tr>
+                              <tr><td>June 2005 – Present</td>
+                              <td>R&amp;D Senior Software Engineer at Nokia</td>
+                              <td>Development &amp; Testing of cross-platform API used by different clients of Nokia HERE Maps in several platforms as Symbian, Maemo, Meego, Android, iOS and Microsoft Windows Phone.</td>
+                              </tr>
+                              <tr><td>October 2003 – May 2005</td>
+                              <td>Electronic Laboratory Assistant MAZ Brandenburg GmbH</td>
+                              <td>Design high complex application specific integrated circuits (ASIC)</td>
+                              </tr>
+                              <tr><td></td>
+                              <td></td>
+                              <td></td>
+                              </tr>
+                              </tbody>
+                              </table>",
                 },
                 {
                     :show_in_menu => true,
