@@ -20,15 +20,15 @@ image_road_close= Refinery::Image.create :image => File.new(image_road_close_pat
 
 # class fade-in used with javascript to fade in and out text
 banner_html = { :default => "<img class=\"image-align-right\" data-rel=\"750x592\" title=\"Me\" src=\"%s\" height=\"284\" width=\"360\" />
-                             <p class=\"fade_in\">If you want different results, don't do always the same. <br>
+                             <p class=\"fade_in\">If you want different results, don't do always the same.<br>
                                <em class=\"font-size-small\">Albert Einstein</em></p>
-                             <p class=\"fade_in\">If you give a hungry man a fish, you nourish him a day. If you teach him to fish, you nourish his whole life. <br>
+                             <p class=\"fade_in\">If you give a hungry man a fish, you nourish him a day. If you teach him to fish, you nourish his whole life.<br>
                                <em class=\"font-size-small\">Lao-Tsé</em></p>
-                             <p class=\"fade_in\">It is always possible, when one wants it. <br>
+                             <p class=\"fade_in\">It is always possible, when one wants it.<br>
                                <em class=\"font-size-small\">José Luis Sampedro</em></p>
-                             <p class=\"fade_in\">There is an engine more powerful than oil, electricity and atomic energy: the will. <br>
+                             <p class=\"fade_in\">There is an engine more powerful than oil, electricity and atomic energy: the will.<br>
                                <em class=\"font-size-small\">Albert Einstein</em></p>
-                             <p class=\"fade_in\">I am not a saint, unless you think of a saint as a sinner who keeps on trying. <br>
+                             <p class=\"fade_in\">I am not a saint, unless you think of a saint as a sinner who keeps on trying.<br>
                                <em class=\"font-size-small\">Nelson Mandela </em></p>
                              <p class=\"fade_in\">Every day we learn more and understand less. <br>
                                <em class=\"font-size-small\">Albert Einstein</em></p>
@@ -42,18 +42,18 @@ banner_html = { :default => "<img class=\"image-align-right\" data-rel=\"750x592
                 :es => "<img class=\"image-align-right\" data-rel=\"750x592\" title=\"Me\" src=\"%s\" height=\"284\" width=\"360\" />
                         <p class=\"fade_in\">Si buscas resultados distintos, no hagas siempre lo mismo.<br>
                           <em class=\"font-size-small\">Albert Einstein</em></p>
-                        <p class=\"fade_in\">Si das pescado a un hombre hambriento, le nutres una jornada. Si le enseñas a pescar, le nutrirás toda la vida. <br>
-                               <em class=\"font-size-small\">Lao-Tsé</em></p>
-                        <p class=\"fade_in\">Siempre se puede, cuando se quiere. <br>
-                               <em class=\"font-size-small\">José Luis Sampedro</em></p>
+                        <p class=\"fade_in\">Si das pescado a un hombre hambriento, le nutres una jornada. Si le enseñas a pescar, le nutrirás toda la vida.<br>
+                          <em class=\"font-size-small\">Lao-Tsé</em></p>
+                        <p class=\"fade_in\">Siempre se puede, cuando se quiere.<br>
+                          <em class=\"font-size-small\">José Luis Sampedro</em></p>
                         <p class=\"fade_in\">Hay una fuerza motriz más poderosa que el petróleo, la electricidad y la energía atómica: la voluntad.<br>
                           <em class=\"font-size-small\">Albert Einstein</em></p>
                         <p class=\"fade_in\">No soy un santo, a menos que pienses que un santo es un pecador que persiste en el intento.<br>
-                               <em class=\"font-size-small\">Nelson Mandela </em></p>
+                          <em class=\"font-size-small\">Nelson Mandela </em></p>
                         <p class=\"fade_in\">Cada día sabemos más y entendemos menos.<br>
                           <em class=\"font-size-small\">Albert Einstein</em></p>
                         <p class=\"fade_in\">Elige un trabajo que te guste y no tendrás que trabajar ni un día de tu vida. <br>
-                               <em class=\"font-size-small\">Confucio ( Filósofo chino )</em></p>
+                          <em class=\"font-size-small\">Confucio ( Filósofo chino )</em></p>
                         <p class=\"fade_in\">No podemos resolver problemas pensando de la misma manera que cuando los creamos. <br>
                           <em class=\"font-size-small\">Albert Einstein</em></p>
                         <p class=\"fade_in\">El ignorante afirma, el sabio duda y reflexiona. <br>
@@ -65,11 +65,11 @@ banner_html = { :default => "<img class=\"image-align-right\" data-rel=\"750x592
                         <p class=\"fade_in\">Si dónes peix a un home afamat, li nodreixes una jornada. Si li ensenyes a pescar, li nutrirás tota la vida. <br>
                           <em class=\"font-size-small\">Lao-Tsé</em></p>
                         <p class=\"fade_in\">Sempre es pot, quan es vol. <br>
-                               <em class=\"font-size-small\">José Luis Sampedro</em></p>
+                          <em class=\"font-size-small\">José Luis Sampedro</em></p>
                         <p class=\"fade_in\">Hi ha una força motriu més poderosa que el petroli, l'electricitat i l'energia atòmica: la voluntat.<br>
                           <em class=\"font-size-small\">Albert Einstein</em></p>
                         <p class=\"fade_in\">No sóc un sant, llevat que pensis d'un sant com un pecador que persisteix en l'intent. <br>
-                            <em class=\"font-size-small\">Nelson Mandela </em></p>
+                          <em class=\"font-size-small\">Nelson Mandela </em></p>
                         <p class=\"fade_in\">Cada dia sabem més i entenem menys.<br>
                           <em class=\"font-size-small\">Albert Einstein</em></p>
                         <p class=\"fade_in\">Tria un treball que t'agradi i no hauràs de treballar ni un dia de la teva vida. <br>

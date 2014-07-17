@@ -1,10 +1,10 @@
-- Continue extracting code from layout.css to header.css or even create a new one with banner.css
-  Fix issue with overlapping menu on the phone
 
-- Add more page parts and add banner with nice sentence
-  Add javascript animation to show different sentences.
+- Add more javascript effects
+  -- pasa pagina cuando cambio de menu
+  -- buscar en google ejemplos bonitos
 
-- Stylesheet refinery 2.0.0 (demo app, source code available?) versus mine. Check #menu ul ??
+- Check google analytics/statistics
+
 
 - Use AWS S3 also in development??? The idea is to create the database locally and import it to heroku.
   Although if the images fail cause they are not in S3, I do not care so much ...
