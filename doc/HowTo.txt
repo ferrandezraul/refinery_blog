@@ -147,8 +147,10 @@ NOTE: This does not alter the database, but always save a copy of your database 
 ---------- RESET DATABASE ON HEROKU ---------------------------------------------------
 
 heroku pg:reset [dbname]
-heroku pg:reset HEROKU_POSTGRESQL_BRONZE_URL      (drop it)
+i.e. heroku pg:reset HEROKU_POSTGRESQL_BRONZE_URL      (drop it)
+i.e. heroku pg:reset DATABASE_URL (always works without knowing database name)
 heroku run rake --trace db:migrate                (migrate)
+heroku run rake --trace db:seed                   (seed)
 heroku restart
 
 --------- ASSETS WHERE NOT WORKING ON ADMIN PANEL ------------------------------------

@@ -19,7 +19,7 @@ image_road_close_path = "#{Rails.root.join('app/assets/images/road_closure-128.p
 image_road_close= Refinery::Image.create :image => File.new(image_road_close_path)
 
 # class fade-in used with javascript to fade in and out text
-banner_html = { :default => "<p><img class=\"image-align-right\" data-rel=\"750x592\" title=\"Me\" src=\"%s\" height=\"320\" width=\"405\" /></p>
+banner_html = { :default => "<img class=\"image-align-right\" data-rel=\"750x592\" title=\"Me\" src=\"%s\" height=\"320\" width=\"405\" />
                              <p class=\"fade_in\">If you want different results, don't do always the same. <br>
                                <em class=\"font-size-small\">Albert Einstein</em></p>
                              <p class=\"fade_in\">If you give a hungry man a fish, you nourish him a day. If you teach him to fish, you nourish his whole life. <br>
@@ -39,7 +39,7 @@ banner_html = { :default => "<p><img class=\"image-align-right\" data-rel=\"750x
                              <p class=\"fade_in\">The ignorant affirms it, the wise questions and thinks about it. <br>
                                <em class=\"font-size-small\">Aristotle</em></p>" % image_me.url,
 
-                :es => "<p><img class=\"image-align-right\" data-rel=\"750x592\" title=\"Me\" src=\"%s\" height=\"320\" width=\"405\" /></p>
+                :es => "<img class=\"image-align-right\" data-rel=\"750x592\" title=\"Me\" src=\"%s\" height=\"320\" width=\"405\" />
                         <p class=\"fade_in\">Si buscas resultados distintos, no hagas siempre lo mismo.<br>
                           <em class=\"font-size-small\">Albert Einstein</em></p>
                         <p class=\"fade_in\">Si das pescado a un hombre hambriento, le nutres una jornada. Si le enseñas a pescar, le nutrirás toda la vida. <br>
@@ -59,7 +59,7 @@ banner_html = { :default => "<p><img class=\"image-align-right\" data-rel=\"750x
                         <p class=\"fade_in\">El ignorante afirma, el sabio duda y reflexiona. <br>
                           <em class=\"font-size-small\">Aristóteles</em></p>" % image_me.url,
 
-                :ca => "<p><img class=\"image-align-right\" data-rel=\"750x592\" title=\"Me\" src=\"%s\" height=\"320\" width=\"405\" /></p>
+                :ca => "<img class=\"image-align-right\" data-rel=\"750x592\" title=\"Me\" src=\"%s\" height=\"320\" width=\"405\" />
                         <p class=\"fade_in\">Si busques resultats diferents, no facis sempre el mateix. <br>
                           <em class=\"font-size-small\">Albert Einstein</em></p>
                         <p class=\"fade_in\">Si dónes peix a un home afamat, li nodreixes una jornada. Si li ensenyes a pescar, li nutrirás tota la vida. <br>
@@ -142,35 +142,56 @@ pages_array = [ {
                     :title_es => "Habilidades Técnicas",
                     :title_ca => "Habilitats Tècniques",
                     :body => "<h3>Technical Skills</h3>
-                              <p>Since 2005, I've been mainly working with C++, developing <a target=\"_blank\" title=\"https://developer.here.com/\" href=\"https://developer.here.com/\">cross platform SDK's for location based services in Nokia HERE Maps.</a></p>
-                              <p>I enjoyed creating test applications with Qt and building a test framework with Ruby.</p>
-                              <p>I am passionate about open source software and Linux OS.</p>
-                              <p>Scripting skills with Bash, Python and Ruby.</p>
-                              <p>Test automation and Continuous Integration with Jenkins, Hudson, Go and CruiseControl.</p>
-                              <p>Web development with Ruby on Rails. </p>
-                              <p>JavaScript with JQuery and CooffeScript. </p>
-                              <p>Design with HTML5, CSS and&#160; SASS.</p>
-                              <p>Agile methodologies like Scrum and Kanban.</p><br></p>",
+                             <p>Since 2005, I've been working with software development, implementing coordinating and verifying <a target=\"_blank\" title=\"https://developer.here.com/\" href=\"https://developer.here.com/\">cross platform SDK's for location based services in Nokia HERE Maps.</a></p>
+                             <ul>
+                             <li>I developed new features with <strong>C++</strong> for Nokia Maps SDK's.</li>
+                             <li>I created test applications with <strong>Qt</strong> and a test framework with <strong>Ruby</strong>.</li>
+                             <li>I am passionate about open source software and <strong>Linux OS</strong>.</li>
+                             <li>Scripting skills with<strong> Bash</strong>, <strong>Python</strong> and <strong>Ruby</strong>.</li>
+                             <li>Test automation and <strong>Continuous Integration</strong> with Jenkins, Hudson, Go and CruiseControl.</li>
+                             <li>Agile methodologies like Scrum and Kanban. </li>
+                             </ul>
+                             <p>As a hobby, I do web development with <strong>Ruby on Rails</strong>. </p>
+                             <ul>
+                             <li><strong>JavaScript</strong> with <strong>JQuery</strong> and <strong>CooffeScript</strong>. </li>
+                             <li>Design with <strong>HTML5</strong>, <strong>CSS</strong> and&#160; <strong>SASS</strong>.</li>
+                             </ul>
+                             <p>Before 2005, I spent two years with ASIC design (Application-Specific Integrated Circuits)&#160; in Teschnische Universität Berlin.</p>
+                             <p>And in 2003 I worked one year with programmable automation systems like Siemens S7-300 in Universitat Politècnica de Catalunya.</p>",
                     :body_es => "<h3>Habilidades Técnicas</h3>
-                                 <p>Desde 2005, he trabajado principalmente con C++, desarrollando <a target=\"_blank\" title=\"https://developer.here.com/\" href=\"https://developer.here.com/\">kits de desarrollo de software (SDK) multiplataforma para los servicios basados en localización de Nokia HERE Maps.</a></p>
-                                 <p>He disfrutado creando aplicaciones de test e interfaces gráficos con Qt y construyendo un sistema de pruebas con Ruby.</p>
-                                 <p>Soy un apasionado del programario libre y los sistemas operativos Linux.</p>
-                                 <p>Scripting con Bash, Python y Ruby.</p>
-                                 <p>Automatización de test y \"Continuous Integration\" con Jenkins, Hudson, Go y CruiseControl.</p>
-                                 <p>Desarrollo web con Ruby on Rails. </p>
-                                 <p>JavaScript con JQuery y CooffeScript. </p>
-                                 <p>Diseño con HTML5, CSS y&#160; SASS.</p>
-                                 <p>Metodologias \"Agile\" como Scrum y Kanban.</p>",
-                    :body_ca => "<h3>Habilitats tècniques</h3>
-                                 <p>Since 2005, I've been mainly working with C++, developing <a target=\"_blank\" title=\"https://developer.here.com/\" href=\"https://developer.here.com/\">cross platform SDK's for location based services in Nokia HERE Maps.</a></p>
-                                 <p>I enjoyed creating test applications with Qt and building a test framework with Ruby.</p>
-                                 <p>I am passionate about open source software and Linux OS.</p>
-                                 <p>Scripting skills with Bash, Python and Ruby.</p>
-                                 <p>Test automation and Continuous Integration with Jenkins, Hudson, Go and CruiseControl.</p>
-                                 <p>Web development with Ruby on Rails. </p>
-                                 <p>JavaScript with JQuery and CooffeScript. </p>
-                                 <p>Design with HTML5, CSS and&#160; SASS.</p>
-                                 <p>Agile methodologies like Scrum and Kanban.</p>"
+                             <p>Desde 2005, he trabajado en el mundo del desarrollo de software, implementando, coordinando y verificando <a target=\"_blank\" title=\"https://developer.here.com/\" href=\"https://developer.here.com/\">kits de desarrollo de software (SDK) multiplataforma para los servicios basados en localización de Nokia HERE Maps.</a></p>
+                             <ul>
+                             <li>He implementado funcionalidades nuevas con <strong>C++</strong> para los kits de desarrollo de Nokia Maps.</li>
+                             <li>He creado aplicaciones de test con <strong>Qt</strong> y un marco de test con <strong>Ruby</strong>.</li>
+                             <li>Soy un apasionado del programario libre y los sistemas operativos <strong>Linux</strong>.</li>
+                             <li>Scripting con <strong>Bash</strong>, <strong>Python</strong> y <strong>Ruby</strong>.</li>
+                             <li>Automatización de test y <strong>\"Continuous Integration\"</strong> con Jenkins, Hudson, Go y CruiseControl.</li>
+                             <li>Metodologías \"Agile\" como Scrum y Kanban.</li>
+                             </ul>
+                             <p>Como hobby, hago desarrollo web con <strong>Ruby on Rails</strong>. </p>
+                             <ul>
+                             <li><strong>JavaScript</strong> con <strong>JQuery</strong> y <strong>CooffeScript</strong>. </li>
+                             <li>Diseño con <strong>HTML5</strong>, <strong>CSS</strong> y <strong>SASS</strong>.</li>
+                             </ul>
+                             <p>Antes de 2005, dediqué dos años a diseño de ASIC (Circuitos integrados de aplicación específica) en \"Teschnische Universität Berlin\".</p>
+                             <p>En 2003 trabajé un año con autómatas programables como el Siemens S7-300 en la \"Universitat Politècnica de Catalunya.\"</p>",
+                    :body_ca => "<h3>Technical Skills</h3>
+                             <p>Since 2005, I've been working with software development, implementing coordinating and verifying <a target=\"_blank\" title=\"https://developer.here.com/\" href=\"https://developer.here.com/\">cross platform SDK's for location based services in Nokia HERE Maps.</a></p>
+                             <ul>
+                             <li>I developed new features with <strong>C++</strong> for Nokia Maps SDK's.</li>
+                             <li>I created test applications with <strong>Qt</strong> and a test framework with <strong>Ruby</strong>.</li>
+                             <li>I am passionate about open source software and <strong>Linux OS</strong>.</li>
+                             <li>Scripting skills with<strong> Bash</strong>, <strong>Python</strong> and <strong>Ruby</strong>.</li>
+                             <li>Test automation and <strong>Continuous Integration</strong> with Jenkins, Hudson, Go and CruiseControl.</li>
+                             <li>Agile methodologies like Scrum and Kanban. </li>
+                             </ul>
+                             <p>As a hobby, I do web development with <strong>Ruby on Rails</strong>. </p>
+                             <ul>
+                             <li><strong>JavaScript</strong> with <strong>JQuery</strong> and <strong>CooffeScript</strong>. </li>
+                             <li>Design with <strong>HTML5</strong>, <strong>CSS</strong> and&#160; <strong>SASS</strong>.</li>
+                             </ul>
+                             <p>Before 2005, I spent two years with ASIC design (Application-Specific Integrated Circuits)&#160; in Teschnische Universität Berlin.</p>
+                             <p>And in 2003 I worked one year with programmable automation systems like Siemens S7-300 in Universitat Politècnica de Catalunya.</p>"
                 },
                 {
                     :show_in_menu => true,
