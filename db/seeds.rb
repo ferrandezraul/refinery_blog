@@ -209,8 +209,8 @@ pages_array = [ {
                                 <th style=\"width:420px\">Position</th>
                                 <th style=\"width:700px\">Responsabilities</th>
                               </tr>
-                              <tr><td>June 2005 – Present</td>
-                              <td>R&amp;D Senior Software Engineer at Nokia</td>
+                              <tr><td>June 2010 – Present</td>
+                              <td>R&amp;D Senior Engineer at Nokia</td>
                               <td>
                               <ul class=\"responsabilities\"><li>Drive mobile-related software development and content integration.</li>
                               <li>Implement product requirements using agile methods and tools</li>
@@ -222,13 +222,22 @@ pages_array = [ {
                               </ul>
                               </td>
                               </tr>
+                              <tr><td>June 2005 – June 2010</td>
+                              <td>R&amp;D Engineer at Nokia</td>
+                              <td><ul class=\"responsabilities\">
+                              <li>Work directly with the R&D, Program and Operational teams to deliver high quality voice navigation in Nokia Maps clients</li>
+                              <li>Take accountability for successful end to end project delivery</li>
+                              <li>Work across business and technical teams to secure resource to ensure successful delivery</li>
+                              <li>Plan, communicate and coordinate the implementation of highly complex projects</li>
+                              <li>Break down complex solutions into clearly defined project deliverables</li>
+                              <li>Deliver solutions on time and within budget</li>
+                              <li>Project plan all aspects of the solution including requirements gathering, testing, release mgmt, performance testing, monitoring and production readiness review</li>
+                              <li>Proactively manage, communicate and successfully mitigate project risks</li></ul></td>
+                              </tr>
                               <tr><td>October 2003 – May 2005</td>
                               <td>Electronic Laboratory Assistant MAZ Brandenburg GmbH</td>
-                              <td><ul class=\"responsabilities\"><li>Design high complex application specific integrated circuits (ASIC)</li></ul></td>
-                              </tr>
-                              <tr><td></td>
-                              <td></td>
-                              <td></td>
+                              <td><ul class=\"responsabilities\"><li>Design high complex application specific integrated circuits (ASIC)</li>
+                              <li>Electronic design automation with cadence</li></ul></td>
                               </tr>
                               </tbody>
                               </table>",
@@ -242,8 +251,8 @@ pages_array = [ {
                                 <th style=\"width:420px\">Posición</th>
                                 <th style=\"width:700px\">Responsabilidades</th>
                               </tr>
-                              <tr><td>Junio 2005 – Presente</td>
-                              <td>I+D Ingeniero Desarrollador Senior en Here a Nokia Business</td>
+                              <tr><td>Junio 2010 – Presente</td>
+                              <td>I+D Ingeniero Senior en Nokia</td>
                               <td>
                               <ul class=\"responsabilities\"><li>Drive mobile-related software development and content integration.</li>
                               <li>Implement product requirements using agile methods and tools</li>
@@ -255,13 +264,22 @@ pages_array = [ {
                               </ul>
                               </td>
                               </tr>
+                              <tr><td>Junio 2005 – Junio 2010</td>
+                              <td>I+D Ingeniero en Nokia</td>
+                              <td><ul class=\"responsabilities\">
+                              <li>Trabajar directamente con los equipos de I + D para ofrecer navegación de voz de alta calidad en los clientes de Nokia Maps</li>
+                              <li>Responsabilidad por el éxito final en la ejecución de proyectos</li>
+                              <li>Trabajar con los equipos técnicos y de negocio para asegurar los recursos y la entrega exitosa de los proyectos</li>
+                              <li>Planificar, comunicar y coordinar la ejecución de proyectos de alta complejidad</li>
+                              <li>Descomponer soluciones complejas en pequeñas tareas claramente definidas como proyectos</li>
+                              <li>Entregar soluciones a tiempo y dentro del presupuesto</li>
+                              <li>Planear todos los aspectos del proyecto incluyendo requisitos, pruebas, seguimiento, revisión y entrega</li>
+                              <li>Administrar de manera proactiva, comunicar y mitigar con éxito los riesgos del proyecto</li></ul></td>
+                              </tr>
                               <tr><td>Octubre 2003 – Mayo 2005</td>
                               <td>Asistente de laboratory electrónico en MAZ Brandenburg GmbH</td>
-                              <td><ul class=\"responsabilities\"><li>Diseño de circuitos integrados para aplicaciones específicas (ASIC).</li></ul></td>
-                              </tr>
-                              <tr><td></td>
-                              <td></td>
-                              <td></td>
+                              <td><ul class=\"responsabilities\"><li>Diseño de circuitos integrados para aplicaciones específicas (ASIC).</li>
+                              <li>Automatización de diseño electrónico con cadence</li></ul></td>
                               </tr>
                               </tbody>
                               </table>",
@@ -275,8 +293,8 @@ pages_array = [ {
                                 <th style=\"width:420px\">Position</th>
                                 <th style=\"width:700px\">Responsabilities</th>
                               </tr>
-                              <tr><td>June 2005 – Present</td>
-                              <td>R&amp;D Senior Software Engineer at Nokia</td>
+                              <tr><td>June 2010 – Present</td>
+                              <td>R&amp;D Senior Engineer at Nokia</td>
                               <td>
                               <ul class=\"responsabilities\"><li>Drive mobile-related software development and content integration.</li>
                               <li>Implement product requirements using agile methods and tools</li>
@@ -288,13 +306,22 @@ pages_array = [ {
                               <ul class=\"responsabilities\">
                               </td>
                               </tr>
+                              <tr><td>June 2005 – June 2010</td>
+                              <td>R&amp;D Engineer at Nokia</td>
+                              <td><ul class=\"responsabilities\">
+                              <li>Trabajar directamente con los equipos de I + D para ofrecer navegación de voz de alta calidad en los clientes de Nokia Maps</li>
+                              <li>Responsabilidad por el éxito final en la ejecución de proyectos</li>
+                              <li>Trabajar con los equipos técnicos y de negocio para asegurar los recursos y la entrega exitosa de los proyectos</li>
+                              <li>Planificar, comunicar y coordinar la ejecución de proyectos de alta complejidad</li>
+                              <li>Descomponer soluciones complejas en pequeñas tareas claramente definidas como proyectos</li>
+                              <li>Entregar soluciones a tiempo y dentro del presupuesto</li>
+                              <li>Planear todos los aspectos del proyecto incluyendo requisitos, pruebas, seguimiento, revisión y entrega</li>
+                              <li>Administrar de manera proactiva, comunicar y mitigar con éxito los riesgos del proyecto</li></ul></td>
+                              </tr>
                               <tr><td>October 2003 – May 2005</td>
                               <td>Electronic Laboratory Assistant MAZ Brandenburg GmbH</td>
-                              <td><ul class=\"responsabilities\"><li>Design high complex application specific integrated circuits (ASIC)</li></ul></td>
-                              </tr>
-                              <tr><td></td>
-                              <td></td>
-                              <td></td>
+                              <td><ul class=\"responsabilities\"><li>Design high complex application specific integrated circuits (ASIC)</li>
+                              <li>Automatización de diseño electrónico con cadence</li></ul></ul></td>
                               </tr>
                               </tbody>
                               </table>",
