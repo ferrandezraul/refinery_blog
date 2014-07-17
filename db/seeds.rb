@@ -211,11 +211,20 @@ pages_array = [ {
                               </tr>
                               <tr><td>June 2005 – Present</td>
                               <td>R&amp;D Senior Software Engineer at Nokia</td>
-                              <td>Development &amp; Testing of cross-platform API used by different clients of Nokia HERE Maps in several platforms as Symbian, Maemo, Meego, Android, iOS and Microsoft Windows Phone.</td>
+                              <td>
+                              <ul class=\"responsabilities\"><li>Drive mobile-related software development and content integration.</li>
+                              <li>Implement product requirements using agile methods and tools</li>
+                              <li>Develop commercial grade software suitable for worldwide distribution</li>
+                              <li>Evaluate technical feasibility and develop implementation plan</li>
+                              <li>Break development plan into actionable engineering tasks, implement code, test and refine</li>
+                              <li>Select suitable architectures, implementation technologies, techniques and tools</li>
+                              <li>Develop and Keep documentation up-dated for all components in domain</li>
+                              </ul>
+                              </td>
                               </tr>
                               <tr><td>October 2003 – May 2005</td>
                               <td>Electronic Laboratory Assistant MAZ Brandenburg GmbH</td>
-                              <td>Design high complex application specific integrated circuits (ASIC)</td>
+                              <td><ul class=\"responsabilities\"><li>Design high complex application specific integrated circuits (ASIC)</li></ul></td>
                               </tr>
                               <tr><td></td>
                               <td></td>
@@ -235,11 +244,20 @@ pages_array = [ {
                               </tr>
                               <tr><td>Junio 2005 – Presente</td>
                               <td>I+D Ingeniero Desarrollador Senior en Here a Nokia Business</td>
-                              <td>Desarrollo &amp; Test de una API multiplataforma usada en diferentes clientes de Nokia HERE Maps para Symbian, Maemo, Meego, Android, iOS y Microsoft Windows Phone.</td>
+                              <td>
+                              <ul class=\"responsabilities\"><li>Drive mobile-related software development and content integration.</li>
+                              <li>Implement product requirements using agile methods and tools</li>
+                              <li>Develop commercial grade software suitable for worldwide distribution</li>
+                              <li>Evaluate technical feasibility and develop implementation plan</li>
+                              <li>Break development plan into actionable engineering tasks, implement code, test and refine</li>
+                              <li>Select suitable architectures, implementation technologies, techniques and tools</li>
+                              <li>Develop and Keep documentation up-dated for all components in domain</li>
+                              </ul>
+                              </td>
                               </tr>
                               <tr><td>Octubre 2003 – Mayo 2005</td>
                               <td>Asistente de laboratory electrónico en MAZ Brandenburg GmbH</td>
-                              <td>Diseño de circuitos integrados para aplicaciones específicas (ASIC).</td>
+                              <td><ul class=\"responsabilities\"><li>Diseño de circuitos integrados para aplicaciones específicas (ASIC).</li></ul></td>
                               </tr>
                               <tr><td></td>
                               <td></td>
@@ -259,11 +277,20 @@ pages_array = [ {
                               </tr>
                               <tr><td>June 2005 – Present</td>
                               <td>R&amp;D Senior Software Engineer at Nokia</td>
-                              <td>Development &amp; Testing of cross-platform API used by different clients of Nokia HERE Maps in several platforms as Symbian, Maemo, Meego, Android, iOS and Microsoft Windows Phone.</td>
+                              <td>
+                              <ul class=\"responsabilities\"><li>Drive mobile-related software development and content integration.</li>
+                              <li>Implement product requirements using agile methods and tools</li>
+                              <li>Develop commercial grade software suitable for worldwide distribution</li>
+                              <li>Evaluate technical feasibility and develop implementation plan</li>
+                              <li>Break development plan into actionable engineering tasks, implement code, test and refine</li>
+                              <li>Select suitable architectures, implementation technologies, techniques and tools</li>
+                              <li>Develop and Keep documentation up-dated for all components in domain</li>
+                              <ul class=\"responsabilities\">
+                              </td>
                               </tr>
                               <tr><td>October 2003 – May 2005</td>
                               <td>Electronic Laboratory Assistant MAZ Brandenburg GmbH</td>
-                              <td>Design high complex application specific integrated circuits (ASIC)</td>
+                              <td><ul class=\"responsabilities\"><li>Design high complex application specific integrated circuits (ASIC)</li></ul></td>
                               </tr>
                               <tr><td></td>
                               <td></td>
