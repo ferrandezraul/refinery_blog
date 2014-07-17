@@ -93,7 +93,7 @@ pages_array = [ {
                               <ul>
                                  <li>Enthusiastic in learning new things by cooperating with projects.</li>
                                  <li>Experienced in several processes of software development as project manager, test engineer and software developer.</li>
-                                 <li>\"Agile Software Development\" with \"Professional Scrum Master\" and \"Project Manager Professional (PMP) degree\" </li>
+                                 <li>\"Agile Software Development\" with \"Professional Scrum Master\" and \"Project Manager Professional (PMP) degree\". </li>
                                  <li>Good communication skills with experience in several countries. </li>
                                  <li>Sports lover: running, cycling, hiking, yoga, football, ... </li>
                                  <li>Environment responsible and an advocate for organic agriculture.</li>
@@ -102,19 +102,19 @@ pages_array = [ {
                     :body_es => "<h3>Mi Perfil</h3>
                                   <ul><li>Entusiasta en aprender cosas nuevas mediante la cooperación en proyectos.</li>
                                   <li>Con experiencia en varios procesos de desarrollo de software como gestor de proyectos, control de calidad y desarrollador.</li>
-                                  <li>\"Agile software development\" con título de \"Professional Scrum Master\" y \"Project Manager Professional (PMP)\"</li>
+                                  <li>\"Agile software development\" con título de \"Professional Scrum Master\" y \"Project Manager Professional (PMP)\".</li>
                                   <li>Habilidades de comunicación con experiencia en varios países.</li>
                                   <li>Amante del deporte: correr, ciclismo, senderismo, yoga, fútbol, ... </li>
-                                  <li>Responsable con el medio ambiente y defensor de la agricultura ecológica </li>
+                                  <li>Responsable con el medio ambiente y defensor de la agricultura ecológica. </li>
                                   <li>Idiomas: Inglés, Alemán, Español y Catalán. </li>
                                   </ul>",
                     :body_ca => "<h3>El meu Perfil</h3>
                                   <ul><li>Entusiasta en aprendre coses noves mitjançant la cooperació amb projectes.</li>
                                     <li>Amb experiència en diversos processos de desenvolupament de programari com a cap de projecte, enginyer de proves i desenvolupador.</li>
-                                    <li>\"Agile Software Development\" amb títol de \"Professional Scrum Master\" i \"Project Manager Professional (PMP)\" </li>
+                                    <li>\"Agile Software Development\" amb títol de \"Professional Scrum Master\" i \"Project Manager Professional (PMP)\". </li>
                                     <li>Habilidades de comunicación con experiencia en varios países.</li>
                                     <li>Amante del deporte: correr, ciclisme, senderisme, ioga, futbòl... </li>
-                                    <li>Responsable amb el medi ambient i defensor de l'agricultura ecològica </li>
+                                    <li>Responsable amb el medi ambient i defensor de l'agricultura ecològica. </li>
                                     <li>Idiomes: Anglès, Alemany, Espanyol i Català. </li>
                                   </ul>",
                     :banner => banner_html[:default],
@@ -155,6 +155,7 @@ pages_array = [ {
                              <ul>
                              <li><strong>JavaScript</strong> with <strong>JQuery</strong> and <strong>CooffeScript</strong>. </li>
                              <li>Design with <strong>HTML5</strong>, <strong>CSS</strong> and&#160; <strong>SASS</strong>.</li>
+                             <li>Testing with <strong>RSpec</strong>, <strong>Cucumber</strong> and <strong>Capybara</strong>.</li>
                              </ul>
                              <p>Before 2005, I spent two years with ASIC design (Application-Specific Integrated Circuits)&#160; in Teschnische Universität Berlin.</p>
                              <p>And in 2003 I worked one year with programmable automation systems like Siemens S7-300 in Universitat Politècnica de Catalunya.</p>",
@@ -172,6 +173,7 @@ pages_array = [ {
                              <ul>
                              <li><strong>JavaScript</strong> con <strong>JQuery</strong> y <strong>CooffeScript</strong>. </li>
                              <li>Diseño con <strong>HTML5</strong>, <strong>CSS</strong> y <strong>SASS</strong>.</li>
+                             <li>Test con <strong>RSpec</strong>, <strong>Cucumber</strong> y <strong>Capybara</strong>.</li>
                              </ul>
                              <p>Antes de 2005, dediqué dos años a diseño de ASIC (Circuitos integrados de aplicación específica) en \"Teschnische Universität Berlin\".</p>
                              <p>En 2003 trabajé un año con autómatas programables como el Siemens S7-300 en la \"Universitat Politècnica de Catalunya.\"</p>",
@@ -189,6 +191,7 @@ pages_array = [ {
                              <ul>
                              <li><strong>JavaScript</strong> with <strong>JQuery</strong> and <strong>CooffeScript</strong>. </li>
                              <li>Design with <strong>HTML5</strong>, <strong>CSS</strong> and&#160; <strong>SASS</strong>.</li>
+                             <li>Test con <strong>RSpec</strong>, <strong>Cucumber</strong> y <strong>Capybara</strong>.</li>
                              </ul>
                              <p>Before 2005, I spent two years with ASIC design (Application-Specific Integrated Circuits)&#160; in Teschnische Universität Berlin.</p>
                              <p>And in 2003 I worked one year with programmable automation systems like Siemens S7-300 in Universitat Politècnica de Catalunya.</p>"
@@ -213,31 +216,31 @@ pages_array = [ {
                               <td>R&amp;D Senior Engineer at Nokia</td>
                               <td>
                               <ul class=\"responsabilities\"><li>Drive mobile-related software development and content integration.</li>
-                              <li>Implement product requirements using agile methods and tools</li>
-                              <li>Develop commercial grade software suitable for worldwide distribution</li>
-                              <li>Evaluate technical feasibility and develop implementation plan</li>
-                              <li>Break development plan into actionable engineering tasks, implement code, test and refine</li>
-                              <li>Select suitable architectures, implementation technologies, techniques and tools</li>
-                              <li>Develop and Keep documentation up-dated for all components in domain</li>
+                              <li>Implement product requirements using agile methods and tools.</li>
+                              <li>Develop commercial grade software suitable for worldwide distribution.</li>
+                              <li>Evaluate technical feasibility and develop implementation plan<./li>
+                              <li>Break development plan into actionable engineering tasks, implement code, test and refine.</li>
+                              <li>Select suitable architectures, implementation technologies, techniques and tools.</li>
+                              <li>Develop and Keep documentation up-dated for all components in domain<./li>
                               </ul>
                               </td>
                               </tr>
                               <tr><td>June 2005 – June 2010</td>
                               <td>R&amp;D Engineer at Nokia</td>
                               <td><ul class=\"responsabilities\">
-                              <li>Work directly with the R&D, Program and Operational teams to deliver high quality voice navigation in Nokia Maps clients</li>
-                              <li>Take accountability for successful end to end project delivery</li>
-                              <li>Work across business and technical teams to secure resource to ensure successful delivery</li>
-                              <li>Plan, communicate and coordinate the implementation of highly complex projects</li>
-                              <li>Break down complex solutions into clearly defined project deliverables</li>
-                              <li>Deliver solutions on time and within budget</li>
-                              <li>Project plan all aspects of the solution including requirements gathering, testing, release mgmt, performance testing, monitoring and production readiness review</li>
-                              <li>Proactively manage, communicate and successfully mitigate project risks</li></ul></td>
+                              <li>Work directly with the R&D, Program and Operational teams to deliver high quality voice navigation in Nokia Maps clients.</li>
+                              <li>Take accountability for successful end to end project delivery.</li>
+                              <li>Work across business and technical teams to secure resource to ensure successful delivery.</li>
+                              <li>Plan, communicate and coordinate the implementation of highly complex projects.</li>
+                              <li>Break down complex solutions into clearly defined project deliverables.</li>
+                              <li>Deliver solutions on time and within budget.</li>
+                              <li>Project plan all aspects of the solution including requirements gathering, testing, release mgmt, performance testing, monitoring and production readiness review.</li>
+                              <li>Proactively manage, communicate and successfully mitigate project risks.</li></ul></td>
                               </tr>
                               <tr><td>October 2003 – May 2005</td>
                               <td>Electronic Laboratory Assistant MAZ Brandenburg GmbH</td>
-                              <td><ul class=\"responsabilities\"><li>Design high complex application specific integrated circuits (ASIC)</li>
-                              <li>Electronic design automation with cadence</li></ul></td>
+                              <td><ul class=\"responsabilities\"><li>Design high complex application specific integrated circuits (ASIC).</li>
+                              <li>Electronic design automation with cadence.</li></ul></td>
                               </tr>
                               </tbody>
                               </table>",
@@ -255,31 +258,31 @@ pages_array = [ {
                               <td>I+D Ingeniero Senior en Nokia</td>
                               <td>
                               <ul class=\"responsabilities\"><li>Drive mobile-related software development and content integration.</li>
-                              <li>Implement product requirements using agile methods and tools</li>
-                              <li>Develop commercial grade software suitable for worldwide distribution</li>
-                              <li>Evaluate technical feasibility and develop implementation plan</li>
-                              <li>Break development plan into actionable engineering tasks, implement code, test and refine</li>
-                              <li>Select suitable architectures, implementation technologies, techniques and tools</li>
-                              <li>Develop and Keep documentation up-dated for all components in domain</li>
+                              <li>Implement product requirements using agile methods and tools.</li>
+                              <li>Develop commercial grade software suitable for worldwide distribution.</li>
+                              <li>Evaluate technical feasibility and develop implementation plan.</li>
+                              <li>Break development plan into actionable engineering tasks, implement code, test and refine.</li>
+                              <li>Select suitable architectures, implementation technologies, techniques and tools.</li>
+                              <li>Develop and Keep documentation up-dated for all components in domain.</li>
                               </ul>
                               </td>
                               </tr>
                               <tr><td>Junio 2005 – Junio 2010</td>
                               <td>I+D Ingeniero en Nokia</td>
                               <td><ul class=\"responsabilities\">
-                              <li>Trabajar directamente con los equipos de I + D para ofrecer navegación de voz de alta calidad en los clientes de Nokia Maps</li>
-                              <li>Responsabilidad por el éxito final en la ejecución de proyectos</li>
-                              <li>Trabajar con los equipos técnicos y de negocio para asegurar los recursos y la entrega exitosa de los proyectos</li>
-                              <li>Planificar, comunicar y coordinar la ejecución de proyectos de alta complejidad</li>
-                              <li>Descomponer soluciones complejas en pequeñas tareas claramente definidas como proyectos</li>
-                              <li>Entregar soluciones a tiempo y dentro del presupuesto</li>
-                              <li>Planear todos los aspectos del proyecto incluyendo requisitos, pruebas, seguimiento, revisión y entrega</li>
-                              <li>Administrar de manera proactiva, comunicar y mitigar con éxito los riesgos del proyecto</li></ul></td>
+                              <li>Trabajar directamente con los equipos de I + D para ofrecer navegación de voz de alta calidad en los clientes de Nokia Maps.</li>
+                              <li>Responsabilidad por el éxito final en la ejecución de proyectos.</li>
+                              <li>Trabajar con los equipos técnicos y de negocio para asegurar los recursos y la entrega exitosa de los proyectos.</li>
+                              <li>Planificar, comunicar y coordinar la ejecución de proyectos de alta complejidad.</li>
+                              <li>Descomponer soluciones complejas en pequeñas tareas claramente definidas como proyectos.</li>
+                              <li>Entregar soluciones a tiempo y dentro del presupuesto.</li>
+                              <li>Planear todos los aspectos del proyecto incluyendo requisitos, pruebas, seguimiento, revisión y entrega.</li>
+                              <li>Administrar de manera proactiva, comunicar y mitigar con éxito los riesgos del proyecto.</li></ul></td>
                               </tr>
                               <tr><td>Octubre 2003 – Mayo 2005</td>
                               <td>Asistente de laboratory electrónico en MAZ Brandenburg GmbH</td>
                               <td><ul class=\"responsabilities\"><li>Diseño de circuitos integrados para aplicaciones específicas (ASIC).</li>
-                              <li>Automatización de diseño electrónico con cadence</li></ul></td>
+                              <li>Automatización de diseño electrónico con cadence.</li></ul></td>
                               </tr>
                               </tbody>
                               </table>",
@@ -297,12 +300,12 @@ pages_array = [ {
                               <td>R&amp;D Senior Engineer at Nokia</td>
                               <td>
                               <ul class=\"responsabilities\"><li>Drive mobile-related software development and content integration.</li>
-                              <li>Implement product requirements using agile methods and tools</li>
-                              <li>Develop commercial grade software suitable for worldwide distribution</li>
-                              <li>Evaluate technical feasibility and develop implementation plan</li>
-                              <li>Break development plan into actionable engineering tasks, implement code, test and refine</li>
-                              <li>Select suitable architectures, implementation technologies, techniques and tools</li>
-                              <li>Develop and Keep documentation up-dated for all components in domain</li>
+                              <li>Implement product requirements using agile methods and tools.</li>
+                              <li>Develop commercial grade software suitable for worldwide distribution.</li>
+                              <li>Evaluate technical feasibility and develop implementation plan.</li>
+                              <li>Break development plan into actionable engineering tasks, implement code, test and refine.</li>
+                              <li>Select suitable architectures, implementation technologies, techniques and tools.</li>
+                              <li>Develop and Keep documentation up-dated for all components in domain.</li>
                               <ul class=\"responsabilities\">
                               </td>
                               </tr>
@@ -310,18 +313,18 @@ pages_array = [ {
                               <td>R&amp;D Engineer at Nokia</td>
                               <td><ul class=\"responsabilities\">
                               <li>Trabajar directamente con los equipos de I + D para ofrecer navegación de voz de alta calidad en los clientes de Nokia Maps</li>
-                              <li>Responsabilidad por el éxito final en la ejecución de proyectos</li>
-                              <li>Trabajar con los equipos técnicos y de negocio para asegurar los recursos y la entrega exitosa de los proyectos</li>
-                              <li>Planificar, comunicar y coordinar la ejecución de proyectos de alta complejidad</li>
-                              <li>Descomponer soluciones complejas en pequeñas tareas claramente definidas como proyectos</li>
-                              <li>Entregar soluciones a tiempo y dentro del presupuesto</li>
-                              <li>Planear todos los aspectos del proyecto incluyendo requisitos, pruebas, seguimiento, revisión y entrega</li>
-                              <li>Administrar de manera proactiva, comunicar y mitigar con éxito los riesgos del proyecto</li></ul></td>
+                              <li>Responsabilidad por el éxito final en la ejecución de proyectos.</li>
+                              <li>Trabajar con los equipos técnicos y de negocio para asegurar los recursos y la entrega exitosa de los proyectos.</li>
+                              <li>Planificar, comunicar y coordinar la ejecución de proyectos de alta complejidad.</li>
+                              <li>Descomponer soluciones complejas en pequeñas tareas claramente definidas como proyectos.</li>
+                              <li>Entregar soluciones a tiempo y dentro del presupuesto.</li>
+                              <li>Planear todos los aspectos del proyecto incluyendo requisitos, pruebas, seguimiento, revisión y entrega.</li>
+                              <li>Administrar de manera proactiva, comunicar y mitigar con éxito los riesgos del proyecto.</li></ul></td>
                               </tr>
                               <tr><td>October 2003 – May 2005</td>
                               <td>Electronic Laboratory Assistant MAZ Brandenburg GmbH</td>
-                              <td><ul class=\"responsabilities\"><li>Design high complex application specific integrated circuits (ASIC)</li>
-                              <li>Automatización de diseño electrónico con cadence</li></ul></ul></td>
+                              <td><ul class=\"responsabilities\"><li>Design high complex application specific integrated circuits (ASIC).</li>
+                              <li>Automatización de diseño electrónico con cadence.</li></ul></ul></td>
                               </tr>
                               </tbody>
                               </table>",
