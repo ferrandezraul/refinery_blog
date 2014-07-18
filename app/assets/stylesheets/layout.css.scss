@@ -57,6 +57,11 @@ td {
   border-bottom: 1px solid black;
 }
 
+// Remove border-bottom in last table row of td
+tr:last-child {
+  td { border-bottom: none }
+}
+
 .responsabilities {
   // top 25px, right 50px, bottom 75px, left 100px
   margin: 0px 10px 10px 10px;
