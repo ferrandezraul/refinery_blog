@@ -18,6 +18,9 @@ image_me= Refinery::Image.create :image => File.new(image_me_path)
 image_road_close_path = "#{Rails.root.join('app/assets/images/road_closure-128.png')}"
 image_road_close= Refinery::Image.create :image => File.new(image_road_close_path)
 
+image_mail_path = "#{Rails.root.join('app/assets/images/message-128.png')}"
+image_mail= Refinery::Image.create :image => File.new(image_mail_path)
+
 # class fade-in used with javascript to fade in and out text
 banner_html = { :default => "<img class=\"image-align-right\" data-rel=\"750x592\" title=\"Me\" src=\"%s\" height=\"284\" width=\"360\" />
                              <p class=\"fade_in\">If you want different results, don't do always the same.<br>
@@ -337,15 +340,15 @@ pages_array = [ {
                     :title_ca => "Contacte",
                     :body => "<h3>Contact</h3>
                               <p>Currently I am located in Berlin (Germany) but you can contact me via Email.</p>
-                              <p>Send me an email <a title=\"ferrandezraul@gmail.com\" href=\"mailto:%66%65%72%72%61%6e%64%65%7a%72%61%75%6c%40%67%6d%61%69%6c%2e%63%6f%6d\">ferrandezraul@gmail.com</a></p>
-                              <p>Find me in&#160;<a target=\"_blank\" title=\"http://www.linkedin.com/in/ferrandezraul\" href=\"http://www.linkedin.com/in/ferrandezraul\">LinkedIn</a></p>",
+                              <p><img class=\"image-align-left\" src=\"%s\" data-rel=\"128x128\" title=\"Mail\" height=\"22\" width=\"22\" />Send me an email <a title=\"ferrandezraul@gmail.com\" href=\"mailto:ferrandezraul@gmail.com\">ferrandezraul@gmail.com</a></p>
+                              <p>Find me in&#160;<a target=\"_blank\" title=\"http://www.linkedin.com/in/ferrandezraul\" href=\"http://www.linkedin.com/in/ferrandezraul\">LinkedIn</a></p>" % image_mail.url,
                     :body_es => "<h3>Contacto</h3>
                                  <p>Actualmente resido en Berlín (Alemania) pero puedes contactarme vía mail.</p>
-                                 <p>Envíame un mail a <a title=\"ferrandezraul@gmail.com\" href=\"mailto:%66%65%72%72%61%6e%64%65%7a%72%61%75%6c%40%67%6d%61%69%6c%2e%63%6f%6d\">ferrandezraul@gmail.com</a></p>
+                                 <p><img class=\"image-align-left\" src=\"%s\" data-rel=\"128x128\" title=\"Mail\" height=\"22\" width=\"22\" />Envíame un mail a <a title=\"ferrandezraul@gmail.com\" href=\"mailto:ferrandezraul@gmail.com\">ferrandezraul@gmail.com</a></p>
                                  <p>Encuéntrame en&#160;<a target=\"_blank\" title=\"http://www.linkedin.com/in/ferrandezraul\" href=\"http://www.linkedin.com/in/ferrandezraul\">LinkedIn</a></p>",
                     :body_ca => "<h3>Contacte</h3>
                                  <p>Currently I am located in Berlin (Germany) but you can contact me via Email.</p>
-                                 <p>Send me an email <a title=\"ferrandezraul@gmail.com\" href=\"mailto:%66%65%72%72%61%6e%64%65%7a%72%61%75%6c%40%67%6d%61%69%6c%2e%63%6f%6d\">ferrandezraul@gmail.com</a></p>
+                                 <p><img class=\"image-align-left\" src=\"%s\" data-rel=\"128x128\" title=\"Mail\" height=\"22\" width=\"22\" />Send me an email <a title=\"ferrandezraul@gmail.com\" href=\"mailto:ferrandezraul@gmail.com\">ferrandezraul@gmail.com</a></p>
                                  <p>Find me in&#160;<a target=\"_blank\" title=\"http://www.linkedin.com/in/ferrandezraul\" href=\"http://www.linkedin.com/in/ferrandezraul\">LinkedIn</a></p>"
                 }
 ]
