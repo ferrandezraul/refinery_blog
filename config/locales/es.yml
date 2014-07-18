@@ -1,4 +1,7 @@
-en:
+es:
   hello: "Hola"
-  share_with_friends: "Comparte esta página con tus amigos:"
   catalan: "Català"  # Do not translate this one
+
+  refinery:
+    footer:
+      share_with_friends: "Comparte esta página con tus amigos:"

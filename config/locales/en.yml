@@ -3,5 +3,8 @@
 
 en:
   hello: "Hello world"
-  share_with_friends: "Share this site with your friends:"
   catalan: "Català"  # Do not translate this one
+
+  refinery:
+    footer:
+      share_with_friends: "Share this site with your friends:"
