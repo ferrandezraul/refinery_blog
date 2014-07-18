@@ -215,7 +215,7 @@ pages_array = [ {
                               <tr><td>June 2010 – Present</td>
                               <td>R&amp;D Senior Engineer at Nokia</td>
                               <td>
-                              <ul class=\"responsabilities\"><li>Drive mobile-related software development and content integration.</li>
+                              <ul class=\"responsabilities\"><li>Drive software development and content integration.</li>
                               <li>Implement product requirements using agile methods and tools.</li>
                               <li>Develop commercial grade software suitable for worldwide distribution.</li>
                               <li>Evaluate technical feasibility and develop implementation plan<./li>
@@ -257,13 +257,13 @@ pages_array = [ {
                               <tr><td>Junio 2010 – Presente</td>
                               <td>I+D Ingeniero Senior en Nokia</td>
                               <td>
-                              <ul class=\"responsabilities\"><li>Drive mobile-related software development and content integration.</li>
-                              <li>Implement product requirements using agile methods and tools.</li>
-                              <li>Develop commercial grade software suitable for worldwide distribution.</li>
-                              <li>Evaluate technical feasibility and develop implementation plan.</li>
-                              <li>Break development plan into actionable engineering tasks, implement code, test and refine.</li>
-                              <li>Select suitable architectures, implementation technologies, techniques and tools.</li>
-                              <li>Develop and Keep documentation up-dated for all components in domain.</li>
+                              <ul class=\"responsabilities\"><li>Dirigir el desarrollo de software e integración de contenidos.</li>
+                              <li>Implementar requisitos del producto, utilizando métodos y herramientas \"ágiles\".</li>
+                              <li>Desarrollar software de calidad comercial adecuada para su distribución en todo el mundo.</li>
+                              <li>Evaluar la viabilidad técnica y desarrollar un plan de implementación.</li>
+                              <li>Descomponer el plan de desarrollo en tareas de ingeniería, implementar código, probar y refinar.</li>
+                              <li>Seleccionar arquitecturas, tecnologías de implementación, técnicas y herramientas adecuadas.</li>
+                              <li>Desarrollar y mantener documentación actualizada para todos los componentes de dominio.</li>
                               </ul>
                               </td>
                               </tr>
