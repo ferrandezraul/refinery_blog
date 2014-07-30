@@ -152,6 +152,8 @@ pages_array = [ {
                              <li>I am passionate about open source software and <strong>Linux OS</strong>.</li>
                              <li>Scripting skills with<strong> Bash</strong>, <strong>Python</strong> and <strong>Ruby</strong>.</li>
                              <li>Test automation and <strong>Continuous Integration</strong> with Jenkins, Hudson, Go and CruiseControl.</li>
+                             <li>Version control system with <strong>Mercurial</strong>, <strong>Git</strong> and <strong>Subversion</strong>.</li>
+                             <li>Bug tracking, issue tracking and project management with <strong>JIRA</strong> and <strong>Bugzilla</strong>.</li>
                              <li>Agile methodologies like Scrum and Kanban. </li>
                              </ul>
                              <p>As a hobby, I do web development with <strong>Ruby on Rails</strong>. </p>
@@ -159,9 +161,11 @@ pages_array = [ {
                              <li><strong>JavaScript</strong> with <strong>JQuery</strong> and <strong>CooffeScript</strong>. </li>
                              <li>Design with <strong>HTML5</strong>, <strong>CSS</strong> and&#160; <strong>SASS</strong>.</li>
                              <li>Testing with <strong>RSpec</strong>, <strong>Cucumber</strong> and <strong>Capybara</strong>.</li>
+                             <li>Content management system (CMS) with <strong>Refinery CMS</strong>.</li>
+                             <li>E-Commerce with <strong>Spree Commerce</strong>.</li>
                              </ul>
                              <p>Before 2005, I spent two years with ASIC design (Application-Specific Integrated Circuits)&#160; in Teschnische Universität Berlin.</p>
-                             <p>And in 2003 I worked one year with programmable automation systems like Siemens S7-300 in Universitat Politècnica de Catalunya.</p>",
+                             <p>In 2003 I worked one year with programmable automation systems like Siemens S7-300 in Universitat Politècnica de Catalunya.</p>",
                     :body_es => "<h3>Habilidades Técnicas</h3>
                              <p>Desde 2005, he trabajado en el mundo del desarrollo de software, implementando, coordinando y verificando <a target=\"_blank\" title=\"https://developer.here.com/\" href=\"https://developer.here.com/\">kits de desarrollo de software (SDK) multiplataforma para los servicios basados en localización de Nokia HERE Maps.</a></p>
                              <ul>
@@ -170,6 +174,8 @@ pages_array = [ {
                              <li>Soy un apasionado del programario libre y los sistemas operativos <strong>Linux</strong>.</li>
                              <li>Scripting con <strong>Bash</strong>, <strong>Python</strong> y <strong>Ruby</strong>.</li>
                              <li>Automatización de test y <strong>\"Continuous Integration\"</strong> con Jenkins, Hudson, Go y CruiseControl.</li>
+                             <li>Sistema de control de versiones con <strong>Mercurial</strong>, <strong>Git</strong> y <strong>Subversion</strong>.</li>
+                             <li>Seguimiento de errores, seguimiento de problemas y gestión de proyectos con <strong>JIRA</strong> y <strong>Bugzilla</strong>.</li>
                              <li>Metodologías \"Agile\" como Scrum y Kanban.</li>
                              </ul>
                              <p>Como hobby, hago desarrollo web con <strong>Ruby on Rails</strong>. </p>
@@ -177,6 +183,8 @@ pages_array = [ {
                              <li><strong>JavaScript</strong> con <strong>JQuery</strong> y <strong>CooffeScript</strong>. </li>
                              <li>Diseño con <strong>HTML5</strong>, <strong>CSS</strong> y <strong>SASS</strong>.</li>
                              <li>Test con <strong>RSpec</strong>, <strong>Cucumber</strong> y <strong>Capybara</strong>.</li>
+                             <li>Sistema de gestión de contenidos (CMS) con <strong>Refinery CMS</strong>.</li>
+                             <li>Comercio electrónico con <strong>Spree Commerce</strong>.</li>
                              </ul>
                              <p>Antes de 2005, dediqué dos años a diseño de ASIC (Circuitos integrados de aplicación específica) en \"Teschnische Universität Berlin\".</p>
                              <p>En 2003 trabajé un año con autómatas programables como el Siemens S7-300 en la \"Universitat Politècnica de Catalunya.\"</p>",
@@ -188,6 +196,8 @@ pages_array = [ {
                              <li>I am passionate about open source software and <strong>Linux OS</strong>.</li>
                              <li>Scripting skills with<strong> Bash</strong>, <strong>Python</strong> and <strong>Ruby</strong>.</li>
                              <li>Test automation and <strong>Continuous Integration</strong> with Jenkins, Hudson, Go and CruiseControl.</li>
+                             li>Sistema de control de versions amb <strong>Mercurial</strong>, <strong>Git</strong> i <strong>Subversion</strong>.</li>
+                             <li>Seguiment d'errors, seguiment de problemes i gestió de projectes amb <strong>JIRA</strong> i <strong>Bugzilla</strong>.</li>
                              <li>Agile methodologies like Scrum and Kanban. </li>
                              </ul>
                              <p>As a hobby, I do web development with <strong>Ruby on Rails</strong>. </p>
@@ -195,9 +205,11 @@ pages_array = [ {
                              <li><strong>JavaScript</strong> with <strong>JQuery</strong> and <strong>CooffeScript</strong>. </li>
                              <li>Design with <strong>HTML5</strong>, <strong>CSS</strong> and&#160; <strong>SASS</strong>.</li>
                              <li>Test con <strong>RSpec</strong>, <strong>Cucumber</strong> y <strong>Capybara</strong>.</li>
+                             <li>Sistema de Gestió de Continguts (CMS) amb <strong>Refinery CMS</strong>.</li>
+                             <li>Comerç electrònic amb <strong>Spree Commerce</strong>.</li>
                              </ul>
                              <p>Before 2005, I spent two years with ASIC design (Application-Specific Integrated Circuits)&#160; in Teschnische Universität Berlin.</p>
-                             <p>And in 2003 I worked one year with programmable automation systems like Siemens S7-300 in Universitat Politècnica de Catalunya.</p>"
+                             <p>In 2003 I worked one year with programmable automation systems like Siemens S7-300 in Universitat Politècnica de Catalunya.</p>"
                 },
                 {
                     :show_in_menu => true,
@@ -341,15 +353,18 @@ pages_array = [ {
                     :body => "<h3>Contact</h3>
                               <p>Currently I am located in Berlin (Germany) but you can contact me via Email.</p>
                               <p><img class=\"image-align-left\" src=\"%s\" data-rel=\"128x128\" title=\"Mail\" height=\"22\" width=\"22\" />Send me an email <a title=\"ferrandezraul@gmail.com\" href=\"mailto:ferrandezraul@gmail.com\">ferrandezraul@gmail.com</a></p>
-                              <p>Find me in&#160;<a target=\"_blank\" title=\"http://www.linkedin.com/in/ferrandezraul\" href=\"http://www.linkedin.com/in/ferrandezraul\">LinkedIn</a></p>" % image_mail.url,
+                              <p>Find me in&#160;<a target=\"_blank\" title=\"http://www.linkedin.com/in/ferrandezraul\" href=\"http://www.linkedin.com/in/ferrandezraul\">LinkedIn</a></p>
+                              <p>Find me in <a target=\"_blank\" title=\"https://www.xing.com/profile/Raul_FerrandezSalvador\" href=\"https://www.xing.com/profile/Raul_FerrandezSalvador\">Xing</a></p>" % image_mail.url,
                     :body_es => "<h3>Contacto</h3>
                                  <p>Actualmente resido en Berlín (Alemania) pero puedes contactarme vía mail.</p>
                                  <p><img class=\"image-align-left\" src=\"%s\" data-rel=\"128x128\" title=\"Mail\" height=\"22\" width=\"22\" />Envíame un mail a <a title=\"ferrandezraul@gmail.com\" href=\"mailto:ferrandezraul@gmail.com\">ferrandezraul@gmail.com</a></p>
-                                 <p>Encuéntrame en&#160;<a target=\"_blank\" title=\"http://www.linkedin.com/in/ferrandezraul\" href=\"http://www.linkedin.com/in/ferrandezraul\">LinkedIn</a></p>",
+                                 <p>Encuéntrame en&#160;<a target=\"_blank\" title=\"http://www.linkedin.com/in/ferrandezraul\" href=\"http://www.linkedin.com/in/ferrandezraul\">LinkedIn</a></p>
+                                 <p>Encuéntrame en <a target=\"_blank\" title=\"https://www.xing.com/profile/Raul_FerrandezSalvador\" href=\"https://www.xing.com/profile/Raul_FerrandezSalvador\">Xing</a></p>" % image_mail.url,
                     :body_ca => "<h3>Contacte</h3>
                                  <p>Currently I am located in Berlin (Germany) but you can contact me via Email.</p>
                                  <p><img class=\"image-align-left\" src=\"%s\" data-rel=\"128x128\" title=\"Mail\" height=\"22\" width=\"22\" />Send me an email <a title=\"ferrandezraul@gmail.com\" href=\"mailto:ferrandezraul@gmail.com\">ferrandezraul@gmail.com</a></p>
-                                 <p>Find me in&#160;<a target=\"_blank\" title=\"http://www.linkedin.com/in/ferrandezraul\" href=\"http://www.linkedin.com/in/ferrandezraul\">LinkedIn</a></p>"
+                                 <p>Find me in&#160;<a target=\"_blank\" title=\"http://www.linkedin.com/in/ferrandezraul\" href=\"http://www.linkedin.com/in/ferrandezraul\">LinkedIn</a></p>
+                                 <p>Find me in <a target=\"_blank\" title=\"https://www.xing.com/profile/Raul_FerrandezSalvador\" href=\"https://www.xing.com/profile/Raul_FerrandezSalvador\">Xing</a></p>" % image_mail.url
                 }
 ]
 
