@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby "2.2.0"
+
 gem 'rails', '3.2.16'
 
 # Bundle edge Rails instead:
@@ -74,4 +76,3 @@ gem 'paperclip'
 gem 'cucumber'
 gem 'rspec'
 
-ruby "2.1.1"
