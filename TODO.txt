@@ -1,3 +1,4 @@
+Check how to use postgresql on OS X 10.10
 
 - Add more javascript effects
   -- http://tutorialzine.com/2013/10/12-awesome-css3-features-you-can-finally-use/
