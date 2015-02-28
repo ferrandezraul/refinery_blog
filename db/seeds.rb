@@ -236,7 +236,8 @@ pages_array = [ {
                               <li>Evaluate technical feasibility and develop implementation plan.</li>
                               <li>Break development plan into actionable engineering tasks, implement code, test and refine.</li>
                               <li>Select suitable architectures, implementation technologies, techniques and tools.</li>
-                              <li>Develop and Keep documentation up-dated for all components in domain</li>
+                              <li>Develop and keep documentation up-dated for all components in domain</li>
+                              <li>Recruiting new employees.</li>
                               </ul>
                               </td>
                               </tr>
@@ -279,6 +280,7 @@ pages_array = [ {
                               <li>Descomponer el plan de desarrollo en tareas de ingeniería, implementar código, probar y refinar.</li>
                               <li>Seleccionar arquitecturas, tecnologías de implementación, técnicas y herramientas adecuadas.</li>
                               <li>Desarrollar y mantener documentación actualizada para todos los componentes de dominio.</li>
+                              <li>Contratación de nuevos empleados.</li>
                               </ul>
                               </td>
                               </tr>
@@ -320,7 +322,8 @@ pages_array = [ {
                               <li>Evaluate technical feasibility and develop implementation plan.</li>
                               <li>Break development plan into actionable engineering tasks, implement code, test and refine.</li>
                               <li>Select suitable architectures, implementation technologies, techniques and tools.</li>
-                              <li>Develop and Keep documentation up-dated for all components in domain.</li>
+                              <li>Develop and keep documentation updated for all components in domain.</li>
+                              <li>Recruiting new employees.</li>
                               <ul class=\"responsabilities\">
                               </td>
                               </tr>

@@ -1,5 +1,8 @@
-Run rake db:drop without any warning
-Run rails s without any warning
+- Fix font type in all browsers. Safari not showing font but working on Android and chrome. Try Firefox as well.
+- Restrict access to database
+- Write proper README.md
+- Edit database on browser, export data from database and add it to seed.rb?
+
 
 Check how to use postgresql on OS X 10.10. 
 
