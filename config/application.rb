@@ -69,5 +69,11 @@ module MyRefineryBlog
     # https://github.com/refinery/refinerycms/issues/1591
     # heroku labs:enable user-env-compile -a myapp (was not needed)
     config.assets.initialize_on_precompile = true
+
+    # Avoid warning about rails-i18n-validation-deprecation-warning
+    # http://stackoverflow.com/questions/20361428/rails-i18n-validation-deprecation-warning
+    config.i18n.enforce_available_locales = true
+    # or if one of your gem compete for pre-loading, use
+    I18n.config.enforce_available_locales = true
   end
 end

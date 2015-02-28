@@ -1,4 +1,4 @@
-# This file should contain all the record creation needed to seed the database with its default values.
+  # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
 #
 # Examples:
@@ -233,10 +233,10 @@ pages_array = [ {
                               <ul class=\"responsabilities\"><li>Drive software development and content integration.</li>
                               <li>Implement product requirements using agile methods and tools.</li>
                               <li>Develop commercial grade software suitable for worldwide distribution.</li>
-                              <li>Evaluate technical feasibility and develop implementation plan<./li>
+                              <li>Evaluate technical feasibility and develop implementation plan.</li>
                               <li>Break development plan into actionable engineering tasks, implement code, test and refine.</li>
                               <li>Select suitable architectures, implementation technologies, techniques and tools.</li>
-                              <li>Develop and Keep documentation up-dated for all components in domain<./li>
+                              <li>Develop and Keep documentation up-dated for all components in domain</li>
                               </ul>
                               </td>
                               </tr>
