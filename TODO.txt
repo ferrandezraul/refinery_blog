@@ -1,3 +1,4 @@
+- pull repo from linux machine and check if fonts are properly displayed on firefox and chrome
 - Fix font type in all browsers. Safari not showing font but working on Android and chrome. Try Firefox as well.
 - Restrict access to database
 - Write proper README.md

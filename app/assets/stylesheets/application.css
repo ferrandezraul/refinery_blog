@@ -13,3 +13,10 @@
  *= require_self
  *= require_tree .
  */
+
+ @font-face {
+    font-family: 'Satisfy';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Satisfy'), url(http://fonts.gstatic.com/s/satisfy/v6/oNwBYmHE3lzLUjiUjkBqiQLUuEpTyoUstqEm5AMlJo4.ttf) format('truetype');
+  }
