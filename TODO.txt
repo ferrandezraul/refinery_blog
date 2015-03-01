@@ -1,5 +1,3 @@
-
-- Write proper README.md
 - Edit database on browser, export data from database and save data in seed.rb?
 - Create rake task that exports data from database using pg
 - Create rake task that imports data in test database and run test.
