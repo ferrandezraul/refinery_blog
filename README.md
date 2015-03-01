@@ -60,7 +60,3 @@ If you're new to Refinery, start with this guide:
 * Manage who can access Refinery.
 * Control which extensions each user has access to.
 * Uses the popular [Devise](https://github.com/plataformatec/devise).
-
-### Credits
-
-Many of the icons used in Refinery CMS are from the wonderful [Silk library by Mark James](http://www.famfamfam.com/lab/icons/silk/).
