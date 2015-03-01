@@ -8,3 +8,4 @@ en:
   refinery:
     footer:
       share_with_friends: "Share this site with your friends:"
+      footer_note: "%{year} %{site_name}"

@@ -6,6 +6,10 @@ https://devcenter.heroku.com/articles/heroku-postgresql#local-setup
 - deploy to production
     - Fixes done: 
         1. google font in safari working.
+        2. javascript shaking on safari.
+        3. Minor typos in seed data.
+    - Improvements
+        1. Extended seed data
 
 
 - Add more javascript effects
