@@ -3,18 +3,17 @@
 This is just an app that uses refinery CMS gem with some customizations in order to 
 have my own web app and update new content whenever I want.
 
-__Refinery is an open source Ruby on Rails content management system for Rails 3.__
+__Refinery is an open source Ruby on Rails content management system for Rails 3 and Rails 4 if you use the edge vesion.__
 
 More information at [http://refinerycms.com](http://refinerycms.com)
-
-[![Build Status](https://travis-ci.org/refinery/refinerycms.png?branch=master)](https://travis-ci.org/refinery/refinerycms)  [![Code Climate](https://codeclimate.com/github/refinery/refinerycms.png)](https://codeclimate.com/github/refinery/refinerycms)
 
 ## Requirements
 
 * [Bundler](http://gembundler.com)
 * [ImageMagick](http://www.imagemagick.org/script/install-source.php)
-  * Mac OS X users should use [homebrew's](https://github.com/mxcl/homebrew/wiki/installation) `brew install imagemagick` or the [magick-installer](https://github.com/maddox/magick-installer).
+  Mac OS X users should use [homebrew's](https://github.com/mxcl/homebrew/wiki/installation) `brew install imagemagick` or the [magick-installer](https://github.com/maddox/magick-installer).
 * [postgresql](http://www.postgresql.org)
+  Mac OS X users should use [homebrew's](https://github.com/mxcl/homebrew/wiki/installation)`brew install postgresql` 
 
 ## How to
 
@@ -27,23 +26,6 @@ More information at [http://refinerycms.com](http://refinerycms.com)
 If you're new to Refinery, start with this guide:
 
 * __[Getting Started](http://refinerycms.com/guides/getting-started)__
-
-## What's it good at?
-
-__Refinery is great for sites where the client needs to be able to update their website themselves__ without being bombarded with anything too complicated.
-
-Unlike other content managers, Refinery is truly __aimed at the end user__ making it easy for them to pick up and make changes themselves.
-
-### For developers
-
-* Easily customise the look to suit the business.
-* __Extend with custom extensions__ to do anything Refinery doesn't do out of the box.
-* Sticks to __"the Rails way"__ as much as possible; we don't force you to learn new templating languages.
-* Uses [jQuery](http://jquery.com/) for fast and concise Javascript.
-
-![Refinery Dashboard](http://refinerycms.com/system/images/0000/0576/dashboard.png)
-
-Wanna see Refinery for yourself? [Try the demo](http://demo.refinerycms.com/refinery)
 
 ## Help and Documentation
 

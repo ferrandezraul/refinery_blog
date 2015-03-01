@@ -20,10 +20,6 @@ username: ferrande
 mail: ferrandezraul@gmail.com
 password: ferrande
 
-----------INSTALL POSTGRESQL UBUNTU  -----------------------------------------------------------------
-
-sudo apt-get install postgresql postgresql-client postgresql-contrib libpq-dev
-
 ----------CLEAN/ EXPORT / IMPORT DATABASE ------------------------------------------------------------
 
 NOTE that I use postgresql database that's why I can not see the database in folder rails_app/db from my app
@@ -168,4 +164,4 @@ Those instructions are contradicted to heroku doc, but seems to work for me
 --------- Generate HTML from README.md ------------------------------------
 
 In sublime text, install markdown editor and markdown preview packages
-press cmd+shift+p and automatically a README.html file is generated
+press cmd+shift+p and select markdown Preview set to Html and a README.html file is generated
