@@ -7,8 +7,6 @@ gem 'rails', '3.2.16'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-
-
 #group :development, :test do
 #  gem 'sqlite3'
 #end
@@ -56,7 +54,7 @@ gem 'jquery-rails'
 # gem 'debugger'
 
 # Refinery CMS
-gem 'refinerycms', '~> 2.1.2'
+gem 'refinerycms', '~> 2.1.5'
 
 # Optionally, specify additional Refinery CMS Extensions here:
 gem 'refinerycms-acts-as-indexed', '~> 1.0.0'

@@ -8,7 +8,7 @@ change_locale_not_working = ->
   console.log( "New request: " + locale_selected )
 
 # Document ready
-$ ->
+#$ ->
   #$('#banner p').delay( 5000 ).fadeIn( 5000 );
   #$(".fade_in").hide( );
   #$('#banner p .fade_in').show( );

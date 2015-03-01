@@ -6,7 +6,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: development_postgreSQL
+  database: refinery_blog_development
   pool: 5
   timeout: 5000
   username: raul
@@ -18,7 +18,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: test_postgreSQL
+  database: refinery_blog_test
   pool: 5
   timeout: 5000
   username: raul
@@ -27,7 +27,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: my_refinery_blog_development
+  database: refinery_blog_production
   pool: 5
   username:
   password:
