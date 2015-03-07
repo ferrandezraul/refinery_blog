@@ -1,3 +1,7 @@
+- Continue playing with better_errors gem
+- Fix localhost:3000/contact/1 to behave as redirecting to a non existing page  as it happens when you enter localhost:3000/no_existing
+In case of localhost:3000/contact/1 it thinks it exists cause there is a page called contact.
+
 - Edit database on browser, export data from database and save data in seed.rb?
 - Create rake task that exports data from database using pg
 - Create rake task that imports data in test database and run test.
