@@ -9,7 +9,7 @@ development:
   database: refinery_blog_development
   pool: 5
   timeout: 5000
-  username: ferrande  # Needs to be the same as the user name of your local machine
+  username: <%= ENV['USER'] %>   # Needs to be the same as the user name of your local machine
   password: ""
 
 # Warning: The database defined as "test" will be erased and
@@ -21,7 +21,7 @@ test:
   database: refinery_blog_test
   pool: 5
   timeout: 5000
-  username: ferrande   # Needs to be the same as the user name of your local machine
+  username: <%= ENV['USER'] %>   # Needs to be the same as the user name of your local machine
   password: ""
 
 production:
