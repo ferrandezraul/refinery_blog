@@ -7,6 +7,29 @@ __Refinery is an open source Ruby on Rails content management system for Rails 3
 
 More information at [http://refinerycms.com](http://refinerycms.com)
 
+## Set up postgresql database locally for development
+
+Lets say your username in your local machine is raul.
+You need to set the username of the database as the user of your local machine in config/database.yml
+
+Create user raul in psql
+sudo su postgres -c psql
+ CREATE USER raul;
+ ALTER ROLE raul WITH CREATEDB;
+ \q
+
+  rake db:create
+  rake db:migrate
+  rails s
+
+ CLEAN DATABASE:
+ rake db:drop
+ rake db:create
+ rake db:migrate
+ rails s
+
+ Alternatively rake db:setup
+
 ## Requirements
 
 * [Bundler](http://gembundler.com)
