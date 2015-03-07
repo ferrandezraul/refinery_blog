@@ -74,3 +74,11 @@ gem 'paperclip'
 gem 'cucumber'
 gem 'rspec'
 
+# http://railscasts.com/episodes/402-better-errors-railspanel
+# https://github.com/charliesome/better_errors
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+end
+
+
