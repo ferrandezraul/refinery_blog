@@ -81,3 +81,6 @@ group :development do
   gem 'binding_of_caller'
   gem 'meta_request'   # From https://github.com/dejan/rails_panel
 end
+
+
+gem 'foundation-rails' # Added for better front end
