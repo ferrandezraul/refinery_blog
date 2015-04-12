@@ -1,3 +1,10 @@
+- Continue with foundation-rails
+    Goal is to be mobile friendly
+    https://www.google.com/webmasters/tools/mobile-friendly/
+    Improve menu bar.
+    https://github.com/zurb/foundation-rails
+    http://foundation.zurb.com/docs/index.html
+
 - Continue playing with better_errors gem
 - Fix localhost:3000/contact/1 to behave as redirecting to a non existing page  as it happens when you enter localhost:3000/no_existing
 In case of localhost:3000/contact/1 it thinks it exists cause there is a page called contact.
