@@ -1,46 +1,49 @@
 <nav id='locales' class="top-bar">
 
-    <%-# commented line -%>
-    <%-# use frontend locales disabled. Note that they are hardcoded below -%>
-    <% if false %>
-        <% Refinery::I18n.frontend_locales.each do |frontend_locale| %>
-            <%= link_to Refinery::I18n.locales[frontend_locale], {:locale => frontend_locale} %>
-        <% end %>
-    <% end %>
+  <%-# commented line -%>
+  <%-# use frontend locales disabled. Note that they are hardcoded below -%>
+  <% if false %>
+      <% Refinery::I18n.frontend_locales.each do |frontend_locale| %>
+          <%= link_to Refinery::I18n.locales[frontend_locale], {:locale => frontend_locale} %>
+      <% end %>
+  <% end %>
 
-    <%-# using javascript disabled ... -%>
-    <% if false %>
-       <div>
-            <select id='locale_switch'>
-              <option value="en">English</option>
-              <option value="de">Deutsch</option>
-              <option value="es">Espanyol</option>
-              <option value="ca">Catala</option>
-            </select>
-       </div>
-    <% end %>
+  <%-# using javascript disabled ... -%>
+  <% if false %>
+     <div>
+          <select id='locale_switch'>
+            <option value="en">English</option>
+            <option value="de">Deutsch</option>
+            <option value="es">Espanyol</option>
+            <option value="ca">Catala</option>
+          </select>
+     </div>
+  <% end %>
 
-    <%-# disable german and catalan -%>
-    <% if false %>
-      <%= link_to image_tag('flags/de.png') + " Deutsch", {:locale => "de" } %>
-      <%= link_to image_tag('flags/ca.png') + t('catalan' ), {:locale => "ca" } %>
-    <% end %>
+  <%-# disable german and catalan -%>
+  <% if false %>
+    <%= link_to image_tag('flags/de.png') + " Deutsch", {:locale => "de" } %>
+    <%= link_to image_tag('flags/ca.png') + t('catalan' ), {:locale => "ca" } %>
+  <% end %>
 
-
-  <%= link_to image_tag('flags/gb.png'), {:locale => "en" } %>
-  <%= link_to image_tag('flags/es.png'), {:locale => "es" } %>
-
+  <!-- Left Nav Section -->
+  <div class="left">
+    <%= link_to image_tag('flags/gb.png'), {:locale => "en" } %>
+    <%= link_to image_tag('flags/es.png'), {:locale => "es" } %>
+  </div>
 
   <ul class="title-area">
-    <li class="name">
-      <h1><%= link_to Refinery::Core.site_name, refinery.root_path %></a></h1>
+    <li class="name ">
+      <h1><a href="#{refinery.root_path}"> <%= Refinery::Core.site_name %> </a></h1>
     </li>
   </ul>
 
   <section class="top-bar-section">
-    <ul id='pages' class="right">
+    <!-- Right Nav Section -->
+    <ul class="right">
       <%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html %>
     </ul>
+    
   </section>
 
 </nav>

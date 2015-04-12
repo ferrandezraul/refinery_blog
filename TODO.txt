@@ -1,7 +1,8 @@
 - Continue with foundation-rails
     Goal is to be mobile friendly
+    Fix locale links not working
+    Refinery::Core.site_name link not working in _header.html.erb_
     https://www.google.com/webmasters/tools/mobile-friendly/
-    Improve menu bar.
     https://github.com/zurb/foundation-rails
     http://foundation.zurb.com/docs/index.html
 
