@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby "2.1.1"
+ruby "2.1.5"
 
 gem 'rails', '3.2.16'
 
@@ -82,5 +82,5 @@ group :development do
   gem 'meta_request'   # From https://github.com/dejan/rails_panel
 end
 
-
+gem 'globalize-versioning'
 gem 'foundation-rails' # Added for better front end
