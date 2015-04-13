@@ -1,3 +1,4 @@
+Push to heroku!! Cambiar region a europa
 - Continue with foundation-rails
     Goal is to be mobile friendly
     https://www.google.com/webmasters/tools/mobile-friendly/
