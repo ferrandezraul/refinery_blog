@@ -22,7 +22,9 @@ image_mail_path = "#{Rails.root.join('app/assets/images/message-128.png')}"
 image_mail= Refinery::Image.create :image => File.new(image_mail_path)
 
 # class fade-in used with javascript to fade in and out text
-banner_html = { :default => "<img class=\"image-align-right\" data-rel=\"750x592\" src=\"%s\" height=\"284\" width=\"360\" />
+# uses foundation tags i.e. data-interchange
+# See http://foundation.zurb.com/docs/components/interchange.html
+banner_html = { :default => "<img class=\"image-align-right\" data-interchange=\"[%s, (large)]]\" height=\"284\" width=\"360\">
                              <p class=\"fade_in\">If you want different results, don't do always the same.<br>
                                <em class=\"font-size-small\">Albert Einstein</em></p>
                              <p class=\"fade_in\">If you give a hungry man a fish, you nourish him a day. If you teach him to fish, you nourish his whole life.<br>
@@ -42,7 +44,7 @@ banner_html = { :default => "<img class=\"image-align-right\" data-rel=\"750x592
                              <p class=\"fade_in\">The ignorant affirms it, the wise questions and thinks about it. <br>
                                <em class=\"font-size-small\">Aristotle</em></p>" % image_me.url,
 
-                :es => "<img class=\"image-align-right\" data-rel=\"750x592\" src=\"%s\" height=\"284\" width=\"360\" />
+                :es => "<img class=\"image-align-right\" data-interchange=\"[%s, (large)]]\" height=\"284\" width=\"360\">
                         <p class=\"fade_in\">Si buscas resultados distintos, no hagas siempre lo mismo.<br>
                           <em class=\"font-size-small\">Albert Einstein</em></p>
                         <p class=\"fade_in\">Si das pescado a un hombre hambriento, le nutres una jornada. Si le enseñas a pescar, le nutrirás toda la vida.<br>
@@ -62,7 +64,7 @@ banner_html = { :default => "<img class=\"image-align-right\" data-rel=\"750x592
                         <p class=\"fade_in\">El ignorante afirma, el sabio duda y reflexiona. <br>
                           <em class=\"font-size-small\">Aristóteles</em></p>" % image_me.url,
 
-                :ca => "<img class=\"image-align-right\" data-rel=\"750x592\" src=\"%s\" height=\"284\" width=\"360\" />
+                :ca => "<img class=\"image-align-right\" data-interchange=\"[%s, (large)]]\" height=\"284\" width=\"360\">
                         <p class=\"fade_in\">Si busques resultats diferents, no facis sempre el mateix. <br>
                           <em class=\"font-size-small\">Albert Einstein</em></p>
                         <p class=\"fade_in\">Si dónes peix a un home afamat, li nodreixes una jornada. Si li ensenyes a pescar, li nutrirás tota la vida. <br>
