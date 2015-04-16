@@ -1,14 +1,12 @@
 add locale switch to menu on your right.
 add menu pages on menu on your left.
+fix database access on heroku and AWS S3
 
-1. test that image does not appear on mobile due to the use of data-interchange. See seeds.rb
-   <img class=\"image-align-right\" data-interchange=\"[%s, (large)]]\" height=\"284\" width=\"360\">
-
-2. The size of the banner should be fixed on mobile, cause now it changes based on the siz of the sentence being displayed.
+- The size of the banner should be fixed on mobile, cause now it changes based on the siz of the sentence being displayed.
 
 - Continue with foundation-rails
     Follow this doc for creation of a nice UI in mobile and non mobile
-    http://foundation.zurb.com/docs/components/offcanvas.html
+    http://foundation.zurb.com/docs/components/visibility.html
     Goal is to be mobile friendly
     https://www.google.com/webmasters/tools/mobile-friendly/
     https://github.com/zurb/foundation-rails
