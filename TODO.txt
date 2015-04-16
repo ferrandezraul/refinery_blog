@@ -1,5 +1,7 @@
-Push to heroku!! Cambiar region a europa
+
 - Continue with foundation-rails
+    Follow this doc for creation of a nice UI in mobile and non mobile
+    http://foundation.zurb.com/docs/components/offcanvas.html
     Goal is to be mobile friendly
     https://www.google.com/webmasters/tools/mobile-friendly/
     https://github.com/zurb/foundation-rails
