@@ -24,8 +24,9 @@ image_mail= Refinery::Image.create :image => File.new(image_mail_path)
 # class fade-in used with javascript to fade in and out text
 # uses foundation tags i.e. data-interchange
 # See http://foundation.zurb.com/docs/components/interchange.html
-banner_html = { :default => "<img class=\"image-align-right\" data-interchange=\"[%s, (large)]]\" height=\"284\" width=\"360\">
-                             <p class=\"fade_in\">If you want different results, don't do always the same.<br>
+banner_html = { :default => "<div class=\"show-for-medium-up\">
+                             <img class=\"image-align-right\" data-interchange=\"[%s, (large)]]\" height=\"284\" width=\"360\">
+                             <p class=\"fade_in \">If you want different results, don't do always the same.<br>
                                <em class=\"font-size-small\">Albert Einstein</em></p>
                              <p class=\"fade_in\">If you give a hungry man a fish, you nourish him a day. If you teach him to fish, you nourish his whole life.<br>
                                <em class=\"font-size-small\">Lao-Tsé</em></p>
@@ -42,7 +43,8 @@ banner_html = { :default => "<img class=\"image-align-right\" data-interchange=\
                              <p class=\"fade_in\">We can't solve problems by thinking the same way as when we created them. <br>
                                <em class=\"font-size-small\">Albert Einstein</em></p>
                              <p class=\"fade_in\">The ignorant affirms it, the wise questions and thinks about it. <br>
-                               <em class=\"font-size-small\">Aristotle</em></p>" % image_me.url,
+                               <em class=\"font-size-small\">Aristotle</em></p>
+                             </div>" % image_me.url,
 
                 :es => "<img class=\"image-align-right\" data-interchange=\"[%s, (large)]]\" height=\"284\" width=\"360\">
                         <p class=\"fade_in\">Si buscas resultados distintos, no hagas siempre lo mismo.<br>
