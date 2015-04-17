@@ -16,17 +16,14 @@
 
     <aside class="left-off-canvas-menu">
       <ul class="off-canvas-list">
-        <li><label>Foundation</label></li>
-        <li><a href="#">The Psychohistorians</a></li>
-        <li><a href="#">...</a></li>
+        <%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html %>
       </ul>
     </aside>
 
     <aside class="right-off-canvas-menu">
       <ul class="off-canvas-list">
-        <li><label>Users</label></li>
-        <li><a href="#">Hari Seldon</a></li>
-        <li><a href="#">...</a></li>
+        <li class="left"><%= link_to image_tag('flags/gb.png'), {:locale => "en" } %></li>
+        <li class="left"><%= link_to image_tag('flags/es.png'), {:locale => "es" } %></li>
       </ul>
     </aside>
 
@@ -34,80 +31,8 @@
       <!-- content goes here -->
     </section>
 
-  <a class="exit-off-canvas"></a>
+    <a class="exit-off-canvas"></a>
 
   </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-<% if false %>
-  <div class="off-canvas-wrap" data-offcanvas>
-    <div class="inner-wrap">
-      <nav id='locales' class="top-bar">
-
-        <%-# commented line -%>
-        <%-# use frontend locales disabled. Note that they are hardcoded below -%>
-        <% if false %>
-            <% Refinery::I18n.frontend_locales.each do |frontend_locale| %>
-                <%= link_to Refinery::I18n.locales[frontend_locale], {:locale => frontend_locale} %>
-            <% end %>
-        <% end %>
-
-        <%-# using javascript disabled ... -%>
-        <% if false %>
-           <div>
-              <select id='locale_switch'>
-                <option value="en">English</option>
-                <option value="de">Deutsch</option>
-                <option value="es">Espanyol</option>
-                <option value="ca">Catala</option>
-              </select>
-           </div>
-        <% end %>
-
-        <%-# disable german and catalan -%>
-        <% if false %>
-          <%= link_to image_tag('flags/de.png') + " Deutsch", {:locale => "de" } %>
-          <%= link_to image_tag('flags/ca.png') + t('catalan' ), {:locale => "ca" } %>
-        <% end %>
-
-        <ul class="title-area">
-          <li class="name">
-            <h1><a href="#{refinery.root_path}"> <%= Refinery::Core.site_name %> </a></h1>
-          </li>
-          <li class="left">
-            <%= link_to image_tag('flags/gb.png'), {:locale => "en" } %>
-          </li>
-          <li class="left">
-            <%= link_to image_tag('flags/es.png'), {:locale => "es" } %>
-          </li>
-        </ul>
-
-        <a class="left-off-canvas-toggle" href="#" >Menu</a>
-
-        <!-- Off Canvas Menu -->
-        <aside class="left-off-canvas-menu">
-            <!-- whatever you want goes here -->
-            <ul>
-              <%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html %>
-            </ul>
-        </aside>
-
-        <!-- close the off-canvas menu -->
-        <a class="exit-off-canvas"></a> 
-
-      </nav>
-
-    </div>
-  </div>  
-
-<% end %>
 
