@@ -1,12 +1,13 @@
-when selecting something from menu, it shouldn't blink. See divs inserted in application.html.erb
-fix database access on heroku and AWS S3
+- Remove sentences and javascript and blue bar from seed.rb
+  and use Slick Carrusel or Orbit 
+  http://foundation.zurb.com/docs/components/orbit.html
+- Change or use some nice icons from foundation 
+  http://foundation.zurb.com/docs/components/icon-bar.html
+- fix database access on heroku and AWS S3
 
-- The size of the banner should be fixed on mobile, cause now it changes based on the siz of the sentence being displayed.
+- when selecting something from menu, it shouldn't blink. See divs inserted in application.html.erb
 
-- Continue with foundation-rails
-    Follow this doc for creation of a nice UI in mobile and non mobile
-    http://foundation.zurb.com/docs/components/visibility.html
-    Goal is to be mobile friendly
+- Goal is to be mobile friendly
     https://www.google.com/webmasters/tools/mobile-friendly/
     https://github.com/zurb/foundation-rails
     http://foundation.zurb.com/docs/index.html
