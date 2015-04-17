@@ -4,6 +4,8 @@
 en:
   hello: "Hello world"
   catalan: "Català"  # Do not translate this one
+  englishUK: "English"
+  spanish: "Spanish"
 
   refinery:
     footer:

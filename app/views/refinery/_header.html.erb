@@ -1,38 +1,35 @@
-<div class="off-canvas-wrap" data-offcanvas>
-  <div class="inner-wrap">
-    <nav class="tab-bar">
-      <section class="left-small">
-        <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
-      </section>
 
-      <section class="middle tab-bar-section">
-        <h1 class="title">Raul Ferrandez Salvador</h1>
-      </section>
+<nav class="tab-bar">
+  <section class="left-small">
+    <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+  </section>
 
-      <section class="right-small">
-        <a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
-      </section>
-    </nav>
+  <section class="middle tab-bar-section">
+    <h1 class="title">Raul Ferrandez Salvador</h1>
+  </section>
 
-    <aside class="left-off-canvas-menu">
-      <ul class="off-canvas-list">
-        <%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html %>
-      </ul>
-    </aside>
+  <section class="right-small">
+    <a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
+  </section>
+</nav>
 
-    <aside class="right-off-canvas-menu">
-      <ul class="off-canvas-list">
-        <li class="left"><%= link_to image_tag('flags/gb.png'), {:locale => "en" } %></li>
-        <li class="left"><%= link_to image_tag('flags/es.png'), {:locale => "es" } %></li>
-      </ul>
-    </aside>
+<aside class="left-off-canvas-menu">
+  <ul class="off-canvas-list">
+    <%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html %>
+  </ul>
+</aside>
 
-    <section class="main-section">
-      <!-- content goes here -->
-    </section>
+<aside class="right-off-canvas-menu">
+  <ul class="off-canvas-list">
+    <li><%= link_to t('englishUK' ), {:locale => "en" } %></li>
+    <li><%= link_to t('spanish' ), {:locale => "es" } %></li>
+  </ul>
+</aside>
 
-    <a class="exit-off-canvas"></a>
+<section class="main-section">
+  <!-- content goes here -->
+</section>
 
-  </div>
-</div>
+<a class="exit-off-canvas"></a>
+
 

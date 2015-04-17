@@ -1,6 +1,8 @@
 de:
   hello: "Hallo"
   catalan: "Català"    # Do not translate this one
+  englishUK: "Englisch"
+  spanish: "Spanisch"
 
   refinery:
     footer:

@@ -1,6 +1,8 @@
 ca:
   hello: "Hola"
   catalan: "Català"
+  englishUK: "Anglès"
+  spanish: "Castellà"
 
   refinery:
     footer:

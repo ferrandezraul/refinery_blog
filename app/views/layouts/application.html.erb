@@ -19,19 +19,25 @@
   </head>
 
   <body id="<%= canonical_id @page %>">
-    <%= site_bar -%>
-    <div id="page_container">
-      <header id="header">
-        <%= render "/refinery/header" -%>
-      </header>
-      <section id="page">
-        <%= yield %>
-      </section>
-      <footer>
-        <%= render "/refinery/footer" -%>
-      </footer>
+    <%# Needed for foundation to wrap everything and show menu properly %>
+    <div class="off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+        <%= site_bar -%>
+        <div id="page_container">
+          <header id="header">
+            <%= render "/refinery/header" -%>
+          </header>
+          <section id="page">
+            <%= yield %>
+          </section>
+          <footer>
+            <%= render "/refinery/footer" -%>
+          </footer>
+        </div>
+        <%= render "/refinery/javascripts" %>
+      </div>
     </div>
-    <%= render "/refinery/javascripts" %>
+
   </body>
 
 </html>

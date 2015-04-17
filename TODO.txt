@@ -1,5 +1,4 @@
-add locale switch to menu on your right.
-add menu pages on menu on your left.
+when selecting something from menu, it shouldn't blink. See divs inserted in application.html.erb
 fix database access on heroku and AWS S3
 
 - The size of the banner should be fixed on mobile, cause now it changes based on the siz of the sentence being displayed.
