@@ -14,3 +14,18 @@ change_locale_not_working = ->
   #$('#banner p .fade_in').show( );
   #alert( "Yes ready")
   #$( '#locale_switch').on( 'change', locale_changed );
+
+
+jQuery ->
+  $('.slider').slick({
+    dots: true,
+    #slidesToScroll: 1,
+  	#autoplay: true,
+  	#autoplaySpeed: 2000
+  });
+  $('.autoplay').slick({
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  autoplay: true,
+	  autoplaySpeed: 5000
+	});

@@ -26,25 +26,27 @@ image_mail= Refinery::Image.create :image => File.new(image_mail_path)
 # See http://foundation.zurb.com/docs/components/interchange.html
 banner_html = { :default => "
                              <div class=\"show-for-medium-up\">
-                             <img class=\"image-align-right\" data-interchange=\"[%s, (large)]]\" height=\"284\" width=\"360\">
-                             <p class=\"fade_in \">If you want different results, don't do always the same.<br>
-                               <em class=\"font-size-small\">Albert Einstein</em></p>
-                             <p class=\"fade_in\">If you give a hungry man a fish, you nourish him a day. If you teach him to fish, you nourish his whole life.<br>
-                               <em class=\"font-size-small\">Lao-Tsé</em></p>
-                             <p class=\"fade_in\">It is always possible, when one wants it.<br>
-                               <em class=\"font-size-small\">José Luis Sampedro</em></p>
-                             <p class=\"fade_in\">There is an engine more powerful than oil, electricity and atomic energy: the will.<br>
-                               <em class=\"font-size-small\">Albert Einstein</em></p>
-                             <p class=\"fade_in\">I am not a saint, unless you think of a saint as a sinner who keeps on trying.<br>
-                               <em class=\"font-size-small\">Nelson Mandela </em></p>
-                             <p class=\"fade_in\">Every day we learn more and understand less. <br>
-                               <em class=\"font-size-small\">Albert Einstein</em></p>
-                             <p class=\"fade_in\">Choose a job you like and you won't have to work a day in your life. <br>
-                               <em class=\"font-size-small\">Confucius (Chinese philosopher)</em></p>
-                             <p class=\"fade_in\">We can't solve problems by thinking the same way as when we created them. <br>
-                               <em class=\"font-size-small\">Albert Einstein</em></p>
-                             <p class=\"fade_in\">The ignorant affirms it, the wise questions and thinks about it. <br>
-                               <em class=\"font-size-small\">Aristotle</em></p>
+                               <div class=\"slider\">
+                                 <img class=\"image-align-right\" data-interchange=\"[%s, (large)]]\" height=\"284\" width=\"360\">
+                                 <p>If you want different results, don't do always the same.<br>
+                                   <em class=\"font-size-small\">Albert Einstein</em></p>
+                                 <p>If you give a hungry man a fish, you nourish him a day. If you teach him to fish, you nourish his whole life.<br>
+                                   <em class=\"font-size-small\">Lao-Tsé</em></p>
+                                 <p>It is always possible, when one wants it.<br>
+                                   <em class=\"font-size-small\">José Luis Sampedro</em></p>
+                                 <p>There is an engine more powerful than oil, electricity and atomic energy: the will.<br>
+                                   <em class=\"font-size-small\">Albert Einstein</em></p>
+                                 <p>I am not a saint, unless you think of a saint as a sinner who keeps on trying.<br>
+                                   <em class=\"font-size-small\">Nelson Mandela </em></p>
+                                 <p>Every day we learn more and understand less. <br>
+                                   <em class=\"font-size-small\">Albert Einstein</em></p>
+                                 <p>Choose a job you like and you won't have to work a day in your life. <br>
+                                   <em class=\"font-size-small\">Confucius (Chinese philosopher)</em></p>
+                                 <p>We can't solve problems by thinking the same way as when we created them. <br>
+                                   <em class=\"font-size-small\">Albert Einstein</em></p>
+                                 <p>The ignorant affirms it, the wise questions and thinks about it. <br>
+                                   <em class=\"font-size-small\">Aristotle</em></p>
+                                </div>
                              </div>" % image_me.url,
 
                 :es => "<img class=\"image-align-right\" data-interchange=\"[%s, (large)]]\" height=\"284\" width=\"360\">
