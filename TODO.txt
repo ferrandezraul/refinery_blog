@@ -3,7 +3,6 @@
   http://foundation.zurb.com/docs/components/orbit.html
 - Change or use some nice icons from foundation 
   http://foundation.zurb.com/docs/components/icon-bar.html
-- fix database access on heroku and AWS S3
 
 - when selecting something from menu, it shouldn't blink. See divs inserted in application.html.erb
 
