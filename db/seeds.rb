@@ -24,7 +24,8 @@ image_mail= Refinery::Image.create :image => File.new(image_mail_path)
 # class fade-in used with javascript to fade in and out text
 # uses foundation tags i.e. data-interchange
 # See http://foundation.zurb.com/docs/components/interchange.html
-banner_html = { :default => "<div class=\"show-for-medium-up\">
+banner_html = { :default => "
+                             <div class=\"show-for-medium-up\">
                              <img class=\"image-align-right\" data-interchange=\"[%s, (large)]]\" height=\"284\" width=\"360\">
                              <p class=\"fade_in \">If you want different results, don't do always the same.<br>
                                <em class=\"font-size-small\">Albert Einstein</em></p>

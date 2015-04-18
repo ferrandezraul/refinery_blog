@@ -14,7 +14,12 @@
  *= require foundation_and_overrides
 
  *= require_tree .
+ *= require slick
+ *= require slick-theme
  */
+
+ @import 'slick';
+ @import 'slick-theme';
 
  @font-face {
     font-family: 'Satisfy';

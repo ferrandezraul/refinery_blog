@@ -84,3 +84,4 @@ end
 
 gem 'globalize-versioning'
 gem 'foundation-rails' # Added for better front end
+gem "jquery-slick-rails" # Slick https://github.com/bodrovis/jquery-slick-rails
