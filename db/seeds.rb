@@ -26,8 +26,7 @@ image_mail= Refinery::Image.create :image => File.new(image_mail_path)
 # See http://foundation.zurb.com/docs/components/interchange.html
 banner_html = { :default => "
                              <div class=\"show-for-medium-up\">
-                               <div class=\"slider\">
-                                 <img class=\"image-align-right\" data-interchange=\"[%s, (large)]]\" height=\"284\" width=\"360\">
+                               <div class=\"autoplay\">
                                  <p>If you want different results, don't do always the same.<br>
                                    <em class=\"font-size-small\">Albert Einstein</em></p>
                                  <p>If you give a hungry man a fish, you nourish him a day. If you teach him to fish, you nourish his whole life.<br>
