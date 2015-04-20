@@ -1,4 +1,5 @@
 es:
+  language: "Idioma"
   hello: "Hola"
   catalan: "Catalán"
   englishUK: "Inglés"

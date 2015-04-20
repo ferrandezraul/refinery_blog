@@ -1,10 +1,15 @@
-- Remove sentences and javascript and blue bar from seed.rb
-  and use Slick Carrusel or Orbit 
+
+Set image properly (remove any div?) Try seed code in application.html.erb
+Why banner.coffee needs JQuery-> in first line
+
+- when selecting something from menu, it shouldn't blink. See divs inserted in application.html.erb
+    All sentences are shortly displayed!! 
+    If it still happens after deleting javascrit, try using html elements as shown in slick doc and foundation doc.
+    Use divs before p??!!
+
   http://foundation.zurb.com/docs/components/orbit.html
 - Change or use some nice icons from foundation 
   http://foundation.zurb.com/docs/components/icon-bar.html
-
-- when selecting something from menu, it shouldn't blink. See divs inserted in application.html.erb
 
 - Goal is to be mobile friendly
     https://www.google.com/webmasters/tools/mobile-friendly/
