@@ -1,5 +1,3 @@
-
-Set image properly (remove any div?) Try seed code in application.html.erb
 Why banner.coffee needs JQuery-> in first line
 
 - when selecting something from menu, it shouldn't blink. See divs inserted in application.html.erb

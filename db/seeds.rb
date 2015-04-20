@@ -26,8 +26,7 @@ image_mail= Refinery::Image.create :image => File.new(image_mail_path)
 # See http://foundation.zurb.com/docs/components/interchange.html
 banner_html = { :default => "<div class=\"show-for-medium-up\">
                               <div class=\"row\">
-                                <div class=\"small-8 columns\">
-                                  <div class=\"autoplay\">
+                                <div class=\"autoplay small-8 columns\">
                                    <p>If you want different results, don't do always the same.<br>
                                      <em class=\"font-size-small\">Albert Einstein</em></p>
                                    <p>If you give a hungry man a fish, you nourish him a day. If you teach him to fish, you nourish his whole life.<br>
@@ -47,8 +46,7 @@ banner_html = { :default => "<div class=\"show-for-medium-up\">
                                    <p>The ignorant affirms it, the wise questions and thinks about it. <br>
                                      <em class=\"font-size-small\">Aristotle</em></p>
                                   </div>
-                                 </div>
-                                 <div class=\"small-3 columns\">
+                                 <div class=\"small-4 columns\">
                                   <img src=\"%s\">  
                                 </div>
                                </div>    
@@ -56,29 +54,27 @@ banner_html = { :default => "<div class=\"show-for-medium-up\">
 
                 :es => "<div class=\"show-for-medium-up\">
                           <div class=\"row\">
-                            <div class=\"small-8 columns\">
-                              <div class=\"autoplay\">
-                                <p>Si buscas resultados distintos, no hagas siempre lo mismo.<br>
-                                  <em class=\"font-size-small\">Albert Einstein</em></p>
-                                <p>Si das pescado a un hombre hambriento, le nutres una jornada. Si le enseñas a pescar, le nutrirás toda la vida.<br>
-                                  <em class=\"font-size-small\">Lao-Tsé</em></p>
-                                <p>Siempre se puede, cuando se quiere.<br>
-                                  <em class=\"font-size-small\">José Luis Sampedro</em></p>
-                                <p>Hay una fuerza motriz más poderosa que el petróleo, la electricidad y la energía atómica: la voluntad.<br>
-                                  <em class=\"font-size-small\">Albert Einstein</em></p>
-                                <p>No soy un santo, a menos que pienses que un santo es un pecador que persiste en el intento.<br>
-                                  <em class=\"font-size-small\">Nelson Mandela </em></p>
-                                <p>Cada día sabemos más y entendemos menos.<br>
-                                  <em class=\"font-size-small\">Albert Einstein</em></p>
-                                <p>Elige un trabajo que te guste y no tendrás que trabajar ni un día de tu vida. <br>
-                                  <em class=\"font-size-small\">Confucio ( Filósofo chino )</em></p>
-                                <p>No podemos resolver problemas pensando de la misma manera que cuando los creamos. <br>
-                                  <em class=\"font-size-small\">Albert Einstein</em></p>
-                                <p>El ignorante afirma, el sabio duda y reflexiona. <br>
-                                  <em class=\"font-size-small\">Aristóteles</em></p>
-                              </div>
+                            <div class=\"autoplay small-8 columns\">
+                              <p>Si buscas resultados distintos, no hagas siempre lo mismo.<br>
+                                <em class=\"font-size-small\">Albert Einstein</em></p>
+                              <p>Si das pescado a un hombre hambriento, le nutres una jornada. Si le enseñas a pescar, le nutrirás toda la vida.<br>
+                                <em class=\"font-size-small\">Lao-Tsé</em></p>
+                              <p>Siempre se puede, cuando se quiere.<br>
+                                <em class=\"font-size-small\">José Luis Sampedro</em></p>
+                              <p>Hay una fuerza motriz más poderosa que el petróleo, la electricidad y la energía atómica: la voluntad.<br>
+                                <em class=\"font-size-small\">Albert Einstein</em></p>
+                              <p>No soy un santo, a menos que pienses que un santo es un pecador que persiste en el intento.<br>
+                                <em class=\"font-size-small\">Nelson Mandela </em></p>
+                              <p>Cada día sabemos más y entendemos menos.<br>
+                                <em class=\"font-size-small\">Albert Einstein</em></p>
+                              <p>Elige un trabajo que te guste y no tendrás que trabajar ni un día de tu vida. <br>
+                                <em class=\"font-size-small\">Confucio ( Filósofo chino )</em></p>
+                              <p>No podemos resolver problemas pensando de la misma manera que cuando los creamos. <br>
+                                <em class=\"font-size-small\">Albert Einstein</em></p>
+                              <p>El ignorante afirma, el sabio duda y reflexiona. <br>
+                                <em class=\"font-size-small\">Aristóteles</em></p>
                             </div>
-                            <div class=\"small-3 columns\">
+                            <div class=\"small-4 columns\">
                               <img data-interchange=\"[%s, (large)]]\">   
                             </div>        
                           </div>  
@@ -86,8 +82,7 @@ banner_html = { :default => "<div class=\"show-for-medium-up\">
 
                 :ca => "<div class=\"show-for-medium-up\">
                           <div class=\"row\">
-                            <div class=\"small-8 columns\">
-                              <div class=\"autoplay\">
+                            <div class=\"autoplay small-8 columns\">
                                 <p>Si busques resultats diferents, no facis sempre el mateix. <br>
                                   <em class=\"font-size-small\">Albert Einstein</em></p>
                                 <p>Si dónes peix a un home afamat, li nodreixes una jornada. Si li ensenyes a pescar, li nutrirás tota la vida. <br>
@@ -108,7 +103,7 @@ banner_html = { :default => "<div class=\"show-for-medium-up\">
                                   <em class=\"font-size-small\">Aristòtil</em></p>
                               </div>
                             </div>
-                            <div class=\"small-3 columns\">
+                            <div class=\"small-4 columns\">
                               <img data-interchange=\"[%s, (large)]]\">   
                             </div>        
                           </div>   
@@ -190,7 +185,7 @@ pages_array = [ {
                              </ul>
                              <p>As a hobby, I do web development with <strong>Ruby on Rails</strong>. </p>
                              <ul>
-                             <li><strong>JavaScript</strong> with <strong>JQuery</strong> and <strong>CooffeScript</strong>. </li>
+                             <li><strong>JavaScript</strong> with <strong>JQuery</strong>, <strong>CooffeScript</strong> and <strong>AngularJS</strong>. </li>
                              <li>Design with <strong>HTML5</strong>, <strong>CSS</strong> and&#160; <strong>SASS</strong>.</li>
                              <li>Front-end development with <strong>Foundation</strong>.</li>
                              <li>Testing with <strong>RSpec</strong>, <strong>Cucumber</strong> and <strong>Capybara</strong>.</li>
@@ -213,7 +208,7 @@ pages_array = [ {
                              </ul>
                              <p>Como hobby, hago desarrollo web con <strong>Ruby on Rails</strong>. </p>
                              <ul>
-                             <li><strong>JavaScript</strong> con <strong>JQuery</strong> y <strong>CooffeScript</strong>. </li>
+                             <li><strong>JavaScript</strong> con <strong>JQuery</strong>, <strong>CooffeScript</strong> y <strong>AngularJS</strong>. </li>
                              <li>Diseño con <strong>HTML5</strong>, <strong>CSS</strong> y <strong>SASS</strong>.</li>
                              <li>Front-end con <strong>Foundation</strong>.</li>
                              <li>Test con <strong>RSpec</strong>, <strong>Cucumber</strong> y <strong>Capybara</strong>.</li>
@@ -236,7 +231,7 @@ pages_array = [ {
                              </ul>
                              <p>As a hobby, I do web development with <strong>Ruby on Rails</strong>. </p>
                              <ul>
-                             <li><strong>JavaScript</strong> with <strong>JQuery</strong> and <strong>CooffeScript</strong>. </li>
+                             <li><strong>JavaScript</strong> with <strong>JQuery</strong>, <strong>CooffeScript</strong> and <strong>AngularJS</strong>. </li>
                              <li>Design with <strong>HTML5</strong>, <strong>CSS</strong> and&#160; <strong>SASS</strong>.</li>
                              <li>Front-end amb <strong>Foundation</strong>.</li>
                              <li>Test con <strong>RSpec</strong>, <strong>Cucumber</strong> y <strong>Capybara</strong>.</li>
