@@ -25,8 +25,8 @@ image_mail= Refinery::Image.create :image => File.new(image_mail_path)
 # uses foundation tags i.e. data-interchange
 # See http://foundation.zurb.com/docs/components/interchange.html
 banner_html = { :default => "
-                             <div class=\"show-for-medium-up\">
-                               <div class=\"autoplay\">
+                             <div class=\"row show-for-medium-up\">
+                               <div class=\"autoplay large-10 columns\">
                                  <p>If you want different results, don't do always the same.<br>
                                    <em class=\"font-size-small\">Albert Einstein</em></p>
                                  <p>If you give a hungry man a fish, you nourish him a day. If you teach him to fish, you nourish his whole life.<br>
@@ -45,6 +45,9 @@ banner_html = { :default => "
                                    <em class=\"font-size-small\">Albert Einstein</em></p>
                                  <p>The ignorant affirms it, the wise questions and thinks about it. <br>
                                    <em class=\"font-size-small\">Aristotle</em></p>
+                                </div>
+                                <div class=\"large-3 columns\">
+                                  <img class=\"banner\" data-interchange=\"[%s, (large)]]\" height=\"284\" width=\"360\">
                                 </div>
                              </div>" % image_me.url,
 
@@ -166,6 +169,7 @@ pages_array = [ {
                              <ul>
                              <li><strong>JavaScript</strong> with <strong>JQuery</strong> and <strong>CooffeScript</strong>. </li>
                              <li>Design with <strong>HTML5</strong>, <strong>CSS</strong> and&#160; <strong>SASS</strong>.</li>
+                             <li>Front-end development with <strong>Foundation</strong>.</li>
                              <li>Testing with <strong>RSpec</strong>, <strong>Cucumber</strong> and <strong>Capybara</strong>.</li>
                              <li>Content management system (CMS) with <strong>Refinery CMS</strong>.</li>
                              <li>E-Commerce with <strong>Spree Commerce</strong>.</li>
@@ -188,6 +192,7 @@ pages_array = [ {
                              <ul>
                              <li><strong>JavaScript</strong> con <strong>JQuery</strong> y <strong>CooffeScript</strong>. </li>
                              <li>Diseño con <strong>HTML5</strong>, <strong>CSS</strong> y <strong>SASS</strong>.</li>
+                             <li>Front-end con <strong>Foundation</strong>.</li>
                              <li>Test con <strong>RSpec</strong>, <strong>Cucumber</strong> y <strong>Capybara</strong>.</li>
                              <li>Sistema de gestión de contenidos (CMS) con <strong>Refinery CMS</strong>.</li>
                              <li>Comercio electrónico con <strong>Spree Commerce</strong>.</li>
@@ -210,6 +215,7 @@ pages_array = [ {
                              <ul>
                              <li><strong>JavaScript</strong> with <strong>JQuery</strong> and <strong>CooffeScript</strong>. </li>
                              <li>Design with <strong>HTML5</strong>, <strong>CSS</strong> and&#160; <strong>SASS</strong>.</li>
+                             <li>Front-end amb <strong>Foundation</strong>.</li>
                              <li>Test con <strong>RSpec</strong>, <strong>Cucumber</strong> y <strong>Capybara</strong>.</li>
                              <li>Sistema de Gestió de Continguts (CMS) amb <strong>Refinery CMS</strong>.</li>
                              <li>Comerç electrònic amb <strong>Spree Commerce</strong>.</li>

@@ -1,10 +1,10 @@
 #body_content_title {
-  display: none;
+  display: none; // Do not display title in pages
 }
 
 #body_content {
   #body {
     margin: 25px 25px;
-    float: left;
+    float: left; // Side body to be placed side by side instead of below.
   }
 }

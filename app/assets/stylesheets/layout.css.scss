@@ -1,18 +1,10 @@
-body {
-  //font-family: Arial, Georgia, Cambria, "Times New Roman", Times, serif;
-  //font-size: 16px;
-  //margin: 0;
-}
-
 #side_body {
-  margin: 25px 100px;
-  float: right;
-  div {
-    float:left;
-  }
-  width: 250px;
+  margin: 25px 25px;
   p {
     color: #777;
-    font-size: 14px;
   }
 }
+
+// Remove space between header and banner
+// http://stackoverflow.com/questions/7461275/how-to-remove-gap-between-header-and-container-div-in-html5-boilerplate
+p{ margin:0;padding:0 }
