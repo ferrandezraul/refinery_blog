@@ -1,4 +1,5 @@
-Why banner.coffee needs JQuery-> in first line
+Deploy again and see how mobile looks. Menu properly displayed?
+When opening site, it shortly blinks with all <p> elements within autoplay class.
 
 - when selecting something from menu, it shouldn't blink. See divs inserted in application.html.erb
     All sentences are shortly displayed!! 
