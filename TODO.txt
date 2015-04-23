@@ -1,11 +1,3 @@
-Deploy again and see how mobile looks. Menu properly displayed?
-When opening site, it shortly blinks with all <p> elements within autoplay class.
-
-- when selecting something from menu, it shouldn't blink. See divs inserted in application.html.erb
-    All sentences are shortly displayed!! 
-    If it still happens after deleting javascrit, try using html elements as shown in slick doc and foundation doc.
-    Use divs before p??!!
-
   http://foundation.zurb.com/docs/components/orbit.html
 - Change or use some nice icons from foundation 
   http://foundation.zurb.com/docs/components/icon-bar.html
