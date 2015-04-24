@@ -384,20 +384,20 @@ pages_array = [ {
                     :title_es => "Contacto",
                     :title_ca => "Contacte",
                     :body => "<h3>Contact</h3>
-                              <p>Currently I am located in Berlin (Germany) but you can contact me via Email.</p>
-                              <p><img class=\"image-align-left\" src=\"%s\" data-rel=\"128x128\" title=\"Mail\" height=\"22\" width=\"22\" />Send me an email <a title=\"ferrandezraul@gmail.com\" href=\"mailto:ferrandezraul@gmail.com\">ferrandezraul@gmail.com</a></p>
+                              <p>Currently I am located in Berlin (Germany) but you can contact me via Email.</p>                              
                               <p>Find me in&#160;<a target=\"_blank\" title=\"http://www.linkedin.com/in/ferrandezraul\" href=\"http://www.linkedin.com/in/ferrandezraul\">LinkedIn</a></p>
-                              <p>Find me in <a target=\"_blank\" title=\"https://www.xing.com/profile/Raul_FerrandezSalvador\" href=\"https://www.xing.com/profile/Raul_FerrandezSalvador\">Xing</a></p>" % image_mail.url,
+                              <p>Find me in <a target=\"_blank\" title=\"https://www.xing.com/profile/Raul_FerrandezSalvador\" href=\"https://www.xing.com/profile/Raul_FerrandezSalvador\">Xing</a></p>
+                              <p><img class=\"image-align-left\" src=\"%s\" data-rel=\"128x128\" title=\"Mail\" height=\"22\" width=\"22\" />Send me an email <a title=\"ferrandezraul@gmail.com\" href=\"mailto:ferrandezraul@gmail.com\">ferrandezraul@gmail.com</a></p>" % image_mail.url,
                     :body_es => "<h3>Contacto</h3>
-                                 <p>Actualmente resido en Berlín (Alemania) pero puedes contactarme vía mail.</p>
-                                 <p><img class=\"image-align-left\" src=\"%s\" data-rel=\"128x128\" title=\"Mail\" height=\"22\" width=\"22\" />Envíame un mail a <a title=\"ferrandezraul@gmail.com\" href=\"mailto:ferrandezraul@gmail.com\">ferrandezraul@gmail.com</a></p>
+                                 <p>Actualmente resido en Berlín (Alemania) pero puedes contactarme vía mail.</p>                                 
                                  <p>Encuéntrame en&#160;<a target=\"_blank\" title=\"http://www.linkedin.com/in/ferrandezraul\" href=\"http://www.linkedin.com/in/ferrandezraul\">LinkedIn</a></p>
-                                 <p>Encuéntrame en <a target=\"_blank\" title=\"https://www.xing.com/profile/Raul_FerrandezSalvador\" href=\"https://www.xing.com/profile/Raul_FerrandezSalvador\">Xing</a></p>" % image_mail.url,
+                                 <p>Encuéntrame en <a target=\"_blank\" title=\"https://www.xing.com/profile/Raul_FerrandezSalvador\" href=\"https://www.xing.com/profile/Raul_FerrandezSalvador\">Xing</a></p>
+                                 <p><img class=\"image-align-left\" src=\"%s\" data-rel=\"128x128\" title=\"Mail\" height=\"22\" width=\"22\" />Envíame un mail a <a title=\"ferrandezraul@gmail.com\" href=\"mailto:ferrandezraul@gmail.com\">ferrandezraul@gmail.com</a></p>" % image_mail.url,
                     :body_ca => "<h3>Contacte</h3>
-                                 <p>Currently I am located in Berlin (Germany) but you can contact me via Email.</p>
-                                 <p><img class=\"image-align-left\" src=\"%s\" data-rel=\"128x128\" title=\"Mail\" height=\"22\" width=\"22\" />Send me an email <a title=\"ferrandezraul@gmail.com\" href=\"mailto:ferrandezraul@gmail.com\">ferrandezraul@gmail.com</a></p>
+                                 <p>Currently I am located in Berlin (Germany) but you can contact me via Email.</p>                                 
                                  <p>Find me in&#160;<a target=\"_blank\" title=\"http://www.linkedin.com/in/ferrandezraul\" href=\"http://www.linkedin.com/in/ferrandezraul\">LinkedIn</a></p>
-                                 <p>Find me in <a target=\"_blank\" title=\"https://www.xing.com/profile/Raul_FerrandezSalvador\" href=\"https://www.xing.com/profile/Raul_FerrandezSalvador\">Xing</a></p>" % image_mail.url
+                                 <p>Find me in <a target=\"_blank\" title=\"https://www.xing.com/profile/Raul_FerrandezSalvador\" href=\"https://www.xing.com/profile/Raul_FerrandezSalvador\">Xing</a></p>
+                                 <p><img class=\"image-align-left\" src=\"%s\" data-rel=\"128x128\" title=\"Mail\" height=\"22\" width=\"22\" />Send me an email <a title=\"ferrandezraul@gmail.com\" href=\"mailto:ferrandezraul@gmail.com\">ferrandezraul@gmail.com</a></p>" % image_mail.url
                 }
 ]
 
